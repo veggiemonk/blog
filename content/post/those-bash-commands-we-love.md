@@ -2,7 +2,7 @@
 title: "💻 Those bash commands we love"
 date: 2018-05-22T14:22:13+02:00
 tags: ["terminal", "kubernetes", "docker", "bash", "automation"]
-draft: true
+draft: false
 ---
 # The era of the terminal
 

@@ -2,7 +2,7 @@ baseURL = "https://veggiemonk.github.io"
 languageCode = "en-us"
 title = "Julien Bisconti"
 theme = "minimal"
-# disqusShortname = "username" # delete this to disable disqus comments
+disqusShortname = "https-veggiemonk-github-io-post" # delete this to disable disqus comments
 googleAnalytics = ""
 
 [params]
@@ -16,7 +16,7 @@ googleAnalytics = ""
     font = "Raleway" # should match the name on Google Fonts!
     highlight = true
     highlightStyle = "solarized-light"
-    highlightLanguages = ["go", "bash", "haskell", "javascript", "clojure", "clojurescript", "html", "css"]
+    highlightLanguages = ["go", "bash", "haskell", "javascript", "clojure", "clojurescript", "css"]
 
 [[menu.main]]
     url = "/"

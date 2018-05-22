@@ -1,0 +1,63 @@
+baseURL = "https://veggiemonk.github.io"
+languageCode = "en-us"
+title = "Julien Bisconti"
+theme = "minimal"
+# disqusShortname = "username" # delete this to disable disqus comments
+googleAnalytics = ""
+
+[params]
+    author = "Julien Bisconti"
+    description = "software engineer who likes cloud thingy and automating everything"
+    githubUsername = "veggiemonk"
+    # copyright = "dvasdv"
+    accent = "#2492ff"
+    showBorder = true
+    backgroundColor = "floralwhite"
+    font = "Raleway" # should match the name on Google Fonts!
+    highlight = true
+    highlightStyle = "solarized-light"
+    highlightLanguages = ["go", "bash", "haskell", "javascript", "clojure", "clojurescript", "html", "css"]
+
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+[[menu.main]]
+    url = "/post/"
+    name = "Posts"
+    weight = 2
+
+[[menu.main]]
+    url = "/project/"
+    name = "Projects"
+    weight = 3
+
+# Social icons to be shown on the right-hand side of the navigation bar
+# The "name" field should match the name of the icon to be used
+# The list of available icons can be found at http://fontawesome.io/icons/
+
+[[menu.icon]]
+    url = "mailto:julien.bisconti@hotmail.com"
+    name = "envelope-o"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/veggiemonk/"
+    name = "github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://twitter.com/veggiemonk/"
+    name = "twitter"
+    weight = 3
+
+[[menu.icon]]
+    url = "https://www.linkedin.com/in/julienbisconti/"
+    name = "linkedin"
+    weight = 4
+
+# [[menu.icon]]
+#     url = "https://www.stackoverflow.com/username/"
+#     name = "stack-overflow"
+#     weight = 5

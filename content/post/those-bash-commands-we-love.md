@@ -147,6 +147,9 @@ CURRENT_DIR=$(dirname "$0")
 
 My favorite sources of inspiration:
 
+
+{{< tweet 1000208860060307456 >}}
+
 * [Bash in one video](https://www.youtube.com/watch?v=hwrnmQumtPw) 1h
 * [the art of command line](https://github.com/jlevy/the-art-of-command-line)
 * [NixCraft - Linux Shell Scripting Tutorial](https://bash.cyberciti.biz/guide/Main_Page)

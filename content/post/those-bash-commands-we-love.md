@@ -147,7 +147,6 @@ CURRENT_DIR=$(dirname "$0")
 
 My favorite sources of inspiration:
 
-
 {{< tweet 1000208860060307456 >}}
 
 * [Bash in one video](https://www.youtube.com/watch?v=hwrnmQumtPw) 1h

@@ -7,9 +7,8 @@
     <br> <div class="text-justify">{{ .Content }}</div>
 
     <div>
-        <a href="https://twitter.com/intent/tweet?source={{ .Permalink }}&via=veggiemonk" target="_blank" title="Tweet">
-            <i class="icon-twitter" aria-hidden="true"></i>
-            <span>Tweet this article</span>
+        <a href="https://twitter.com/intent/tweet?original_referer={{ .Permalink }}&amp;text={{ .Title }}&amp;tw_p=tweetbutton&amp;url={{ .Permalink }}&amp;via=veggiemonk" rel="nofollow" target="_blank" title="tweeting">(tweet this post)
+            <span style="text-decoration: underline"></span>
         </a>
     </div>
 

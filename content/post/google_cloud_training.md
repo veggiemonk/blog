@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Training Day"
+title: "☁️ Google Cloud Training Day"
 date: 2018-05-23T17:10:48+02:00
 tags: ["google", "cloud", "kubernetes", "container", "automation"]
 draft: false

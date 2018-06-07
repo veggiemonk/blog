@@ -63,7 +63,7 @@ The GCP is actually flexible enough to let the user choose how much of the infra
 Regarding pricing, the policy is in line the of a discount for sustained use.
 It means that if a service is used for more than 15 days per months, there is a high chance that the service will keep on running for the next month.
 With that prediction, Google is able to give a discount because the service is used more.
-You can say whatever but the interface uses Material UI (insert link) and seems very clean and nice.
+You can say whatever but the interface uses Material UI and seems very clean and nice.
 
 Fun fact: everything is running inside a container, even virtual machines!
 
@@ -131,7 +131,7 @@ The machine has to released after 24h but in order to game the system, someone c
 
 ### Scaling
 
-Google has been doing container orchestration for many years since the initial Borg paper. (insert link)
+Google has been doing container orchestration for many years since the initial [Borg paper](https://ai.google/research/pubs/pub43438).
 So it offers a kubernetes cluster with more features than the open source version of it.
 There is also the autoscaler that can be based on the user specific metrics such as the number of player in a game hosted on GCP.
 Not to mention the number of companies, such as SnapChat, that used GCP and didn't even to change anything in their code when they hit the tipping point of users.

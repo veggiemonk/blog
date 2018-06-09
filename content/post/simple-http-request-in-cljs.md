@@ -2,8 +2,10 @@
 title: "🔗 ClojureScript HTTP data fetching"
 date: 2016-12-06T19:54:04+07:00
 draft: false
-tags: ["clojure", "clojurescript", "data", "web", "fetching"]
+tags: ["Clojure", "ClojureScript", "data", "web", "fetching", "http"]
 ---
+
+# ClojureScript HTTP data fetching
 
 In ClojureScript, there is a very helpful library that is a wrapper around XHR. It is called [cljs-http](https://github.com/r0man/cljs-http).
 

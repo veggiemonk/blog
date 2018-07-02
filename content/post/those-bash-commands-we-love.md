@@ -82,6 +82,12 @@ while true; do
 done
 ```
 
+### Remove all git branches except master
+
+```bash
+for i in $(git branch); do echo $i | grep -v -e 'master' -e \* | xargs git branch -D ; done
+```
+
 ## Evaluating
 
 Sometimes we need to copy-paste the content of a file:

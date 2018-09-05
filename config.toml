@@ -57,7 +57,7 @@ googleAnalytics = ""
     name = "linkedin"
     weight = 4
 
-# [[menu.icon]]
-#     url = "https://www.stackoverflow.com/username/"
-#     name = "stack-overflow"
-#     weight = 5
+[[menu.icon]]
+    url = "https://www.slideshare.net/julienbisconti"
+    name = "slideshare"
+    weight = 5

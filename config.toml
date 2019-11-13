@@ -61,3 +61,7 @@ googleAnalytics = ""
     url = "https://www.slideshare.net/julienbisconti"
     name = "slideshare"
     weight = 5
+[[menu.icon]]
+    url = "https://www.youtube.com/playlist?list=PLYxGStwBFd5PrwBH14sU7IuZj7QZ1q6YQ"
+    name = "youtube"
+    weight = 6

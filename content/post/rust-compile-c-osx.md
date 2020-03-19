@@ -86,7 +86,7 @@ error: build failed
 
 I've had my fare share of C/C++ compiling errors 15 years ago using Gentoo. 
 So by reflex, search the internet with the error message: Nothing.
-And that's hell. It means, it is my environment and I'm missing some dependecies. 
+And that's hell. It means, it is my environment and I'm missing some dependencies. 
 
 I check `brew info zlib` and 
 ```
@@ -188,7 +188,7 @@ In most case, this usually does the trick but this time, unfortunately, it did n
 
 Ok let's look at node-gyp.
 
-Nice, a special page decicated to [Catalina](https://github.com/nodejs/node-gyp/blob/master/macOS_Catalina.md)
+Nice, a special page dedicated to [Catalina](https://github.com/nodejs/node-gyp/blob/master/macOS_Catalina.md)
 
 Trying all the steps and debugging everything.
 

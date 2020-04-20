@@ -38,7 +38,7 @@ googleAnalytics = ""
 # The list of available icons can be found at http://fontawesome.io/icons/
 
 [[menu.icon]]
-    url = "mailto:julien.bisconti@hotmail.com"
+    url = "mailto:julien@bisconti.cloud"
     name = "envelope-o"
     weight = 1
 
@@ -48,7 +48,7 @@ googleAnalytics = ""
     weight = 2
 
 [[menu.icon]]
-    url = "https://twitter.com/veggiemonk/"
+    url = "https://twitter.com/julienBisconti/"
     name = "twitter"
     weight = 3
 

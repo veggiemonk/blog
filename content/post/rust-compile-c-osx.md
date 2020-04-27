@@ -6,7 +6,7 @@ draft: false
 ---
 
 
-## Quick story first. 
+## Quick story first.
 
     A weed smoker died. He did bad things during his life and was sent to hell. Arriving there, he saw an endless field of plants (marijuana) and in the middle, sitting there, Jimmy Hendrix and Bob Marley, rolling a massive join. 
 
@@ -88,7 +88,8 @@ I've had my fare share of C/C++ compiling errors 15 years ago using Gentoo.
 So by reflex, search the internet with the error message: Nothing.
 And that's hell. It means, it is my environment and I'm missing some dependencies. 
 
-I check `brew info zlib` and 
+I check `brew info zlib` and
+
 ```
 ==> Caveats
 zlib is keg-only, which means it was not symlinked into /usr/local,
@@ -96,7 +97,7 @@ because macOS already provides this software and installing another version in
 parallel can cause all kinds of trouble.
 ```
 
-It doesn't look good. 
+It doesn't look good.
 
 I searched and searched for a ridiculous amount of hours.
 Trying nightly versions of Rust, different targets, changing dependencies version, trying to build others Rust projects.
@@ -112,13 +113,14 @@ I just wanted the banana and got the gorilla holding the banana with the whole j
 
 Let's try to compile a C program `a.c`.
 
-```
+```c
 #include<stdio.h>
 int main(void){
- printf("Hello world\n");
- return 0;
+  printf("Hello world\n");
+  return 0;
 }
 ```
+
 Running `gcc -o a a.c` works perfectly.
 Running `make a` throw this error:
 
@@ -131,12 +133,12 @@ a.c:1:9: fatal error: 'stdio.h' file not found
 make: *** [a] Error 1
 ```
 
-## Ok, we're getting somewhere.
+## Ok, we're getting somewhere
 
 I returned to build the Rust program with different flags to no avail.
 
-I gave up and went back to a Node.js project. 
-Change dir, `npm install`. 
+I gave up and went back to a Node.js project.
+Change dir, `npm install`.
 I wonder if there is a competition I don't know about, to see who has the most dependencies.
 And hell is there again:
 
@@ -181,7 +183,7 @@ found 10 low severity vulnerabilities
   run `npm audit fix` to fix them, or `npm audit` for details
 ```
 
-What did I do to deserve this? 
+What did I do to deserve this?
 <!-- 
 I even put my credit card number into iTunes, just to confirm that my account did not need a "special blessing" from the Apple spirits. I though that would unlock me to continue with my project. 
 In most case, this usually does the trick but this time, unfortunately, it did not. -->
@@ -205,8 +207,6 @@ Stack overflow to the rescue:
 - https://apple.stackexchange.com/questions/372032/usr-include-missing-on-macos-catalina-with-xcode-11
 
 - https://apple.stackexchange.com/questions/372340/missing-header-files-on-macos-catalina
-
-
 
 Finally, the answer was, the `CPATH`:
 

@@ -18,9 +18,9 @@ Scaling the monolith was a problem though and an expensive one.
 So someone invented the microservices architecture and told them "That should scale horizontally".
 "Well", the developers said, "let's make a  -->
 
-Don't you notice something? Every year, the infrastructure stack becomes bigger and bigger.
+<!-- Don't you notice something? Every year, the infrastructure stack becomes bigger and bigger.
 How it all went from bare metal to serverless function in a blink of an eye.
 Why is that?
 
 Well, the answer could be that it makes sense for easily understood and reproducible pattern to be reused.
-Nobody likes to reinvent the wheel all the times, every 2 years is enough.
+Nobody likes to reinvent the wheel all the times, every 2 years is enough. -->

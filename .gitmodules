@@ -4,3 +4,9 @@
 [submodule "public"]
 	path = public
 	url = git@github.com:veggiemonk/veggiemonk.github.io.git
+[submodule "themes/zen"]
+	path = themes/zen
+	url = https://github.com/frjo/hugo-theme-zen.git
+[submodule "themes/reveal-hugo"]
+	path = themes/reveal-hugo
+	url = git@github.com:dzello/reveal-hugo.git

@@ -32,7 +32,7 @@ outputs:
 params:
   contact: "julien@bisconti.cloud"
   copyright: "<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->"
-  description: "The zen theme for Hugo example site."
+  description: "Julien Bisconti software engineer for Google Cloud"
   dateformat: "2 January, 2006"
   favicon: "apple-touch-icon.png"
   feedlinks: true

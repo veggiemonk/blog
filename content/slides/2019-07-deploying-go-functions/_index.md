@@ -1,7 +1,7 @@
 +++
-title = "Deploying Go Functions (2)"
+title = "Deploying Go Functions (2) (Minsk Go Conference 2019)"
 outputs = ["Reveal"]
-date = "18 July 2019"
+date = "18 Jul 2019"
 
 [reveal_hugo]
 #theme = "simple"

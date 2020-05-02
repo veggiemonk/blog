@@ -1,5 +1,5 @@
 +++
-title = "Chaos Engineering with a Service Mesh (3)"
+title = "Chaos Engineering with a Service Mesh (3) (Stockholm Meetup)"
 outputs = ["Reveal"]
 date = "18 Nov 2018"
 

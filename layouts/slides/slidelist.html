@@ -4,10 +4,10 @@
     <div class="content">
         {{ .Content }}
         <ul>
-            {{ range sort .Sections}}
-            <li>
-                <a class="" href="{{ .Permalink }}" target="blank">{{.Title}}</a>
-                <!-- TODO: add date of the slides -->
+            {{ range sort .Sections "Date" "desc"}}
+            <li class="slide-list">
+                <span>{{ .Date.Format "06 Jan 2006" }}</span> > <a class="" href="{{ .Permalink }}"
+                    target="blank">{{.Title}}</a>
             </li>
             {{ end }}
         </ul>

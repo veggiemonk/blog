@@ -1,5 +1,5 @@
 +++
-title = "Monorepo -vs- Multirepo"
+title = "Monorepo -vs- Multirepo (Stockholm Meetup)"
 outputs = ["Reveal"]
 date = "18 Feb 2019"
 

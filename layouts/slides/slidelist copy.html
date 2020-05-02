@@ -1,0 +1,17 @@
+{{ define "main" -}}
+<main class="main layout__main">
+    <h1 class="title">{{ .Title }}</h1>
+    <div class="content">
+        {{ .Content }}
+        <ul>
+            {{ range sort .Sections "Date" "desc"}}
+            <li>
+                <span style="width:5rem;">{{ .Date.Format "06 Jan 2006" }}</span><a class="" href="{{ .Permalink }}"
+                    target="blank">{{.Title}}</a>
+                <!-- TODO: add date of the slides -->
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</main>
+{{ end }}

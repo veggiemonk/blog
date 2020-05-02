@@ -1,5 +1,5 @@
 +++
-title = "Code Motion 2019 Milan - Deploying Go Functions"
+title = "Deploying Go Functions (5) (Milan Code Motion Conference 2019)"
 outputs = ["Reveal"]
 date = "18 Oct 2019"
 

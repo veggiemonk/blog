@@ -1,5 +1,5 @@
 +++
-title = "Chaos Engineering with a Service Mesh (4)"
+title = "Chaos Engineering with a Service Mesh (4) - (CNCF)"
 outputs = ["Reveal"]
 date = "18 Nov 2018"
 

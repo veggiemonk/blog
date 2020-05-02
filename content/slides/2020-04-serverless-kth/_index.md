@@ -1,5 +1,5 @@
 +++
-title = "Serverless & FaaS"
+title = "Serverless & FaaS (KTH University)"
 outputs = ["Reveal"]
 date = "21 Apr 2020"
 

@@ -1,5 +1,5 @@
 +++
-title = "Kubernetes Logging & Monitoring"
+title = "Kubernetes Logging & Monitoring (Stockholm Meetup)"
 outputs = ["Reveal"]
 date = "18 Mar 2019"
 

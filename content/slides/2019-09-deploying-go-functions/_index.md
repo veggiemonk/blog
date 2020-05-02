@@ -1,5 +1,5 @@
 +++
-title = "Deploying Go Functions (3)"
+title = "Deploying Go Functions (3) (Stockholm Meetup)"
 outputs = ["Reveal"]
 date = "18 Sep 2019"
 

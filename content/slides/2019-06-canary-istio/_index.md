@@ -1,7 +1,7 @@
 +++
-title = "Canary release with Istio"
+title = "Canary release with Istio (Stockholm Meetup)"
 outputs = ["Reveal"]
-date = "18 June 2019"
+date = "18 Jun 2019"
 
 [reveal_hugo]
 #theme = "simple"

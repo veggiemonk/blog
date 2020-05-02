@@ -1,3 +1,14 @@
 // sass-lint:disable no-css-comments, no-color-hex, no-color-literals
 
 // Site custom styles
+
+.slide-list{
+    list-style-type: none;
+    line-height: 2rem;
+    padding-left: 0rem;
+
+    span{
+        display: inline-block;
+        width: 6rem;
+    }
+}

@@ -852,4 +852,12 @@ figure.podcast audio {
 .js-submitted textarea:invalid {
   background-color: #fff0f0; }
 
+.slide-list {
+  list-style-type: none;
+  line-height: 2rem;
+  padding-left: 0rem; }
+  .slide-list span {
+    display: inline-block;
+    width: 6rem; }
+
 /*# sourceMappingURL=styles.css.map */

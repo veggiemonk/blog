@@ -1,5 +1,5 @@
 +++
-title = "Service Mesh - Istio"
+title = "Service Mesh - Istio (Stockholm Meetup)"
 outputs = ["Reveal"]
 date = "18 May 2019"
 

@@ -1,26 +1,32 @@
 ---
 title: "Compiling C dependencies for Rust and node-gyp on MacOSX Catalina"
 date: 2020-03-18T23:03:28+02:00
+author: "Julien Bisconti"
 tags: [ "rust", "compiling", "c", "dependencies", "osx", "catalina"]
 draft: false
 ---
 
 
-## Quick story first.
+## Quick story first
 
-    A weed smoker died. He did bad things during his life and was sent to hell. Arriving there, he saw an endless field of plants (marijuana) and in the middle, sitting there, Jimmy Hendrix and Bob Marley, rolling a massive join. 
+    A weed smoker died. He did bad things during his life and was sent to hell. 
+    Arriving there, he saw an endless field of plants (marijuana) and in the middle, 
+    sitting there, Jimmy Hendrix and Bob Marley, rolling a massive join. 
 
-    He ran towards them and say: - "Hi, big fan, quick question. I thought this was going to be hell! But with all that weed, I must be in heaven. Can we smoke some together?"
+    He ran towards them and say: - "Hi, big fan, quick question. 
+    I thought this was going to be hell! But with all that weed, 
+    I must be in heaven. Can we smoke some together?"
     Hendrix asks, "Got a lighter ?" 
     Smoker replied, "No."
     Marley says, "See, man, this is hell".
+
 
 I don't smoke weed. I don't even drink alcohol. My addiction is trying GitHub projects.
 So I wanted to try a Rust project that I use daily on a freshly installed OSX. 
 Clone, change dir, `cargo build`.
 And this is what hell looks like for me:
 
-```
+```shell
 error: failed to run custom build command for `libz-sys v1.0.25`
 
 Caused by:
@@ -90,7 +96,7 @@ And that's hell. It means, it is my environment and I'm missing some dependencie
 
 I check `brew info zlib` and
 
-```
+```shell
 ==> Caveats
 zlib is keg-only, which means it was not symlinked into /usr/local,
 because macOS already provides this software and installing another version in
@@ -142,7 +148,7 @@ Change dir, `npm install`.
 I wonder if there is a competition I don't know about, to see who has the most dependencies.
 And hell is there again:
 
-```
+```shell
 ❯ npm install
 
 > fsevents@1.2.11 install /Users/julien/code/awesome-docker/node_modules/fsevents

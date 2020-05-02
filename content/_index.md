@@ -3,8 +3,8 @@ title: "home"
 
 ---
 
-# Software Consultant
+## Freelance Software Engineer
 
-## Software engineer in the cloud 
+## Specialized in Google Cloud
 
-Welcome to my personal website. 
+Welcome to my personal website.

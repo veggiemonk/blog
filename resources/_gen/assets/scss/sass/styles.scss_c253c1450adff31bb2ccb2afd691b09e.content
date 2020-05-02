@@ -749,7 +749,6 @@ article pre {
   border: 1px solid #cccccc;
   background-color: #fff;
   overflow: auto;
-  max-height: 300px;
   max-width: 90vw; }
   article pre.chroma {
     max-height: initial;

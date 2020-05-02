@@ -1,0 +1,387 @@
++++
+title = "Deploying Go Functions (2)"
+outputs = ["Reveal"]
+date = "18 July 2019"
+
+[reveal_hugo]
+#theme = "simple"
+highlight_theme = "zenburn"
++++
+
+<section data-transition='concave' data-state='blackout'>
+<h1>DEPLOYING GO FUNCTIONS</h1>
+</section>
+
+<section>
+<h2>Demo</h2>
+<p>
+    <a href="https://www.openfaas.com/">
+    <img width="50%" src="openfaas.png"
+        alt="openfaas logo">
+    </a>
+</p>
+<pre><code class="hljs bash" data-trim>
+git clone https://github.com/openfaas/faas-netes
+cd faas
+make start_kind
+</code></pre>
+</section>
+<!-- <section>
+<ul>
+    <li>demo</li>
+    <li>show code</li>
+    <li>show how it is build (architecture)</li>
+    <li>build is ok but time consuming</li>
+    <li>buy (use open source) and learn is a better strategy/investment long term</li>
+    <li>show with linkerd (https://github.com/openfaas-incubator/openfaas-linkerd2)</li>
+    <li>show "no code"</li>
+    <li>show talk "simplicity is complicated"</li>
+    <li>serverless (mindset/architecture)vs FaaS (implementations)</li>
+    <li>on prem vs pay for what you use</li>
+    <li>employee time (build) vs using a product (buy)</li>
+    <li>show Swardley map</li>
+    <li>deploy to gcp</li>
+    <li>talk about security and ci/cd</li>
+    <li>show cloud architecture forseti-viz</li>
+</ul>
+</section> -->
+<section>
+<h4>templates</h4>
+<pre><code class="hljs golang" data-trim >
+import (
+"fmt"
+"io/ioutil"
+"log"
+"os"
+
+"handler/function"
+)
+func main() {
+input, err := ioutil.ReadAll(os.Stdin)
+if err != nil {
+log.Fatalf("Unable to read standard input: %s", err.Error())
+}
+fmt.Println(function.Handle(input))
+}
+</code></pre>
+<p><a href="https://github.com/openfaas/templates">See all templates</a></p>
+</section>
+
+<section>
+<h4>functions</h4>
+<pre><code  class="hljs golang" data-trim>
+// Handle a serverless request
+func Handle(req []byte) string {
+return fmt.Sprintf("Hello, Go. You said: %s", string(req))
+}
+</code></pre>
+<p><a href="https://github.com/esimov/pigo-openfaas/blob/master/pigo-openfaas/handler.go">face detection
+    handler</a></p>
+</section>
+
+<section>
+<h4>Some container with your function? </h4>
+<pre><code class="hljs dockerfile" data-trim>
+# Populate example here - i.e. "cat", "sha512sum" or "node index.js"
+ENV fprocess="./handler"
+# Set to true to see request in function logs
+ENV write_debug="false"
+
+EXPOSE 8080
+
+HEALTHCHECK --interval=3s CMD [ -e /tmp/.lock ] || exit 1
+CMD [ "fwatchdog" ]
+</code></pre>
+</section>
+<section>
+<h2>How does it work</h2>
+<ul>
+    <li>OpenFaas API Gateway routes into functions</li>
+    <li>Runs inside a container</li>
+    <li>Uses a watchdog process (web server)</li>
+    <li>Process STDIN and returns to STDOUT</li>
+    <!-- <li>Collects metrics in Prometheus</li> -->
+</ul>
+<aside class="notes">						
+    Each container has a watchdog process that hosts a web server allowing a post request
+    to be forwarded to a desired process via STDIN.
+    The response is sent back to the caller via STDOUT.
+    
+    The API Gateway provides an external route into your functions and collects metrics in Prometheus.
+    The gateway will scale functions according to demand by mangaging Docker Swarm replicas as throughput increases.
+    A UI is baked in allowing you to invoke functions in your browser and create new ones as needed.
+</aside>            
+</section>
+<!-- ======================================================================= -->
+<section>
+<h2>Why deploying go functions ?</h2>
+</section>
+<section>
+<h2>Simplicity is complicated</h2>
+<h4>Rob Pike</h4>
+<div>
+    <img src="https://upload.wikimedia.org/wikipedia/en/7/76/The_Art_of_Unix_Programming.jpg"
+    alt="The Art of UNIX programming">
+    <p><a href="https://www.youtube.com/watch?v=rFejpH_tAHM">dotGo 2015 - Rob Pike - Simplicity is Complicated</a>
+    </p>
+</div>
+</section>
+<section>
+<img src="production_grade_infra.png" alt="production grade infrastructure">
+<a href="">Yevgeniy Brikman - Lessons from 300k+ Lines of Infrastructure Code</a>
+</section>
+<section>
+<h2>why does it take so long</h2>
+<div>
+    <img width="70%" src="https://media1.giphy.com/media/mbluZIdy0Ww5q/giphy.gif" alt="Yak Shaving"> 
+</div>
+</section>
+<!-- <section>
+Example: <a target="_blank" href="https://gist.github.com/veggiemonk/59afbd540619873587de42d6865253cc">gist</a>
+</section> -->
+<section>
+<h2>" we should build X "</h2>
+</section>
+<section>
+<h1>We could build it</h1>
+<h2>BUT</h2>
+<h4>spending time on the business makes more sense financially.</h4>
+</section>
+<section>
+<h3>build OR buy</h3>
+<img width="60%" src="tweetdc.png" alt="Tweet about datacenter" />
+<p>
+    <a target="_blank" href="https://threadreaderapp.com/thread/1102401615263223809.html">whole thread</a>
+</p>
+</section>
+<section>
+<h3>build OR buy</h3>
+<p>Restaurants buy, cook and sell food.</p>
+<p>Very few do farming and even less are good at both.</p>
+</section>
+<section>
+<h2>Mental limitations</h2>
+<br>
+<ul>
+    <li># decisions / day </li>
+    <li># things to remember</li>
+    <li>speed of memory / reflexes</li>
+</ul>
+</section>
+<section>
+<h2>Consistency is key</h2>
+<a href="http://collections.uakron.edu/utils/getdownloaditem/collection/p15960coll1/id/25524/filename/25525.pdf/mapsto/pdf">source</a>
+<img src="army_report_title.png" alt="Archives of the History of American Psychology, The Center for the
+History of Psychology, The University of Akron" srcset="" />
+<img src="army_report.png" alt="army report uniformity" srcset="" />
+</section>
+<!-- <section>
+<ul>
+    <li>Logging</li>
+    <li>Tracing</li>
+    <li>Metrics</li>
+    <li>Service identity and Auth</li>
+    <li>Circuit breaking</li>
+    <li>Traffic flow and policies</li>
+    <li>Failover</li>
+    <li>A/B testing</li>
+    <li>Fault injection</li>
+    <li>...</li>
+</ul>
+<br>
+<br>
+<h4 class="fragment">➡️ ️ use code?</h4>
+</section>
+<section>
+<h3>drawbacks</h3>
+<ul>
+    <li>combination language/framework/version/feature</li>
+    <li>maintain, upgrade, migrate, retire</li>
+    <li>code pollution and complexity (+ testing)</li>
+    <li>deployment / rolling update</li>
+    <li>language/framework/version lock-in</li>
+    <li>debugging</li>
+</ul>
+<br>
+<br>
+<h4 class="fragment">➡️ ️ make code part of infrastructure</h4>
+</section> -->
+
+
+<!-- <section>
+<h2>demo</h2>
+<h4>service mesh: Linkerd</h4>
+<a href="https://github.com/openfaas-incubator/openfaas-linkerd2">linkerd.io</a>
+</section> -->
+<!-- ======================================================================= -->
+<section>
+<h2>Why deploying go functions ?</h2>
+</section>
+<section>
+<img src="/no-code.png" alt="no code" width="80%">
+<a target="_blank" href="https://github.com/kelseyhightower/nocode">repository</a>
+</section>
+<section>
+<h1>Mindset</h1>
+<h2>connect services</h2>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/bYCPbKHivMA" frameborder="0"
+    allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+<a href="https://www.youtube.com/watch?v=bYCPbKHivMA">Patrick Debois - From serverless to Service Full</a>
+</section>
+<section>
+<h3> Name a service for :</h3>
+<ul>
+    <li>mails</li>
+    <li>chat</li>
+    <li>pictures</li>
+    <li>files</li>
+    <li>code</li>
+    <li>dns</li>
+    <li>payment</li>
+</ul>
+</section>
+<section>
+<h2>tradeoffs</h2>
+<p>
+    Developer time (build)
+    <br>
+    Use a product (buy)
+</p>
+
+<p>
+    On premise: fixed price and capacity
+    <br>
+    Cloud: pay for what you use
+</p>
+
+<p>
+    latency versus throughput
+</p>
+<h2 class="fragment"> 👉 strategy</h2>
+</section>
+
+<section>
+<img src="swardley_map.jpeg" alt="mapping">
+<p><a href="https://youtu.be/xlNYYy8pzB4">Simon Wardly - Mapping</a></p>
+</section>
+<!-- 
+<section>
+<h2>CODE</h2>
+👇
+<h2>INFRA</h2>
+👇
+<H2>SERVICE</H2>
+</section> -->
+<!-- ======================================================================= -->
+<section>
+<h2>Why deploying go functions ?</h2>
+</section>
+<section>
+    <h2>Pipelines are software too</h2>
+
+    <h4>How to change the system</h4>
+</section>
+<section>
+<h2>⬅️  SHIFT LEFT</h2>
+<img src="delivery.png" alt="delivery diagram">
+</section>
+<section>
+<h3>Shift left</h3>
+<p>Test early with <span style="color:#eee8d5">"X-as-Code"</span> where "X" can be: </p>
+<ul>
+    <li>infra</li>
+    <li>config</li>
+    <li>build</li>
+    <li>policy</li>
+    <li>deployment</li>
+    <li>pipeline</li>
+    <li>resiliency ?</li>
+</ul>
+</section>
+<section>
+<ul>
+    <li>infra 👉 Terraform</li>
+    <li>config 👉 YAML (CUE ?)</li>
+    <li>build 👉 Dockerfile</li>
+    <li>policy 👉 O.P.A.</li>
+    <li>deployment 👉 YAML (Kubernetes)</li>
+    <li>pipeline 👉 Jenkins (Tekton ?)</li>
+    <li>resiliency  👉 ChaosToolkit</li>
+</ul>
+
+
+<!-- TODO:
+* graph for ci cd
+* deploy on cloud run:
+https://github.com/GoogleCloudPlatform/cloud-run-events/blob/master/docs/install/README.md
+* Use run on cloud run: https://github.com/GoogleCloudPlatform/cloud-run-button
+* cloud run sample https://github.com/GoogleCloudPlatform/cloud-run-samples/blob/master/go/pubsub/main.go
+
+
+https://github.com/GoogleCloudPlatform/cloud-functions-go
+git clone https://github.com/GoogleCloudPlatform/golang-samples.git
+https://cloud.google.com/functions/docs/quickstart#functions-prepare-environment-go -->
+</section>
+<section>
+<h3>In the ☁️</h3>
+
+
+<pre><code data-trim>
+docker pull esimov/pigo-openfaas:0.1
+gcloud auth configure-docker
+export IMAGE="eu.gcr.io/${PROJECT_ID}/pigo-openfaas"
+docker tag esimov/pigo-openfaas:0.1 "${IMAGE}"
+docker push "${IMAGE}"
+
+gcloud beta run deploy pigo-openfaas --platform=managed \
+--region=us-central1 --image="${IMAGE}" \
+--allow-unauthenticated \
+--set-env-vars=output_mode=image \
+--set-env-vars=input_mode=url 
+export FUNCTION_URL="..."
+export IMG_URL="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/NASA_Astronaut_Group_18.jpg/1200px-NASA_Astronaut_Group_18.jpg"
+curl -H 'Content-Type: binary/octet-stream' \
+--data-binary "${IMG_URL}" "${FUNCTION_URL}" > target.jpg
+</code></pre>
+</section>
+
+<section>
+<h2>Resources</h2>
+<ul>
+    <!-- <li>All references have links</li> -->
+    <small>
+    <li><a href="https://www.openfaas.com">openfaas.com</a></li>
+    <li><a href="https://linkerd.io/">linkerd.io</a></li>
+    <li><a href="https://www.openfaas.com/blog/golang-serverless/">openfaas.com/blog/golang-serverless</a></li>
+    <li><a href="https://cloud.google.com/run/docs/reference/container-contract">cloud.google.com/run/docs/reference/container-contract</a></li>
+    <li><a href="https://codelabs.developers.google.com/codelabs/cloud-run-gke/index.html?index=..%2F..index#0">cloud-run-gke - codelabs</a></li>
+    <li><a href="https://cloud.google.com/run/docs/">Cloud Run Docs</a></li>
+    <li><a href="https://www.azquotes.com/author/3969-Edsger_Dijkstra">Dijkstra Quotes</a></li>
+    </small>
+</ul>
+<h4>free stuff</h4>
+<a href="https://tinyurl.com/FreeK8SQuest">tinyurl.com/FreeK8SQuest </a>
+
+</section>
+<section>
+<h2>I'm sorry 🙏 </h2>
+<h4>If you had to maintain my code</h4>
+<br>
+<p>
+    <small>
+    <a style='font-weight:bold;color:deepskyblue;' href='http://github.com/veggiemonk'>Github: @veggiemonk</a>
+    <br />
+    <a style='font-weight:bold;color:deepskyblue;' href='https://twitter.com/veggiemonk'>Twitter:
+        @veggiemonk</a>
+    <br />
+    <a style='font-weight:bold;color:deepskyblue;' href='https://www.linkedin.com/in/julienbisconti/'>LinkedIn:
+        julienbisconti</a>
+    <br />
+    <a style='font-weight:bold;color:deepskyblue;' href="https://veggiemonk.github.io/">blog:
+        https://veggiemonk.github.io/</a>
+    <br />
+    <a style='font-weight:bold;color:deepskyblue;' href="https://www.slideshare.net/julienbisconti">slides:
+        https://www.slideshare.net/julienbisconti</a>
+    </small>
+</p>
+</section>

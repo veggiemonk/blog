@@ -1,6 +1,7 @@
 ---
 title: "Successful Opensource Projects"
 date: 2019-03-24T15:39:01+01:00
+author: "Julien Bisconti"
 tags: ["open source", "culture", "marketing", "automation","data", "web",]
 draft: false
 ---
@@ -14,7 +15,7 @@ I might use strong words but it's because I try to make you understand how to su
 
 I would recommend this article: https://www.stephaniemorillo.co/single-post/2019/02/17/7-Common-Content-Marketing-Mistakes-Developers-Make-and-How-to-Avoid-Them
 
-It takes too much time for me to figure out what is that project, what are its dependencies, how to install it and how to use it. 
+It takes too much time for me to figure out what is that project, what are its dependencies, how to install it and how to use it.
 Those sections should be part of the README or website. 
 Then a use case section would be nice. What is the problem that the software solves.
 If the project can't answer that in the first 30 seconds, it will drown in the continuous flood of new projects I see popup every day/hour/second .... I just don't have the time to figure things out and "play" with them. 
@@ -30,6 +31,4 @@ video on youtube: ["20 Years of Product Management in 25 Minutes by Dave Wascha"
 
 I hope this helps,
 
-
 Julien
-

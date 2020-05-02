@@ -1,0 +1,4 @@
+# Ignore Markdown files in the test directory
+content/slides/*/*.md
+
+!test/except/this/one.md

@@ -5,7 +5,9 @@
         {{ .Content }}
         <ul>
             {{ range sort .Sections}}
-            <li><a class="" href="{{ .Permalink }}" target="blank">{{.Title}}</a>
+            <li>
+                <a class="" href="{{ .Permalink }}" target="blank">{{.Title}}</a>
+                <!-- TODO: add date of the slides -->
             </li>
             {{ end }}
         </ul>

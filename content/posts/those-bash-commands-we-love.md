@@ -1,9 +1,11 @@
 ---
 title: "💻 Those bash commands we love"
 date: 2018-05-22T14:22:13+02:00
+author: "Julien Bisconti"
 tags: ["terminal", "kubernetes", "docker", "bash", "automation"]
 draft: false
 ---
+
 # The era of the terminal
 
 Looking back at the time of the mainframe with dummy terminal clients and their black/green screen, it makes me wonder if things really change that much. I guess it's like in everything, some things change, some don't. Deal with it.
@@ -41,7 +43,7 @@ INTERNAL_IP=$(curl -s -H "Metadata-Flavor: Google" \
 for file in *; do echo "File -> $file"; done
 
 # Do something at interval
- while true; do kubectl get pods; sleep 1; done
+while true; do kubectl get pods; sleep 1; done
 
 # Iterate over arguments
 for var in "$@"
@@ -85,7 +87,10 @@ done
 ### Remove all git branches except master
 
 ```bash
-for i in $(git branch); do echo $i | grep -v -e 'master' -e \* | xargs git branch -D ; done
+for i in $(git branch);
+  do
+    echo $i | grep -v -e 'master' -e \* | xargs git branch -D ;
+  done
 ```
 
 ## Evaluating
@@ -93,7 +98,7 @@ for i in $(git branch); do echo $i | grep -v -e 'master' -e \* | xargs git branc
 Sometimes we need to copy-paste the content of a file:
 
 ```bash
-cat <<EOF | ~/newly_created_file
+cat < EOF > ~/newly_created_file
 input
 on multiple lines
 EOF
@@ -102,7 +107,7 @@ EOF
 Sometimes we need to have privileges:
 
 ```bash
-cat <<EOF | sudo tee /etc/systemd/system/foo.service
+cat < EOF | sudo tee /etc/systemd/system/foo.service
 [Unit]
 Description=foo
 
@@ -155,7 +160,7 @@ My favorite sources of inspiration:
 
 {{< tweet 1000208860060307456 >}}
 
-* [Bash in one video](https://www.youtube.com/watch?v=hwrnmQumtPw) 1h
+* [Bash in one video (1h)](https://www.youtube.com/watch?v=hwrnmQumtPw) 
 * [the art of command line](https://github.com/jlevy/the-art-of-command-line)
 * [NixCraft - Linux Shell Scripting Tutorial](https://bash.cyberciti.biz/guide/Main_Page)
 * [kubernetes the hard way](https://github.com/kelseyhightower/kubernetes-the-hard-way)

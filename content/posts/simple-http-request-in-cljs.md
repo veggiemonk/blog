@@ -1,6 +1,7 @@
 ---
 title: "🔗 ClojureScript HTTP data fetching"
 date: 2016-12-06T19:54:04+07:00
+author: "Julien Bisconti"
 draft: false
 tags: ["Clojure", "ClojureScript", "data", "web", "fetching", "http"]
 ---

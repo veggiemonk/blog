@@ -1,6 +1,7 @@
 ---
 title: "Chaos Engineering With Service Mesh"
 date: 2018-06-22T23:03:28+02:00
+author: "Julien Bisconti"
 tags: [ "cloud", "kubernetes", "presentation", "chaos engineering", "service mesh", "istio"]
 draft: false
 ---

@@ -1,9 +1,11 @@
 ---
 title: "☁️ Google Cloud Training Day"
 date: 2018-05-23T17:10:48+02:00
+author: "Julien Bisconti"
 tags: ["google", "cloud", "kubernetes", "container", "automation"]
 draft: false
 ---
+
 # 1 day free event workshop in Stockholm
 
 It's a one day event where anybody can attend for free in order to see what's available in the cloud build by Google.

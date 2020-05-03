@@ -1,10 +1,11 @@
 +++
-title = "Serverless & FaaS (KTH University)"
+title = "Serverless & FaaS"
 outputs = ["Reveal"]
 date = "21 Apr 2020"
+event_name = "DevOps Course, Stockholm @ KTH University"
 
 [reveal_hugo]
-#theme = "simple"
+theme = "moon"
 highlight_theme = "zenburn"
 +++
 

@@ -1,10 +1,11 @@
 +++
-title = "Chaos Engineering with a Service Mesh (Stockholm Meetup)"
+title = "Chaos Engineering with a Service Mesh"
 outputs = ["Reveal"]
 date = "18 Sep 2018"
+event_name = "CNCF Meetup, Stockholm @ Spotify"
 
 [reveal_hugo]
-#theme = "simple"
+theme = "moon"
 highlight_theme = "zenburn"
 +++
 

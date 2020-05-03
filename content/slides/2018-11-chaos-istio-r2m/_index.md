@@ -1,10 +1,11 @@
 +++
-title = "Chaos Engineering with a Service Mesh (3) (Stockholm Meetup)"
+title = "Chaos Engineering with a Service Mesh"
 outputs = ["Reveal"]
 date = "18 Nov 2018"
+event_name = "Meetup, Stockholm @ R2M"
 
 [reveal_hugo]
-#theme = "simple"
+theme = "moon"
 highlight_theme = "zenburn"
 +++
 

@@ -1,10 +1,11 @@
 +++
-title = "Chaos Engineering with a Service Mesh (4) - (CNCF)"
+title = "Chaos Engineering with a Service Mesh"
 outputs = ["Reveal"]
 date = "18 Nov 2018"
+event_name = "Chaos Engineering Working Group, CNCF"
 
 [reveal_hugo]
-#theme = "simple"
+theme = "moon"
 highlight_theme = "zenburn"
 +++
 

@@ -1,10 +1,11 @@
 +++
-title = "Kubernetes Logging & Monitoring (2) (Stockholm Meetup)"
+title = "Kubernetes Logging & Monitoring"
 outputs = ["Reveal"]
 date = "18 May 2019"
+event_name = "CNCF Meetup, Stockholm"
 
 [reveal_hugo]
-#theme = "simple"
+theme = "moon"
 highlight_theme = "zenburn"
 +++
 

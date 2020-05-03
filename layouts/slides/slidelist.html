@@ -4,10 +4,18 @@
     <div class="content">
         {{ .Content }}
         <ul>
-            {{ range sort .Sections "Date" "desc"}}
+            {{ range .Pages}}
             <li class="slide-list">
-                <span>{{ .Date.Format "06 Jan 2006" }}</span> > <a class="" href="{{ .Permalink }}"
-                    target="blank">{{.Title}}</a>
+                <div>
+                    <span class="side-list__date">{{ .Date.Format "06 Jan 2006" }}</span>
+                    <span class="side-list__separator"> > </span>
+                    <a class="side-list__link" href="{{ .Permalink }}" target="blank">{{.Title}}</a>
+                </div>
+                {{ with .Params.event_name }}
+                <div class="side-list__event-name">
+                    <span>{{ . }}</span>
+                </div>
+                {{ end }}
             </li>
             {{ end }}
         </ul>

@@ -1,7 +1,8 @@
 +++
-title = "Chaos Engineering Deep Dive (KubeCon 18 Seattle)"
+title = "Chaos Engineering Deep Dive"
 outputs = ["Reveal"]
 date = "07 Dec 2018"
+event_name = "KubeCon 18, Seattle"
 
 [reveal_hugo]
 theme = "moon"

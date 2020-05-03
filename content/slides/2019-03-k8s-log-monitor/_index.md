@@ -1,10 +1,11 @@
 +++
-title = "Kubernetes Logging & Monitoring (Stockholm Meetup)"
+title = "Kubernetes Logging & Monitoring"
 outputs = ["Reveal"]
 date = "18 Mar 2019"
+event_name = "Data Native Meetup, Stockholm"
 
 [reveal_hugo]
-#theme = "simple"
+theme = "moon"
 highlight_theme = "zenburn"
 +++
 <section data-transition="concave" data-state="blackout">

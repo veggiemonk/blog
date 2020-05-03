@@ -1,10 +1,11 @@
 +++
-title = "Deploying Go Functions (3) (Stockholm Meetup)"
+title = "Deploying Go Functions"
 outputs = ["Reveal"]
 date = "18 Sep 2019"
+event_name = "Stockholm @ NetEnt"
 
 [reveal_hugo]
-#theme = "simple"
+theme = "moon"
 highlight_theme = "zenburn"
 +++
 

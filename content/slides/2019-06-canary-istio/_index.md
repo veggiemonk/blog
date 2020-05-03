@@ -1,10 +1,11 @@
 +++
-title = "Canary release with Istio (Stockholm Meetup)"
+title = "Canary release with Istio"
 outputs = ["Reveal"]
 date = "18 Jun 2019"
+event_name = "CICD Meetup, Stockholm"
 
 [reveal_hugo]
-#theme = "simple"
+theme = "moon"
 highlight_theme = "zenburn"
 +++
 

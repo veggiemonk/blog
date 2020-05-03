@@ -1,10 +1,11 @@
 +++
-title = "Service Mesh - Istio (Stockholm Meetup)"
+title = "Service Mesh - Istio"
 outputs = ["Reveal"]
 date = "18 May 2019"
+event_name = "DevOps Meetup, Stockholm"
 
 [reveal_hugo]
-#theme = "simple"
+theme = "moon"
 highlight_theme = "zenburn"
 +++
 

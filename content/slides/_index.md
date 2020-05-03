@@ -1,4 +1,4 @@
 +++
-title = "Slides"
+title = "Presentations"
 layout = "slidelist"
 +++

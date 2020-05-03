@@ -7,4 +7,5 @@ title: "home"
 
 ## Specialized in Google Cloud
 
-Welcome to my personal website.
+
+Maybe you've seen one of my talks. 

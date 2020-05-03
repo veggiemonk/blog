@@ -1,10 +1,11 @@
 +++
-title = "Infrastructure as Code - Terraform on GCP (Stockholm Meetup)"
+title = "Infrastructure as Code - Terraform on GCP"
 outputs = ["Reveal"]
 date = "18 May 2019"
+event_name = "Meetup, Stockholm @ NetEnt"
 
 [reveal_hugo]
-#theme = "simple"
+theme = "moon"
 highlight_theme = "zenburn"
 +++
 

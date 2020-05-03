@@ -1,10 +1,11 @@
 +++
-title = "Monorepo -vs- Multirepo (Stockholm Meetup)"
+title = "Monorepo -vs- Multirepo"
 outputs = ["Reveal"]
 date = "18 Feb 2019"
+event_name = "Meetup, Stockholm @ iZettle"
 
 [reveal_hugo]
-#theme = "simple"
+theme = "moon"
 highlight_theme = "zenburn"
 +++
 

@@ -855,9 +855,12 @@ figure.podcast audio {
 .slide-list {
   list-style-type: none;
   line-height: 2rem;
-  padding-left: 0rem; }
-  .slide-list span {
+  border-bottom: 1px dashed; }
+  .slide-list .side-list__date {
     display: inline-block;
     width: 6rem; }
+  .slide-list .side-list__event-name {
+    display: flex;
+    flex-direction: row-reverse; }
 
 /*# sourceMappingURL=styles.css.map */

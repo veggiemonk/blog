@@ -1,10 +1,11 @@
 +++
-title = "Deploying Go Functions (5) (Milan Code Motion Conference 2019)"
+title = "Deploying Go Functions"
 outputs = ["Reveal"]
 date = "18 Oct 2019"
+event_name = "Code Motion Conference 2019, Milan"
 
 [reveal_hugo]
-#theme = "simple"
+theme = "moon"
 highlight_theme = "zenburn"
 +++
 

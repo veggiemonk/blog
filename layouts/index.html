@@ -2,18 +2,35 @@
 
 {{ define "main" -}}
 <main class="main layout__main">
-<article class="{{ with .Section }}section-{{ . | urlize }} {{ end }}single-view">
-<div class="content">
-{{ .Content }}
-</div>
-</article>
+    <article class="{{ with .Section }}section-{{ . | urlize }} {{ end }}single-view">
+        <div class="content">
+            {{ .Content }}
+        </div>
+    </article>
 
-{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-{{ $paginator := .Paginate $pages -}}
-{{ range $paginator.Pages -}}
-{{ .Render "summary"}}
-{{ end -}}
+    <div class="page-content">
 
-{{ partial "pagination.html" . }}
+        {{ $currentSection := .Section -}}
+        {{ $currentID := "" -}}
+        {{ with .File }}{{ $currentID = .UniqueID }}{{ end -}}
+        {{ with .Site.GetPage "section" "about" }}
+        <a href="{{ .RelPermalink }}">
+            <div class="card">
+                <div class="card__content">
+                    <h2 class="card__title">{{ .Title }}</h2>
+                </div>
+            </div>
+        </a>
+        {{ end }}
+        {{ range .Site.Sections -}}
+        <a href="{{ .RelPermalink }}">
+            <div class="card">
+                <div class="card__content">
+                    <h2 class="card__title">{{ .Title }}</h2>
+                </div>
+            </div>
+        </a>
+        {{ end -}}
+    </div>
 </main>
 {{ end }}

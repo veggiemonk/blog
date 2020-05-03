@@ -3,17 +3,17 @@
     <h1 class="title">{{ .Title }}</h1>
     <div class="content">
         {{ .Content }}
-        <ul>
+        <ul class="slide-list">
             {{ range .Pages}}
-            <li class="slide-list">
+            <li class="slide-item">
                 <div>
-                    <span class="side-list__date">{{ .Date.Format "06 Jan 2006" }}</span>
-                    <span class="side-list__separator"> > </span>
-                    <a class="side-list__link" href="{{ .Permalink }}" target="blank">{{.Title}}</a>
+                    <span class="slide-item__date">{{ .Date.Format "06 Jan 2006" }}</span>
+                    <span class="slide-item__separator"> > </span>
+                    <a class="slide-item__link" href="{{ .Permalink }}" target="blank">{{.Title}}</a>
                 </div>
                 {{ with .Params.event_name }}
-                <div class="side-list__event-name">
-                    <span>{{ . }}</span>
+                <div class="slide-item__event-name">
+                    {{ . }}
                 </div>
                 {{ end }}
             </li>

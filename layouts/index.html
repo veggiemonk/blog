@@ -13,21 +13,17 @@
         {{ $currentSection := .Section -}}
         {{ $currentID := "" -}}
         {{ with .File }}{{ $currentID = .UniqueID }}{{ end -}}
-        {{ with .Site.GetPage "section" "about" }}
-        <a href="{{ .RelPermalink }}">
+        {{ with .Site.GetPage "section" "resume" }}
+        <a class="no-underline" href="{{ .RelPermalink }}">
             <div class="card">
-                <div class="card__content">
-                    <h2 class="card__title">{{ .Title }}</h2>
-                </div>
+                <span class="card__title">{{ .Title }}</span>
             </div>
         </a>
         {{ end }}
         {{ range .Site.Sections -}}
-        <a href="{{ .RelPermalink }}">
+        <a class="no-underline" href="{{ .RelPermalink }}">
             <div class="card">
-                <div class="card__content">
-                    <h2 class="card__title">{{ .Title }}</h2>
-                </div>
+                <span class="card__title">{{ .Title }}</span>
             </div>
         </a>
         {{ end -}}

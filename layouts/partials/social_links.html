@@ -1,6 +1,5 @@
-{{ if .IsNamedParams }}
 <div style="display: flex; flex-direction: row; justify-content: flex-end; padding-right: 4rem; ">
-  {{ if .Get "twitter" }}
+  {{ if .Site.Get "twitter" }}
   <a style="padding-left: 1rem" href="https://twitter.com/{{ .Get "twitter" }}">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
@@ -9,7 +8,7 @@
       </path>
     </svg>
   </a>
-  {{ end }} {{ if .Get "linkedin" }}
+  {{ end }} {{ if .Site.Get "linkedin" }}
   <a style="padding-left: 1rem" href="https://www.linkedin.com/in/{{ .Get "linkedin" }}">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
@@ -37,4 +36,3 @@
   </a>
   {{ end }}
 </div>
-{{ end }}

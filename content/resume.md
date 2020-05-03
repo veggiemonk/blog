@@ -1,5 +1,5 @@
 ---
-title: "About me"
+title: "Résumé"
 date: '01 Mar 2020'
 ---
 

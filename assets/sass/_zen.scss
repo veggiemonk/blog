@@ -229,20 +229,20 @@ figure {
 
   a {
     display: block;
-    background-color: $brand;
+    background: $brand;
     color: $text-bg;
     padding: 2px 8px;
     text-decoration: none;
-
-    &:hover,
-    &:focus {
-      background-color: $brand-dark;
+    
+    &:hover, &:focus  {
+      background: $brand-alt;
+      transition: background-color .7s ease-out;
     }
 
     &:active,
     &.active {
-      background-color: $brand;
-      text-decoration: underline;
+      background-color: $brand-alt;
+      // text-decoration: underline;
     }
   }
 }

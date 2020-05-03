@@ -1,18 +1,42 @@
 // sass-lint:disable no-color-keywords; no-color-hex
 
 // Base colors.
-$black:                  #000;
-$nearblack:              lighten($black, 20%); // #333
-$grey-dark:              lighten($black, 40%); // #666
-$grey:                   lighten($black, 60%); // #999
-$grey-light:             lighten($black, 80%); // #ccc
-$grey-extra-light:       lighten($black, 93.33%); // #eee
-$white:                  #fff;
+// $black:                  #000;
+// $nearblack:              lighten($black, 20%); // #333
+// $grey-dark:              lighten($black, 40%); // #666
+// $grey:                   lighten($black, 60%); // #999
+// $grey-light:             lighten($black, 80%); // #ccc
+// $grey-extra-light:       lighten($black, 93.33%); // #eee
+// $white:                  #fff;
 
-$blue:                   #0072b9;
-$red:                    #c00;
-$green:                  #43a808;
-$yellow:                 #fd0;
+// Palette URL: http://paletton.com/#uid=21q0E0k00kX01KQ01rK05e91p5G */
+
+// As hex codes */
+
+$color-primary-0: #A7A7A7;	// Main Primary color */
+$color-primary-1: #FFFFFF;
+$color-primary-2: #DDDDDD;
+$color-primary-3: #717170;
+$color-primary-4: #2D2D2B;
+
+$color-complement-0: #737373;	// Main Complement color */
+$color-complement-1: #D7D7D7;
+$color-complement-2: #989898;
+$color-complement-3: #4D4D4E;
+$color-complement-4: #1E1E1F;
+
+$black:                  $color-primary-4;
+$nearblack:              $color-complement-4; // #333
+$grey-dark:              $color-complement-3; // #666
+$grey:                   $color-primary-3; // #999
+$grey-light:             $color-complement-2; // #ccc
+$grey-extra-light:       $color-primary-2; // #eee
+$white:                  $color-primary-1;
+
+$blue:                   #4285f4;
+$red:                    #ea4335;
+$green:                  #34a853;
+$yellow:                 #fbbc05;
 
 // Colors used in the main content area.
 $brand:                  $nearblack;
@@ -35,7 +59,7 @@ $autocomplete-bg:        $text-bg;
 $autocomplete-select:    $white;
 $autocomplete-select-bg: $blue;
 
-$body-bg:                $white;
+$body-bg:                $grey-extra-light;
 $header-bg:              $brand;
 $backdrop:               $grey-extra-light;
 

@@ -1,5 +1,5 @@
 {{ with .Site.Params.social_links.twitter }}
-<a style="padding-left: 1rem" href="https://twitter.com/{{ . }}">
+<a class="social_link" target="_blank" href="https://twitter.com/{{ . }}">
   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
     <path
@@ -8,7 +8,7 @@
   </svg>
 </a>
 {{ end }} {{ with .Site.Params.social_links.linkedin }}
-<a style="padding-left: 1rem" href="https://www.linkedin.com/in/{{ . }}">
+<a class="social_link" target="_blank" href="https://www.linkedin.com/in/{{ . }}">
   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -17,7 +17,7 @@
   </svg>
 </a>
 {{ end }} {{ with .Site.Params.social_links.github }}
-<a style="padding-left: 1rem" href="https://github.com/{{ . }}">
+<a class="social_link" target="_blank" href="https://github.com/{{ . }}">
   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
     <path
@@ -26,7 +26,7 @@
   </svg>
 </a>
 {{ end }} {{ with .Site.Params.social_links.web }}
-<a style="padding-left: 1rem" href="https://{{ . }}">
+<a class="social_link" target="_blank" href="{{ . }}">
   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
     <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>

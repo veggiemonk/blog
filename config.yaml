@@ -38,7 +38,7 @@ params:
   contact: "julien@bisconti.cloud"
   copyright: ""
   description: "Freelance Software Engineer specialized in Google Cloud"
-  dateformat: "2 January, 2006"
+  dateformat: "2 Jan, 2006"
   favicon: "apple-touch-icon.png"
   feedlinks: true
   footer: "Powered by [Hugo](https://gohugo.io/), [Zen theme](https://github.com/frjo/hugo-theme-zen) and [reveal-hugo](https://github.com/dzello/reveal-hugo)"

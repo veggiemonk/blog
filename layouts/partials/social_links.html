@@ -1,5 +1,5 @@
 {{ with .Site.Params.social_links.twitter }}
-<a class="social_link" target="_blank" href="https://twitter.com/{{ . }}">
+<a class="social_link" target="_blank" rel="noopener" href="https://twitter.com/{{ . }}" aria-label="Twitter profile">
   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
     <path
@@ -8,7 +8,8 @@
   </svg>
 </a>
 {{ end }} {{ with .Site.Params.social_links.linkedin }}
-<a class="social_link" target="_blank" href="https://www.linkedin.com/in/{{ . }}">
+<a class="social_link" target="_blank" rel="noopener" href="https://www.linkedin.com/in/{{ . }}"
+  aria-label="LinkedIn profile">
   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -17,7 +18,7 @@
   </svg>
 </a>
 {{ end }} {{ with .Site.Params.social_links.github }}
-<a class="social_link" target="_blank" href="https://github.com/{{ . }}">
+<a class="social_link" target="_blank" rel="noopener" href="https://github.com/{{ . }}" aria-label="GitHub profile">
   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
     <path
@@ -26,11 +27,20 @@
   </svg>
 </a>
 {{ end }} {{ with .Site.Params.social_links.web }}
-<a class="social_link" target="_blank" href="{{ . }}">
-  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
-    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+<a class="social_link grayscale" target="_blank" rel="noopener" href="{{ . }}"
+  aria-label="Google Developer expert profile">
+  <svg width="42" height="42" viewBox="0 0 73 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+      <path d="M46.265 35c.98 0 1.974-.25 2.884-.775l20.298-11.719-14.15-5.18-11.928 6.888A5.78 5.78 0 0 0 46.265 35"
+        fill="#FBBC04" />
+      <path
+        d="M66.552 23.281a5.775 5.775 0 0 0 5.01-2.892 5.779 5.779 0 0 0-2.114-7.894L49.15.775a5.78 5.78 0 0 0-5.78 10.011l20.298 11.72c.91.525 1.904.775 2.884.775"
+        fill="#0F9D58" />
+      <path d="M17.222 17.568l11.747-6.782a5.78 5.78 0 0 0-5.78-10.01L2.891 12.495l14.331 5.072z" fill="#EA4335" />
+      <path
+        d="M26.073 35a5.78 5.78 0 0 0 2.896-10.786L8.67 12.495A5.778 5.778 0 0 0 .777 14.61a5.78 5.78 0 0 0 2.114 7.896l20.3 11.719c.91.525 1.903.775 2.883.775"
+        fill="#4285F4" />
+    </g>
   </svg>
 </a>
 {{ end }}

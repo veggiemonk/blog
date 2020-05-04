@@ -193,7 +193,7 @@ highlight_theme = "zenburn"
   <h4>How does it solve inter service communication</h4>
   <img style="height: 60vh;filter: invert(.9) brightness(1.4);"
   alt="The overall architecture of an Istio-based application."
-  src="https://istio.io/docs/concepts/what-is-istio/arch.svg" title="Istio Architecture">
+  src="/slides/images/istio_arch.svg" title="Istio Architecture">
 </section>
 
 ---
@@ -201,7 +201,7 @@ highlight_theme = "zenburn"
 
 <section id="osi-layers">
     <img style="filter: invert(.9) brightness(1.4);" height="521" width="1024"
-    src="https://f5.com/Portals/1/Users/038/38/38/the_new_new_osi_stack.jpg?ver=2017-10-03-080252-023" >
+    src="/slides/images/the_new_new_osi_stack.jpg" >
     <a href="https://f5.com/about-us/blog/articles/the-new-osi-network-stack-containers-and-half-layers-28124">source</a>
 </section>
 
@@ -312,7 +312,7 @@ spec:
 <section>
   <h1>DEMO</h1>
   <img style="filter: invert(.9) brightness(1.4);"
-  src="https://istio.io/docs/examples/bookinfo/withistio.svg"
+  src="/slides/images/withistio.svg"
   alt="Bookinfo Application without Istio" title="Bookinfo Application without Istio">
 </section>
 
@@ -360,7 +360,7 @@ spec:
     <p>Thoughtful, planned experiments designed to reveal the weakness in our systems. </p>
     &mdash; <a href="https://www.gremlin.com/">Kolton Andrus (cofounder and CEO of Gremlin Inc.)</a>
   </blockquote>
-  <img src="https://media.science360.gov/files/story/cbb08900-d237-40a5-be17-307532b53688-largeImage.jpg" width="350px" />
+  <img src="/slides/images/vaccine.jpeg" width="350px" />
 </section>
 
 ---
@@ -400,7 +400,7 @@ spec:
 
 <section>
   <h4>What Chaos Engineering is not</h4>
-  <img src="https://randomoverload.org/wp-content/uploads/2015/10/1abaS6RB77Z.jpg" alt="pray to server">
+  <img src="/slides/images/server_praying.jpg" alt="pray to server">
 </section>
 
 ---
@@ -485,7 +485,7 @@ spec:
 <section>
   <h2>Kaizen (改善)</h2>
   <p> kai-zen = change-good</p>
-  <img src="https://image.slidesharecdn.com/om-150830140656-lva1-app6892/95/the-toyota-way-toyota-production-system-operations-management-27-638.jpg" alt="Toyota andon cord">
+  <img src="/slides/images/toyota-andon-cord.jpg" alt="Toyota andon cord">
 
   <p>
      <a href="https://web.archive.org/web/20131029204446/http://www.kaizen.com/about-us/definition-of-kaizen.html">definition</a>
@@ -533,7 +533,8 @@ spec:
 
 <section>
   <h1>DEMO</h1>
-  <img style="filter: invert(.9) brightness(1.2);" height="300px" src="https://istio.io/docs/examples/bookinfo/withistio.svg" alt="Bookinfo Application without Istio" title="Bookinfo Application without Istio">
+  <img style="filter: invert(.9) brightness(1.2);" height="300px" 
+  src="/slides/images/withistio.svg" alt="Bookinfo Application without Istio" title="Bookinfo Application without Istio">
   <p>Inject delay in user Jason's requests</p>
 
 </section>

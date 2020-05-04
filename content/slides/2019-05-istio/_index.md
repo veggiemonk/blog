@@ -169,7 +169,7 @@ highlight_theme = "zenburn"
 
 <section id="envoyproxy">
   <h3>Data plane</h3>
-  <img width="50%" src="envoyproxy.png" alt="envoy proxy">
+  <img width="50%" src="/slides/images/envoyproxy.png" alt="envoy proxy">
   <blockquote style="width: 100%">
     The network should be transparent to applications.
     <br>
@@ -185,7 +185,7 @@ highlight_theme = "zenburn"
   <!-- <h4>How does it solve inter service communication</h4> -->
   <img style="height: 40vh;filter: invert(.9) brightness(1.4);"
   alt="The overall architecture of an Istio-based application."
-  src="https://istio.io/docs/concepts/what-is-istio/arch.svg" title="Istio Architecture">
+  src="/slides/images/istio_arch.svg" title="Istio Architecture">
   <h4 class="fragment" >How to manage a fleet of envoy proxy?</h4>
 </section>
 
@@ -238,7 +238,7 @@ highlight_theme = "zenburn"
   <h4>How does it solve inter service communication</h4>
   <img style="height: 40vh;filter: invert(.9) brightness(1.4);"
   alt="The overall architecture of an Istio-based application."
-  src="https://istio.io/docs/concepts/what-is-istio/arch.svg" title="Istio Architecture">
+  src="/slides/images/istio_arch.svg" title="Istio Architecture">
 </section>
 
 ---
@@ -246,23 +246,21 @@ highlight_theme = "zenburn"
 
 <section id="osi-layers">
     <img style="filter: invert(.9) brightness(1.4);" height="521" width="1024"
-    src="https://f5.com/Portals/1/Users/038/38/38/the_new_new_osi_stack.jpg?ver=2017-10-03-080252-023" >
+    src="/slides/images/the_new_new_osi_stack.jpg" >
     <a href="https://f5.com/about-us/blog/articles/the-new-osi-network-stack-containers-and-half-layers-28124">source</a>
 </section>
 
 ---
 
-
 <section id="pilot">
   <h3>Control plane</h3>
   <img style="height: 40vh;filter: invert(.9) brightness(1.4);"
-   src="https://istio.io/docs/concepts/traffic-management/PilotAdapters.svg"
+   src="/slides/images/PilotAdapters.svg"
    alt="pilot arch">
    <!-- <p>How to manage a fleet of envoy proxy?</p> -->
 </section>
 
 ---
-
 
 <section>
   <h4>What's in the code</h4>
@@ -367,7 +365,7 @@ spec:
 <section>
   <h1>DEMO</h1>
   <img style="filter: invert(.9) brightness(1.4);"
-  src="https://istio.io/docs/examples/bookinfo/withistio.svg"
+  src="/slides/images/withistio.svg"
   alt="Bookinfo Application without Istio" title="Bookinfo Application without Istio">
 </section>
 

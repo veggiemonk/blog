@@ -37,7 +37,7 @@ outputs:
 params:
   contact: "julien@bisconti.cloud"
   copyright: ""
-  description: "Freelance Software Engineer specialized in Google Cloud"
+  description: "Julien Bisconti, Freelance Software Engineer Specialized in Google Cloud, slides presentations and conference talks about kubernetes, serverless, data engineering, logging, monitoring, software architecture"
   dateformat: "2 Jan, 2006"
   favicon: "apple-touch-icon.png"
   feedlinks: true
@@ -54,6 +54,7 @@ params:
     linkedin: "julienbisconti"
     web: "https://developers.google.com/community/experts/directory/profile/profile-julien_bisconti"
   submitted: true
+  searchfrom: true
   reveal_hugo:
     theme: "moon"
 

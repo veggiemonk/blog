@@ -850,10 +850,13 @@ figure.podcast audio {
 .text-justify {
   text-align: justify; }
 
+.grayscale {
+  filter: grayscale(1); }
+
 .header__social-links {
   display: flex;
   align-items: center;
-  margin-left: 2rem; }
+  margin-left: auto; }
 
 .social_link {
   margin: 0 .5rem 0 .5rem; }

@@ -17,7 +17,7 @@ highlight_theme = "zenburn"
 <h2>Demo</h2>
 <p>
     <a href="https://www.openfaas.com/">
-    <img width="50%" src="openfaas.png"
+    <img width="50%" src="/slides/images/openfaas.png"
         alt="openfaas logo">
     </a>
 </p>
@@ -102,14 +102,14 @@ CMD [ "fwatchdog" ]
 <h2>Simplicity is complicated</h2>
 <h4>Rob Pike</h4>
 <div>
-    <img src="https://upload.wikimedia.org/wikipedia/en/7/76/The_Art_of_Unix_Programming.jpg"
+    <img src="/slides/images/The_Art_of_Unix_Programming.jpg"
     alt="The Art of UNIX programming">
     <p><a href="https://www.youtube.com/watch?v=rFejpH_tAHM">dotGo 2015 - Rob Pike - Simplicity is Complicated</a>
     </p>
 </div>
 </section>
 <section>
-<img src="production_grade_infra.png" alt="production grade infrastructure">
+<img src="/slides/images/production_grade_infra.png" alt="production grade infrastructure">
 <a href="">Yevgeniy Brikman - Lessons from 300k+ Lines of Infrastructure Code</a>
 </section>
 <section>
@@ -138,7 +138,7 @@ Example: <a target="_blank" href="https://gist.github.com/veggiemonk/59afbd54061
 </section>
 <section>
 <h3>build OR buy</h3>
-<img width="60%" src="tweetdc.png" alt="Tweet about datacenter" />
+<img width="60%" src="/slides/images/tweetdc.png" alt="Tweet about datacenter" />
 <p>
     <a target="_blank" href="https://threadreaderapp.com/thread/1102401615263223809.html">whole thread</a>
 </p>
@@ -164,16 +164,16 @@ Example: <a target="_blank" href="https://gist.github.com/veggiemonk/59afbd54061
 <section>
 <h2>Consistency is key</h2>
 <a href="http://collections.uakron.edu/utils/getdownloaditem/collection/p15960coll1/id/25524/filename/25525.pdf/mapsto/pdf">source</a>
-<img src="army_report_title.png" alt="Archives of the History of American Psychology, The Center for the
+<img src="/slides/images/army_report_title.png" alt="Archives of the History of American Psychology, The Center for the
 History of Psychology, The University of Akron" srcset="" />
-<img src="army_report.png" alt="army report uniformity" srcset="" />
+<img src="/slides/images/army_report.png" alt="army report uniformity" srcset="" />
 </section>
 <!-- ======================================================================= -->
 <section>
 <h1>Why deploying go functions ?</h1>
 </section>
 <section>
-<img src="/no-code.png" alt="no code" width="80%">
+<img src="/slides/images/no-code.png" alt="no code" width="80%">
 <a target="_blank" href="https://github.com/kelseyhightower/nocode">repository</a>
 </section>
 <section>
@@ -215,7 +215,7 @@ History of Psychology, The University of Akron" srcset="" />
 </section>
 
 <section>
-<img src="swardley_map.jpeg" alt="mapping">
+<img src="/slides/images/swardley_map.jpeg" alt="mapping">
 <p><a href="https://youtu.be/xlNYYy8pzB4">Simon Wardly - Mapping</a></p>
 </section>
 <!-- ======================================================================= -->
@@ -232,7 +232,7 @@ History of Psychology, The University of Akron" srcset="" />
 </section>
 <section>
 <h2>⬅️  SHIFT LEFT</h2>
-<img src="delivery.png" alt="delivery diagram">
+<img src="/slides/images/delivery.png" alt="delivery diagram">
 <p>How to test and deploy new pipelines ?</p>
 </section>
 <section>

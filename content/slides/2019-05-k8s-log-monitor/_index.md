@@ -223,9 +223,9 @@ highlight_theme = "zenburn"
 ---
 
 <section>
-    <img src="string.png" alt="string perf tweet" />
+    <img src="/slides/images/string.png" alt="string perf tweet" />
     <img
-    src="string_perf.jpg"
+    src="/slides/images/string_perf.jpg"
     alt="string perf"
     width="80%"
     />
@@ -250,7 +250,7 @@ highlight_theme = "zenburn"
 ---
 
 <!-- <section>
-    <img src="metrics.gif" alt="funny cartoon" />
+    <img src="/slides/images/metrics.gif" alt="funny cartoon" />
 </section>
 
 ---
@@ -272,7 +272,7 @@ highlight_theme = "zenburn"
 
 <section>
     <h3>build OR buy</h3>
-    <img width="60%" src="tweetdc.png" alt="Tweet about datacenter" />
+    <img width="60%" src="/slides/images/tweetdc.png" alt="Tweet about datacenter" />
     <p>
     <a
         target="_blank"
@@ -415,7 +415,7 @@ google/cadvisor:latest
 
 
 <section id="k8s">
-    <img src="Kubernetes.png" alt="kubernetes architecture" />
+    <img src="/slides/images/Kubernetes.png" alt="kubernetes architecture" />
 </section>
 
 ---
@@ -431,7 +431,7 @@ google/cadvisor:latest
     <h3>Node level logging</h3>
     <div style="display:grid; grid-template-columns: 1fr 1fr">
     <img
-        src="https://d33wubrfki0l68.cloudfront.net/59b1aae2adcfe4f06270b99a2789012ed64bec1f/4d0ad/images/docs/user-guide/logging/logging-node-level.png"
+        src="/slides/images/logging-node-level.png"
         alt="node level logging"
     />
     <ul>
@@ -463,7 +463,7 @@ google/cadvisor:latest
     <h3>logging with node agent</h3>
     <div style="display:grid; grid-template-columns: 1fr 1fr">
     <img
-        src="https://d33wubrfki0l68.cloudfront.net/2585cf9757d316b9030cf36d6a4e6b8ea7eedf5a/1509f/images/docs/user-guide/logging/logging-with-node-agent.png"
+        src="/slides/images/logging-with-node-agent.png"
         alt="logging with node agent"
     />
     <ul>
@@ -481,7 +481,7 @@ google/cadvisor:latest
     <h3>logging with streaming side car</h3>
     <div style="display:grid; grid-template-columns: 1fr 1fr">
     <img
-        src="https://d33wubrfki0l68.cloudfront.net/c51467e219320fdd46ab1acb40867b79a58d37af/b5414/images/docs/user-guide/logging/logging-with-streaming-sidecar.png"
+        src="/slides/images/logging-with-streaming-sidecar.png"
         alt="logging with streaming side car"
     />
     <ul>
@@ -501,7 +501,7 @@ google/cadvisor:latest
     <h3>logging with sidecar agent</h3>
     <div style="display:grid; grid-template-columns: 1fr 1fr">
     <img
-        src="https://d33wubrfki0l68.cloudfront.net/d55c404912a21223392e7d1a5a1741bda283f3df/c0397/images/docs/user-guide/logging/logging-with-sidecar-agent.png"
+        src="/slides/images/logging-with-sidecar-agent.png"
         alt="logging with sidecar agent"
     />
     <ul>
@@ -516,7 +516,7 @@ google/cadvisor:latest
 <section>
     <h3>logging from application</h3>
     <img
-    src="https://d33wubrfki0l68.cloudfront.net/0b4444914e56a3049a54c16b44f1a6619c0b198e/260e4/images/docs/user-guide/logging/logging-from-application.png"
+    src="/slides/images/logging-from-application.png"
     alt="logs from application"
     />
 </section>
@@ -525,7 +525,7 @@ google/cadvisor:latest
 
 <section>
     <h3>which logs</h3>
-    <img src="microservice-diagram.png" alt="typical app" style="background-color:dimgrey; padding:20px"/>
+    <img src="/slides/images/microservice-diagram.png" alt="typical app" style="background-color:dimgrey; padding:20px"/>
 </section>
 
 ---
@@ -617,7 +617,7 @@ google/cadvisor:latest
 
 <section>
     <div style="display:grid; grid-template-columns: 1fr 1fr">
-    <img width="70%" src="sre.png" alt="Site Reliability Engineering book by Google">
+    <img width="70%" src="/slides/images/sre.png" alt="Site Reliability Engineering book by Google">
     <div>
         <div style="color: #eee8d5; font-family: 'League Gothic', Impact, sans-serif; font-size: 150%">4 Golden Signals</div>
         <br>
@@ -652,7 +652,7 @@ google/cadvisor:latest
 <section>
     <h2>Health check</h2>
     <p>what does "healthy" mean?</p>
-    <img src="microservice-diagram.png" alt="typical app" />
+    <img src="/slides/images/microservice-diagram.png" alt="typical app" />
 </section>
 
 ---
@@ -677,7 +677,7 @@ google/cadvisor:latest
     what values we want those metrics to have, and how we’ll react if we
     can’t provide the expected service
     </p>
-    <img src="define_sli_slo.jpg" alt="Define SLI SLO" />
+    <img src="/slides/images/define_sli_slo.jpg" alt="Define SLI SLO" />
 </section>
 
 ---

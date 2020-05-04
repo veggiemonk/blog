@@ -37,8 +37,8 @@ highlight_theme = "zenburn"
 <section>
   <h2>Demo</h2>
   <p>
-    <a href="https://www.openfaas.com/">
-      <img width="50%" src="https://github.com/openfaas/media/blob/master/OpenFaaS_Magnet_3_1_png.png?raw=true" alt="openfaas logo">
+    <a rel="noopener" href="https://www.openfaas.com/">
+      <img width="50%" src="/slides/images/openfaas.png" alt="openfaas logo">
     </a>
   </p>
   <pre><code class="hljs bash">docker swarm init
@@ -82,7 +82,7 @@ func main() {
   }
   fmt.Println(function.Handle(input))
 }</code></pre>
-<p><a href="https://github.com/openfaas/templates">See all templates</a></p>
+<p><a rel="noopener" href="https://github.com/openfaas/templates">See all templates</a></p>
   </section>
 
 ---
@@ -96,7 +96,7 @@ func Handle(req []byte) string {
   return fmt.Sprintf("Hello, Go. You said: %s", string(req))
 }
     </code></pre>
-    <p><a href="https://github.com/esimov/pigo-openfaas/blob/master/pigo-openfaas/handler.go">face detection handler</a></p>
+    <p><a rel="noopener" href="https://github.com/esimov/pigo-openfaas/blob/master/pigo-openfaas/handler.go">face detection handler</a></p>
   </section>
 
 ---
@@ -143,8 +143,8 @@ A UI is baked in allowing you to invoke functions in your browser and create new
 ---
 
 <section>
-<img src="https://upload.wikimedia.org/wikipedia/en/7/76/The_Art_of_Unix_Programming.jpg" alt="The Art of UNIX programming">
-<!-- <p><a href="https://www.youtube.com/watch?v=rFejpH_tAHM">dotGo 2015 - Rob Pike - Simplicity is Complicated</a></p> -->
+<img src="/slides/images/The_Art_of_Unix_Programming.jpg" alt="The Art of UNIX programming">
+<!-- <p><a rel="noopener" href="https://www.youtube.com/watch?v=rFejpH_tAHM">dotGo 2015 - Rob Pike - Simplicity is Complicated</a></p> -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rFejpH_tAHM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </section>
 
@@ -229,7 +229,7 @@ A UI is baked in allowing you to invoke functions in your browser and create new
 ---
 
 <section>
-  <img src="/no-code.png" alt="no code" width="80%">
+  <img src="/slides/images/no-code.png" alt="no code" width="80%">
   <a target="_blank" href="https://github.com/kelseyhightower/nocode">repository</a>
 </section>
 
@@ -237,8 +237,8 @@ A UI is baked in allowing you to invoke functions in your browser and create new
 
 
 <section>
-  <img src="https://cdn-images-1.medium.com/max/1600/1*9UXhn8Ne74Ijfn931sjOPw.jpeg" alt="mapping">
-  <p><a href="https://youtu.be/xlNYYy8pzB4">Simon Wardly - Mapping</a></p>
+  <img src="/slides/images/swardley_map.jpeg" alt="mapping">
+  <p><a rel="noopener" href="https://youtu.be/xlNYYy8pzB4">Simon Wardly - Mapping</a></p>
 </section>
 
 ---
@@ -258,7 +258,7 @@ A UI is baked in allowing you to invoke functions in your browser and create new
     <p lang="en" dir="ltr">Chaos Engineering is exploratory testing of non-functional requirements
         where ‘non-functional requirements’ are the requirements that if not met render a service non-functional.
     </p>
-    &mdash; <a href="https://twitter.com/littleidea/status/1030304684991369216">@littleidea</a>
+    &mdash; <a rel="noopener" href="https://twitter.com/littleidea/status/1030304684991369216">@littleidea</a>
   </blockquote>
 </section>
 
@@ -297,8 +297,8 @@ A UI is baked in allowing you to invoke functions in your browser and create new
 <section>
   <h2>THANK YOU</h2>
   <p>
-    <img src="/56k.cloud.png" alt="56k.cloud" style="vertical-align:middle; background-color: white;" width="10%">
-    <a href="http://56k.cloud">56k.cloud</a> is hiring DevOps/SRE</p>
+    <img src="/slides/images/56k.cloud.png" alt="56k.cloud" style="vertical-align:middle; background-color: white;" width="10%">
+    <a rel="noopener" href="http://56k.cloud">56k.cloud</a> is hiring DevOps/SRE</p>
   <br>
   <p>
     <small>

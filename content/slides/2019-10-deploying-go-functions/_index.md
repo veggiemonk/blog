@@ -10,17 +10,26 @@ highlight_theme = "zenburn"
 +++
 
 
-<section data-background-image="codemotion_start.png" data-background-size="contain"></section>
+<section>
+<h1>CODE MOTION MILAN 2019</h1>
+
+</section>
+
+---
+
 
 <section data-transition='concave' data-state='blackout'>
 <h1>DEPLOYING GO FUNCTIONS</h1>
 </section>
 
+---
+
+
 <section>
 <h2>Demo</h2>
 <p>
     <a href="https://www.openfaas.com/">
-    <img width="50%" src="openfaas.png"
+    <img width="50%" src="/slides/images/openfaas.png"
         alt="openfaas logo">
     </a>
 </p>
@@ -30,6 +39,9 @@ cd faas-netes
 make start_kind
 </code></pre>
 </section>
+
+---
+
 <section>
 <h4>templates</h4>
 <pre><code class="hljs golang" data-trim >
@@ -52,6 +64,9 @@ fmt.Println(function.Handle(input))
 <p><a href="https://github.com/openfaas/templates">See all templates</a></p>
 </section>
 
+---
+
+
 <section>
 <h4>functions</h4>
 <pre><code  class="hljs golang" data-trim>
@@ -63,6 +78,9 @@ return fmt.Sprintf("Hello, Go. You said: %s", string(req))
 <p><a href="https://github.com/esimov/pigo-openfaas/blob/master/pigo-openfaas/handler.go">face detection
     handler</a></p>
 </section>
+
+---
+
 
 <section>
 <h4>Some container with your function? </h4>
@@ -78,6 +96,9 @@ HEALTHCHECK --interval=3s CMD [ -e /tmp/.lock ] || exit 1
 CMD [ "fwatchdog" ]
 </code></pre>
 </section>
+
+---
+
 <section>
 <h2>How does it work</h2>
 <ul>
@@ -97,24 +118,36 @@ CMD [ "fwatchdog" ]
     A UI is baked in allowing you to invoke functions in your browser and create new ones as needed.
 </aside>            
 </section>
+
+---
+
 <!-- ======================================================================= -->
 <section>
 <h1>Why deploying go functions ?</h1>
 </section>
+
+---
+
 <section>
 <h2>Simplicity is complicated</h2>
 <h4>Rob Pike</h4>
 <div>
-    <img src="https://upload.wikimedia.org/wikipedia/en/7/76/The_Art_of_Unix_Programming.jpg"
+    <img src="/slides/images/The_Art_of_Unix_Programming.jpg"
     alt="The Art of UNIX programming">
     <p><a href="https://www.youtube.com/watch?v=rFejpH_tAHM">dotGo 2015 - Rob Pike - Simplicity is Complicated</a>
     </p>
 </div>
 </section>
+
+---
+
 <section>
-<img src="production_grade_infra.png" alt="production grade infrastructure">
+<img src="/slides/images/production_grade_infra.png" alt="production grade infrastructure">
 <a href="">Yevgeniy Brikman - Lessons from 300k+ Lines of Infrastructure Code</a>
 </section>
+
+---
+
 <section>
 <h2>why does it take so long</h2>
 <div>
@@ -122,15 +155,24 @@ CMD [ "fwatchdog" ]
 </div>
 <p><a href="https://media1.giphy.com/media/mbluZIdy0Ww5q/giphy.gif">Yak Shaving</a></p>
 </section>
+
+---
+
 <!-- <section>
 Example: <a target="_blank" href="https://gist.github.com/veggiemonk/59afbd540619873587de42d6865253cc">gist</a>
-</section> -->
+</section>
+
+---
+ -->
 <section>
 <h2>" we should build our own X "</h2>
 
 <p class="fragment">where "X" is anything not related to the business</p>
 <p class="fragment">Example: framework, in-memory database, queue system, new programming language, etc.</p>
 </section>
+
+---
+
 <section>
 <h1>We could build it</h1>
 <div class="fragment">
@@ -139,22 +181,34 @@ Example: <a target="_blank" href="https://gist.github.com/veggiemonk/59afbd54061
     <h2>makes more sense financially</h2>
 </div>
 </section>
+
+---
+
 <section>
 <h3>build OR buy</h3>
-<img width="60%" src="tweetdc.png" alt="Tweet about datacenter" />
+<img width="60%" src="/slides/images/tweetdc.png" alt="Tweet about datacenter" />
 <p>
     <a target="_blank" href="https://threadreaderapp.com/thread/1102401615263223809.html">whole thread</a>
 </p>
 </section>
+
+---
+
 <section>
 <h3>build OR buy</h3>
 <p>Restaurants buy, cook and sell food.</p>
 <p>Very few do farming and even less are good at both.</p>
 </section>
+
+---
+
 <!-- ======================================================================= -->
 <section>
 <h1>Why deploying go functions ?</h1>
 </section>
+
+---
+
 <section>
 <h2>Mental limitations</h2>
 <br>
@@ -164,26 +218,41 @@ Example: <a target="_blank" href="https://gist.github.com/veggiemonk/59afbd54061
     <li>speed of memory / reflexes</li>
 </ul>
 </section>
+
+---
+
 <section>
 <h2>Consistency is key</h2>
 <a href="http://collections.uakron.edu/utils/getdownloaditem/collection/p15960coll1/id/25524/filename/25525.pdf/mapsto/pdf">source</a>
-<img src="army_report_title.png" alt="Archives of the History of American Psychology, The Center for the
+<img src="/slides/images/army_report_title.png" alt="Archives of the History of American Psychology, The Center for the
 History of Psychology, The University of Akron" srcset="" />
-<img src="army_report.png" alt="army report uniformity" srcset="" />
+<img src="/slides/images/army_report.png" alt="army report uniformity" srcset="" />
 </section>
+
+---
+
 <!-- ======================================================================= -->
 <section>
 <h1>Why deploying go functions ?</h1>
 </section>
+
+---
+
 <section>
-<img src="/no-code.png" alt="no code" width="80%">
+<img src="/slides/images/no-code.png" alt="no code" width="80%">
 <a target="_blank" href="https://github.com/kelseyhightower/nocode">repository</a>
 </section>
+
+---
+
 <section>
 <h1>Mindset</h1>
 <h2>connect services</h2>
 <a href="https://www.youtube.com/watch?v=bYCPbKHivMA">Patrick Debois - From serverless to Service Full</a>
 </section>
+
+---
+
 <section>
 <h3> Name a service for :</h3>
 <ul>
@@ -197,6 +266,9 @@ History of Psychology, The University of Akron" srcset="" />
 </ul>
 <h3 class="fragment">would you write your own?</h3>
 </section>
+
+---
+
 <section>
 <h2>tradeoffs</h2>
 <p>
@@ -217,27 +289,45 @@ History of Psychology, The University of Akron" srcset="" />
 <h2 class="fragment"> 👉 strategy</h2>
 </section>
 
+---
+
+
 <section>
-<img src="swardley_map.jpeg" alt="mapping">
+<img src="/slides/images/swardley_map.jpeg" alt="mapping">
 <p><a href="https://youtu.be/xlNYYy8pzB4">Simon Wardly - Mapping</a></p>
 </section>
+
+---
+
 <!-- ======================================================================= -->
 <section>
 <h1>Why deploying go functions ?</h1>
 </section>
+
+---
+
 <section>
     <h2>Pipelines are software too</h2>
 
     <h4>How to change the system</h4>
 </section>
+
+---
+
 <section>
 <h2> pipeline code > function code </h2>
 </section>
+
+---
+
 <section>
 <h2>⬅️  SHIFT LEFT</h2>
-<img src="delivery.png" alt="delivery diagram">
+<img src="/slides/images/delivery.png" alt="delivery diagram">
 <p>How to test and deploy new pipelines ?</p>
 </section>
+
+---
+
 <section>
 <h3>"  X-as-Code  "</h3>
 <p>where "X" can be: </p>
@@ -253,6 +343,9 @@ History of Psychology, The University of Akron" srcset="" />
     </div>
     </div>
 </section>
+
+---
+
 <section data-transition="none">
 <h3>"  X-as-Code  "</h3>
 <p>where "X" can be: </p>
@@ -308,13 +401,22 @@ https://github.com/GoogleCloudPlatform/cloud-functions-go
 git clone https://github.com/GoogleCloudPlatform/golang-samples.git
 https://cloud.google.com/functions/docs/quickstart#functions-prepare-environment-go -->
 </section>
+
+---
+
 <section>
 <h1>Why deploying go functions ?</h1>
 </section>
+
+---
+
 <section>
 <h2>Focus on code</h2>
 <h2 class="fragment">OR?</h2>
 </section>
+
+---
+
 <section>
 <h2>Focus on:</h2>
 <ul>
@@ -329,10 +431,16 @@ https://cloud.google.com/functions/docs/quickstart#functions-prepare-environment
 </ul>
 </section>
 
+---
+
+
 <!--
 <section>
 <h1>Why deploying go functions ?</h1>
 </section>
+
+---
+
 <section>
 TODO
 Event driven architecture
@@ -344,10 +452,16 @@ performance critical answer
 
 How fresh does the data needs to be?
 </section>
+
+---
+
 -->
 <section>
 <h1>Why deploying go functions ?</h1>
 </section>
+
+---
+
 <section>
 <h3>In the ☁️</h3>
 <pre><code data-trim>
@@ -369,6 +483,9 @@ curl -H 'Content-Type: binary/octet-stream' \
 </code></pre>
 </section>
 
+---
+
+
 <section>
 <h2>Resources</h2>
 <ul>
@@ -387,6 +504,9 @@ curl -H 'Content-Type: binary/octet-stream' \
 <a href="https://tinyurl.com/FreeK8SQuest">tinyurl.com/FreeK8SQuest </a>
 
 </section>
+
+---
+
 <section>
 <h2>I'm sorry 🙏 </h2>
 <h4>If you had to maintain my code</h4>
@@ -411,4 +531,5 @@ curl -H 'Content-Type: binary/octet-stream' \
     </small>
 </p>
 </section>
-<section data-background-image="codemotion_end.png" data-background-size="contain"></section>
+
+

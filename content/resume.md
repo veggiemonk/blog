@@ -1,6 +1,6 @@
 ---
 title: "Résumé"
-date: '01 Mar 2020'
+date: ''
 ---
 
 

@@ -147,14 +147,14 @@ highlight_theme = "zenburn"
 ---
 
 <section>
-  <img src="./meme_cncf_landscape.jpeg" alt="Meme CNCF landscape" />
+  <img src="/slides/images/meme_cncf_landscape.jpeg" alt="Meme CNCF landscape" />
 </section>
 
 ---
 
 <section>
   <img
-    src="production_grade_infra.png"
+    src="/slides/images/production_grade_infra.png"
     alt="production grade infrastructure"
   />
   <a href=""
@@ -201,7 +201,7 @@ highlight_theme = "zenburn"
 ---
 
 <section>
-  <img src="./components-of-iaas-caas-paas-faas.png" alt="XaaS" />
+  <img src="/slides/images/components-of-iaas-caas-paas-faas.png" alt="XaaS" />
   <p class="fragment">I don't understand this abstraction</p>
   <a
     href="https://dzone.com/articles/a-quick-guide-to-serverless-computing-world"
@@ -258,12 +258,12 @@ exports.helloGET = (req, res) => {
     source
   </a>
   <img
-    src="army_report_title.png"
+    src="/slides/images/army_report_title.png"
     alt="Archives of the History of American Psychology, The Center for the
 History of Psychology, The University of Akron"
     srcset=""
   />
-  <img src="army_report.png" alt="army report uniformity" srcset="" />
+  <img src="/slides/images/army_report.png" alt="army report uniformity" srcset="" />
 </section>
 
 ---
@@ -286,7 +286,7 @@ History of Psychology, The University of Akron"
 ---
 
 <section>
-  <img src="./no-code.png" alt="no code" width="80%" />
+  <img src="/slides/images/no-code.png" alt="no code" width="80%" />
   <a target="_blank" href="https://github.com/kelseyhightower/nocode"
     >repository</a
   >
@@ -325,7 +325,7 @@ History of Psychology, The University of Akron"
 
 
 <section>
-  <img src="swardley_map.jpeg" alt="mapping" />
+  <img src="/slides/images/swardley_map.jpeg" alt="mapping" />
   <p>
     <a href="https://youtu.be/xlNYYy8pzB4">Simon Wardly - Mapping</a>
   </p>

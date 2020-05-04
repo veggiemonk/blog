@@ -221,14 +221,14 @@ highlight_theme = "zenburn"
   <h4>How does it solve inter service communication</h4>
   <img style="height: 60vh;"
   alt="The overall architecture of an Istio-based application."
-  src="https://istio.io/docs/concepts/what-is-istio/./arch.svg" title="Istio Architecture">
+  src="/slides/images/istio_arch.svg" title="Istio Architecture">
 </section>
 
 ---
 
 
 <section id="osi-layers">
-    <img src="https://f5.com/Portals/1/Users/038/38/38/the_new_new_osi_stack.jpg?ver=2017-10-03-080252-023" height="521" width="1024">
+    <img src="/slides/images/the_new_new_osi_stack.jpg" height="521" width="1024">
     <a href="https://f5.com/about-us/blog/articles/the-new-osi-network-stack-containers-and-half-layers-28124">source</a>
 </section>
 
@@ -338,7 +338,7 @@ spec:
 
 <section>
   <h1>DEMO</h1>
-  <img style="background-color: #f0f0f0;" src="https://istio.io/docs/examples/bookinfo/withistio.svg" alt="Bookinfo Application without Istio" title="Bookinfo Application without Istio">
+  <img style="background-color: #f0f0f0;" src="/slides/images/withistio.svg" alt="Bookinfo Application without Istio" title="Bookinfo Application without Istio">
 </section>
 
 ---
@@ -376,7 +376,7 @@ spec:
     <p>Thoughtful, planned experiments designed to reveal the weakness in our systems. </p>
     &mdash; <a href="https://www.gremlin.com/">Kolton Andrus (cofounder and CEO of Gremlin Inc.)</a>
   </blockquote>
-  <!-- <img src="https://media.science360.gov/files/story/cbb08900-d237-40a5-be17-307532b53688-largeImage.jpg" width="350px" /> -->
+  <!-- <img src="/slides/images/vaccine.jpeg" width="350px" /> -->
 </section>
 
 ---
@@ -490,7 +490,7 @@ spec:
 
 <section>
   <h1>DEMO</h1>
-  <img style="background-color: #f0f0f0;" src="https://istio.io/docs/examples/bookinfo/withistio.svg" alt="Bookinfo Application without Istio" title="Bookinfo Application without Istio">
+  <img style="background-color: #f0f0f0;" src="/slides/images/withistio.svg" alt="Bookinfo Application without Istio" title="Bookinfo Application without Istio">
 </section>
 
 ---

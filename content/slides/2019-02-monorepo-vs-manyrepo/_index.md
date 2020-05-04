@@ -34,7 +34,6 @@ highlight_theme = "zenburn"
     <h2>
     build, test, run, debug, deploy
     </h2>
-
     <h3>a project ?</h3>
 </section>
 
@@ -103,8 +102,8 @@ highlight_theme = "zenburn"
 <section>
     <img
     style="height:100%;"
-    src="https://i.imgflip.com/2hrq4d.jpg"
-    title="made at imgflip.com"
+    src="/slides/images/why-monolith.jpg"
+    title="why monolith"
     />
 </section>
 
@@ -130,7 +129,7 @@ highlight_theme = "zenburn"
 <section>
     <h3>Everybody should do monorepo?</h3>
     <img
-    src="mono-all-the-things.jpg"
+    src="/slides/images/mono-all-the-things.jpg"
     alt="mono all the things"
     srcset=""
     />
@@ -177,7 +176,7 @@ highlight_theme = "zenburn"
 
 <section>
     <h4>Demo: babel (js)</h4>
-    <img src="babel.png" alt="babel" srcset="" />
+    <img src="/slides/images/babel.png" alt="babel" srcset="" />
 </section>
 
 ---
@@ -215,12 +214,12 @@ highlight_theme = "zenburn"
 
 <section>
     <img
-    src="army_report_title.png"
+    src="/slides/images/army_report_title.png"
     alt="Archives of the History of American Psychology, The Center for the
     History of Psychology, The University of Akron"
     srcset=""
     />
-    <img src="army_report.png" alt="army report uniformity" srcset="" />
+    <img src="/slides/images/army_report.png" alt="army report uniformity" srcset="" />
 </section>
 
 ---
@@ -228,9 +227,8 @@ highlight_theme = "zenburn"
 <section>
     <h4>gitlab: from idea to production</h4>
     <img
-    src="gitlab.png"
+    src="/slides/images/gitlab.png"
     alt="gitlab from idea to production"
-    srcset=""
     style="background-color: #eee8d5;"
     />
 </section>
@@ -247,7 +245,7 @@ highlight_theme = "zenburn"
 ---
 
 <section>
-    <img src="conways-law.jpg" alt="conway's law" srcset="" />
+    <img src="/slides/images/conways-law.jpg" alt="conway's law" srcset="" />
     <br />
     <a href="https://thefourthrevolution.org/wordpress/archives/5512"
     >source</a
@@ -296,7 +294,7 @@ highlight_theme = "zenburn"
 ---
 
 <section>
-    <img src="org_amazon.png" alt="amazon org" srcset="" />
+    <img src="/slides/images/org_amazon.png" alt="amazon org" srcset="" />
     <br />
     <p style="font-size: x-large">
     credit: <a href="https://twitter.com/lmanul">Manu Cornet</a>
@@ -306,7 +304,7 @@ highlight_theme = "zenburn"
 ---
 
 <section>
-    <img src="org_google.png" alt="google org" srcset="" />
+    <img src="/slides/images/org_google.png" alt="google org" srcset="" />
     <br />
     <p style="font-size: x-large">
     credit: <a href="https://twitter.com/lmanul">Manu Cornet</a>
@@ -316,7 +314,7 @@ highlight_theme = "zenburn"
 ---
 
 <section>
-    <img src="org_facebook.png" alt="facebook org" srcset="" />
+    <img src="/slides/images/org_facebook.png" alt="facebook org" srcset="" />
     <br />
     <p style="font-size: x-large">
     credit: <a href="https://twitter.com/lmanul">Manu Cornet</a>
@@ -326,7 +324,7 @@ highlight_theme = "zenburn"
 ---
 
 <section>
-    <img src="org_microsoft.png" alt="microsoft org" srcset="" />
+    <img src="/slides/images/org_microsoft.png" alt="microsoft org" srcset="" />
     <br />
     <p style="font-size: x-large">
     credit: <a href="https://twitter.com/lmanul">Manu Cornet</a>
@@ -336,7 +334,7 @@ highlight_theme = "zenburn"
 ---
 
 <section>
-    <img src="org_apple.png" alt="apple org" srcset="" />
+    <img src="/slides/images/org_apple.png" alt="apple org" srcset="" />
     <br />
     <p style="font-size: x-large">
     credit: <a href="https://twitter.com/lmanul">Manu Cornet</a>
@@ -346,7 +344,7 @@ highlight_theme = "zenburn"
 ---
 
 <section>
-    <img src="org_oracle.png" alt="oracle org" srcset="" />
+    <img src="/slides/images/org_oracle.png" alt="oracle org" srcset="" />
     <br />
     <p style="font-size: x-large">
     credit: <a href="https://twitter.com/lmanul">Manu Cornet</a>
@@ -382,7 +380,7 @@ highlight_theme = "zenburn"
 
 <section>
     <h2>GIT</h2>
-    <img width="70%" src="git.png" alt="git" />
+    <img width="70%" src="/slides/images/git.png" alt="git" />
     <br />
     <a href="https://www.youtube.com/watch?v=dBSHLb1B8sw"
     >GOTO 2015 • Deep Dive into Git • Edward Thomson</a
@@ -405,7 +403,7 @@ highlight_theme = "zenburn"
 ---
 
 <section>
-    <img src="branches.png" alt="git branches" />
+    <img src="/slides/images/branches.png" alt="git branches" />
 </section>
 
 ---
@@ -413,15 +411,13 @@ highlight_theme = "zenburn"
 
 <section>
     <h3>code storage ≠ deployment</h3>
-
-    <img style="width:150%" src="tooling.png" alt="Toolling diagram" />
+    <img style="width:150%" src="/slides/images/tooling.png" alt="Toolling diagram" />
 </section>
 
 ---
 
 <section>
     <h3>tooling</h3>
-
     <ul>
     <li>
         <a href="https://github.com/splitsh/lite">
@@ -452,7 +448,6 @@ highlight_theme = "zenburn"
 
 <section>
     <h3>tooling (cont'd)</h3>
-
     <h4>Archive git history</h4>
     <pre><code>
 git clone file:///Users/$USER/Projects/myProject myClonedProject \

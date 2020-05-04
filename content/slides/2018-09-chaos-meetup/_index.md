@@ -12,7 +12,7 @@ highlight_theme = "zenburn"
 <section>
   <img src="data:image/png;base64,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" alt="QR code for slides">
   <p>
-      SLIDES: <a href="https://tinyurl.com/ChaosEngSW">tinyurl.com/ChaosEngSW</a>
+      SLIDES: <a rel="noopener" href="https://tinyurl.com/ChaosEngSW">tinyurl.com/ChaosEngSW</a>
   </p>
 </section>
 
@@ -105,9 +105,9 @@ highlight_theme = "zenburn"
         <svg viewBox="0 0 1200 900" class="landing-image" data-name="expanded art" id="expanded_art"><defs><style>.m-1{fill:#476baf}.m-2,.m-3,.m-4,.m-6{fill:none;stroke-miterlimit:10}.m-2{stroke:#000}.m-2,.m-4,.m-6{stroke-width:10px}.m-3{stroke-width:30px}.m-4{stroke:#64c489}.m-5{fill:#64c489}.m-6{stroke:#476baf}</style></defs><path d="M666.46,512.46c-105.09,105.1-221,171.4-299.72,208.52C314,745.86,261.91,765.12,214.26,777.75A202,202,0,0,0,254,747l1.46-1.45c85.64-80.87,146-107.14,222.5-140.39,52.38-22.79,112.8-49.07,194.31-98.42Q669.35,509.59,666.46,512.46Z" class="m-1"></path><path d="M1103,300c-280,0-183,120-513,186S340,800,100,800" class="m-2"></path><path d="M1103,160c-137,0-136.65,130.87-263,226C500,642,432,572,252,742" class="m-2"></path><path d="M250.49,743.49C216.2,777.16,172.84,800,100,800" class="m-2"></path><path d="M100,800c137,0,390-104,570-284s430-77,430-77" class="m-2"></path><path d="M474.34,668.6C695.34,535.6,817,439,1100,439" class="m-2"></path><g><line class="m-3" x1="830" x2="830" y1="100" y2="800"></line><line class="m-4" x1="830" x2="830" y1="100" y2="800"></line></g><g><g><ellipse cx="150" cy="148.55" rx="50" ry="50.47"></ellipse><polygon points="391.65 171.25 355.69 193.98 378.21 230.28 391.65 171.25"></polygon><polygon points="215.97 289.64 179.56 267.66 157.79 304.41 215.97 289.64"></polygon></g><g><circle cx="220" cy="430" r="50" class="m-5"></circle><circle cx="635" cy="256" r="50" class="m-1"></circle><polygon points="424.37 376.1 441.35 337.22 402.47 320.24 424.37 376.1" class="m-1"></polygon></g><g><line class="m-6" x1="404.19" x2="276.07" y1="352.78" y2="406.49"></line><line class="m-6" x1="578.89" x2="448.03" y1="279.53" y2="334.39"></line></g><g><g><line class="m-2" x1="177.73" x2="164.55" y1="260.9" y2="208.2"></line><line class="m-2" x1="205.37" x2="189.22" y1="371.49" y2="306.86"></line></g><g><line class="m-2" x1="394.71" x2="576.12" y1="203.48" y2="243.13"></line><line class="m-2" x1="208.7" x2="347.94" y1="162.83" y2="193.26"></line></g></g></g></svg>
         <p>OBSERVE</p>
       </div>
-      <div style="grid-column: span 4;"><a href="http://istio.io">source: istio.io</a></div>
+      <div style="grid-column: span 4;"><a rel="noopener" href="http://istio.io">source: istio.io</a></div>
   </div>
-  <p class="fragment"><a href="https://www.youtube.com/watch?v=WnmzEM52_tQ">VIDEO: Istio a la carte by Dan Ciruli</a></p>
+  <p class="fragment"><a rel="noopener" href="https://www.youtube.com/watch?v=WnmzEM52_tQ">VIDEO: Istio a la carte by Dan Ciruli</a></p>
 </section>
 
 ---
@@ -129,11 +129,10 @@ highlight_theme = "zenburn"
   </ol>
   </div>
   <br />
-
   <span class="fragment">
-    <a href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing">source (wikipedia)</a>
+    <a rel="noopener" href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing">source (wikipedia)</a>
     <br />
-    <a href="https://tools.ietf.org/html/rfc1925">RFC 1925 - 22 years old and still pertinent</a>
+    <a rel="noopener" href="https://tools.ietf.org/html/rfc1925">RFC 1925 - 22 years old and still pertinent</a>
   </span>
 </section>
 
@@ -202,7 +201,7 @@ highlight_theme = "zenburn"
 <section id="osi-layers">
     <img style="filter: invert(.9) brightness(1.4);" height="521" width="1024"
     src="/slides/images/the_new_new_osi_stack.jpg" >
-    <a href="https://f5.com/about-us/blog/articles/the-new-osi-network-stack-containers-and-half-layers-28124">source</a>
+    <a rel="noopener" href="https://f5.com/about-us/blog/articles/the-new-osi-network-stack-containers-and-half-layers-28124">source</a>
 </section>
 
 ---
@@ -223,7 +222,7 @@ ratings = {
     "children" : []
 }
   </code></pre>
-  <a href="https://github.com/istio/istio/blob/master/samples/bookinfo/src/productpage/productpage.py#L53">source code</a>
+  <a rel="noopener" href="https://github.com/istio/istio/blob/master/samples/bookinfo/src/productpage/productpage.py#L53">source code</a>
 </section>
 
 ---
@@ -302,7 +301,7 @@ spec:
     <li>Metrics (prometheus)</li>
     <li>Logs (fluentd)</li>
     <li>Tracing (jaeger)</li>
-    <li><a href="http://localhost:20001">Cluster traffic (kiali)</a></li>
+    <li><a rel="noopener" href="http://localhost:20001">Cluster traffic (kiali)</a></li>
   </ul>
 </section>
 
@@ -322,14 +321,14 @@ spec:
   <h2>QUESTIONS about service mesh</h2>
   <p>List of service meshes</p>
   <ul>
-    <li><a href="https://github.com/istio/istio">Istio</a></li>
-    <li><a href="https://github.com/envoyproxy/envoy">Envoy</a></li>
-    <li><a href="https://github.com/linkerd/linkerd2">Conduit/Linkerd2</a></li>
-    <li><a href="https://github.com/linkerd/linkerd">Linkerd</a></li>
-    <li><a href="https://github.com/hashicorp/consul">Consul</a></li>
-    <li><a href="https://github.com/weaveworks/mesh">Weave mesh</a></li>
+    <li><a rel="noopener" href="https://github.com/istio/istio">Istio</a></li>
+    <li><a rel="noopener" href="https://github.com/envoyproxy/envoy">Envoy</a></li>
+    <li><a rel="noopener" href="https://github.com/linkerd/linkerd2">Conduit/Linkerd2</a></li>
+    <li><a rel="noopener" href="https://github.com/linkerd/linkerd">Linkerd</a></li>
+    <li><a rel="noopener" href="https://github.com/hashicorp/consul">Consul</a></li>
+    <li><a rel="noopener" href="https://github.com/weaveworks/mesh">Weave mesh</a></li>
   </ul>
-  <p><a href="https://www.consul.io/intro/vs/istio.html">Comparison: Consult vs Istio</a></p>
+  <p><a rel="noopener" href="https://www.consul.io/intro/vs/istio.html">Comparison: Consult vs Istio</a></p>
 </section>
 
 ---
@@ -348,7 +347,7 @@ spec:
   <blockquote>
     <p lang="en" dir="ltr">Chaos Engineering is the discipline of experimenting on a distributed system in order to build confidence
     in the system’s capability to withstand turbulent conditions in production.</p>
-    &mdash; <a href="https://principlesofchaos.org/">principlesofchaos.org</a>
+    &mdash; <a rel="noopener" href="https://principlesofchaos.org/">principlesofchaos.org</a>
   </blockquote>
 </section>
 
@@ -358,7 +357,7 @@ spec:
 <section>
   <blockquote>
     <p>Thoughtful, planned experiments designed to reveal the weakness in our systems. </p>
-    &mdash; <a href="https://www.gremlin.com/">Kolton Andrus (cofounder and CEO of Gremlin Inc.)</a>
+    &mdash; <a rel="noopener" href="https://www.gremlin.com/">Kolton Andrus (cofounder and CEO of Gremlin Inc.)</a>
   </blockquote>
   <img src="/slides/images/vaccine.jpeg" width="350px" />
 </section>
@@ -369,7 +368,7 @@ spec:
 <section>
   <blockquote>
     <p lang="en" dir="ltr">Chaos Engineering isn't done to cause problems; it is done to reveal them.</p>
-    &mdash; <a href="https://twitter.com/allspaw/status/1030226933248798720">Nora Jones (Netflix)</a>
+    &mdash; <a rel="noopener" href="https://twitter.com/allspaw/status/1030226933248798720">Nora Jones (Netflix)</a>
   </blockquote>
 </section>
 
@@ -381,7 +380,7 @@ spec:
     <p lang="en" dir="ltr">Chaos Engineering is exploratory testing of non-functional requirements
         where ‘non-functional requirements’ are the requirements that if not met render a service non-functional.
     </p>
-    &mdash; <a href="https://twitter.com/littleidea/status/1030304684991369216">@littleidea</a>
+    &mdash; <a rel="noopener" href="https://twitter.com/littleidea/status/1030304684991369216">@littleidea</a>
   </blockquote>
 </section>
 
@@ -391,7 +390,7 @@ spec:
 <section>
     <blockquote class="twitter-tweet" data-lang="en">
       <p lang="en" dir="ltr">Having a child: Chaos Engineering for everything in your life.</p>
-      &mdash; <a href="https://twitter.com/icecrime/status/963115377562669057?ref_src=twsrc%5Etfw">@icecrime</a>
+      &mdash; <a rel="noopener" href="https://twitter.com/icecrime/status/963115377562669057?ref_src=twsrc%5Etfw">@icecrime</a>
     </blockquote>
 </section>
 
@@ -448,7 +447,7 @@ spec:
     <li>Identify weaknesses</li>
     <li>Improve resiliency</li>
     <li>
-      <a href="https://landing.google.com/sre/book/chapters/service-level-objectives.html">SLI, SLO, SLA</a>
+      <a rel="noopener" href="https://landing.google.com/sre/book/chapters/service-level-objectives.html">SLI, SLO, SLA</a>
       <!--
         These measurements describe basic properties of metrics that matter,
         what values we want those metrics to have,
@@ -462,7 +461,7 @@ spec:
 <section>
   <h2>Gameday</h2>
   <p>What happens when ________ ? [fill in the blank]</p>
-  <p>example: <a href="https://www.gremlin.com/community/tutorials/gremlin-gameday-breaking-dynamodb/">Breaking DynamoDB</a></p>
+  <p>example: <a rel="noopener" href="https://www.gremlin.com/community/tutorials/gremlin-gameday-breaking-dynamodb/">Breaking DynamoDB</a></p>
 </section>
 
 ---
@@ -476,7 +475,7 @@ spec:
     <li>Practice: It's a cultural approach to failure</li>
     <li>Publish reports (RCA) and results</li>
   </ul>
-  <p><a href="https://www.gremlin.com/community/tutorials/how-to-establish-a-high-severity-incident-management-program/">source</a></p>
+  <p><a rel="noopener" href="https://www.gremlin.com/community/tutorials/how-to-establish-a-high-severity-incident-management-program/">source</a></p>
 </section>
 
 ---
@@ -488,7 +487,7 @@ spec:
   <img src="/slides/images/toyota-andon-cord.jpg" alt="Toyota andon cord">
 
   <p>
-     <a href="https://web.archive.org/web/20131029204446/http://www.kaizen.com/about-us/definition-of-kaizen.html">definition</a>
+     <a rel="noopener" href="https://web.archive.org/web/20131029204446/http://www.kaizen.com/about-us/definition-of-kaizen.html">definition</a>
   </p>
 
 </section>
@@ -505,9 +504,9 @@ spec:
   </p>
   <p>
     <br>
-    Article: <a href="https://www.linkedin.com/pulse/would-chaos-any-othername-casey-rosenthal/">Would a Chaos by any other Name</a>
+    Article: <a rel="noopener" href="https://www.linkedin.com/pulse/would-chaos-any-othername-casey-rosenthal/">Would a Chaos by any other Name</a>
   </p>
-  <p>Book: <a href="https://www.amazon.co.uk/Resilience-Engineering-Practice-Guidebook-Ashgate/dp/1472420748/ref=sr_1_2">Resilience Engineering in Practice</a></p>
+  <p>Book: <a rel="noopener" href="https://www.amazon.co.uk/Resilience-Engineering-Practice-Guidebook-Ashgate/dp/1472420748/ref=sr_1_2">Resilience Engineering in Practice</a></p>
 </section>
 
 ---
@@ -546,19 +545,19 @@ spec:
   <h2>Resources</h2>
   <small>
   <ul>
-    <li><a href="https://blog.buoyant.io/2017/04/25/whats-a-service-mesh-and-why-do-i-need-one/">What's a service mesh</a></li>
-    <li><a href="https://landing.google.com/sre/book/index.html">SRE book</a></li>
-    <li><a href="https://www.youtube.com/watch?v=tEylFyxbDLE">SLI, SLO, SLA</a> </li>
-    <li><a href="https://www.microservices.com/talks/lyfts-envoy-monolith-service-mesh-matt-klein/">[Talk] Lyft's envoy</a></li>
-    <li><a href="https://blog.sebastian-daschner.com/entries/istio-networking-api-explained">Istio Networking Api explained (Video)</a></li>
-    <li><a href="https://www.gremlin.com/blog/">Gremlin Blog</a></li>
-    <li><a href="https://www.techrepublic.com/article/chaos-engineering-a-cheat-sheet/">Chaos Engineering Cheat sheet</a></li>
-    <li><a href="https://www.infoq.com/presentations/chaos-engineering-resilient-systems">[Talk] Chaos Engineering: Why the World Needs More Resilient Systems</a></li>
-    <li><a href="https://www.oreilly.com/webops-perf/free/chaos-engineering.csp">Chaos Engineering Book</a></li>
-    <li><a href="https://www.gremlin.com/community/tutorials/chaos-engineering-the-history-principles-and-practice/">Chaos Engineering: the history, principles, and practice</a></li>
-    <li><a href="https://github.com/dastergon/awesome-chaos-engineering">⭐️ Awesome Chaos Engineering</a></li>
-    <li><a href="https://www.infoq.com/presentations/adopt-chaos-engineering">[Talk] Choose Your Own Adventure: Chaos Engineering</a></li>
-    <li><a href="https://www.linkedin.com/pulse/would-chaos-any-othername-casey-rosenthal/">Would a Chaos by any other Name</a></li>
+    <li><a rel="noopener" href="https://blog.buoyant.io/2017/04/25/whats-a-service-mesh-and-why-do-i-need-one/">What's a service mesh</a></li>
+    <li><a rel="noopener" href="https://landing.google.com/sre/book/index.html">SRE book</a></li>
+    <li><a rel="noopener" href="https://www.youtube.com/watch?v=tEylFyxbDLE">SLI, SLO, SLA</a> </li>
+    <li><a rel="noopener" href="https://www.microservices.com/talks/lyfts-envoy-monolith-service-mesh-matt-klein/">[Talk] Lyft's envoy</a></li>
+    <li><a rel="noopener" href="https://blog.sebastian-daschner.com/entries/istio-networking-api-explained">Istio Networking Api explained (Video)</a></li>
+    <li><a rel="noopener" href="https://www.gremlin.com/blog/">Gremlin Blog</a></li>
+    <li><a rel="noopener" href="https://www.techrepublic.com/article/chaos-engineering-a-cheat-sheet/">Chaos Engineering Cheat sheet</a></li>
+    <li><a rel="noopener" href="https://www.infoq.com/presentations/chaos-engineering-resilient-systems">[Talk] Chaos Engineering: Why the World Needs More Resilient Systems</a></li>
+    <li><a rel="noopener" href="https://www.oreilly.com/webops-perf/free/chaos-engineering.csp">Chaos Engineering Book</a></li>
+    <li><a rel="noopener" href="https://www.gremlin.com/community/tutorials/chaos-engineering-the-history-principles-and-practice/">Chaos Engineering: the history, principles, and practice</a></li>
+    <li><a rel="noopener" href="https://github.com/dastergon/awesome-chaos-engineering">⭐️ Awesome Chaos Engineering</a></li>
+    <li><a rel="noopener" href="https://www.infoq.com/presentations/adopt-chaos-engineering">[Talk] Choose Your Own Adventure: Chaos Engineering</a></li>
+    <li><a rel="noopener" href="https://www.linkedin.com/pulse/would-chaos-any-othername-casey-rosenthal/">Would a Chaos by any other Name</a></li>
   </ul>
   </small>
 </section>

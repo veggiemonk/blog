@@ -157,7 +157,7 @@ highlight_theme = "zenburn"
     src="/slides/images/production_grade_infra.png"
     alt="production grade infrastructure"
   />
-  <a href=""
+  <a rel="noopener" href="https://www.youtube.com/watch?v=jiWRTuF4yXk"
     >Yevgeniy Brikman - Lessons from 300k+ Lines of Infrastructure
     Code</a
   >
@@ -192,7 +192,7 @@ highlight_theme = "zenburn"
       will hit a wire.
     </p>
     &mdash;
-    <a href="https://gojko.net/2016/08/27/serverless.html"
+    <a rel="noopener" href="https://gojko.net/2016/08/27/serverless.html"
       >Gojko Adzic</a
     >
   </blockquote>
@@ -218,7 +218,7 @@ exports.helloGET = (req, res) => {
   res.send('Hello World!');
 };
   </code></pre>
-  <a href="https://cloud.google.com/functions/docs/first-nodejs">
+  <a rel="noopener" href="https://cloud.google.com/functions/docs/first-nodejs">
     source documentation
   </a>
 </section>
@@ -287,7 +287,7 @@ History of Psychology, The University of Akron"
 
 <section>
   <img src="/slides/images/no-code.png" alt="no code" width="80%" />
-  <a target="_blank" href="https://github.com/kelseyhightower/nocode"
+  <a rel="noopener" target="_blank" href="https://github.com/kelseyhightower/nocode"
     >repository</a
   >
 </section>
@@ -327,7 +327,7 @@ History of Psychology, The University of Akron"
 <section>
   <img src="/slides/images/swardley_map.jpeg" alt="mapping" />
   <p>
-    <a href="https://youtu.be/xlNYYy8pzB4">Simon Wardly - Mapping</a>
+    <a rel="noopener" href="https://youtu.be/xlNYYy8pzB4">Simon Wardly - Mapping</a>
   </p>
 </section>
 
@@ -342,7 +342,7 @@ History of Psychology, The University of Akron"
 <section>
   <h1>Mindset</h1>
   <h2>connect services</h2>
-  <a href="https://www.youtube.com/watch?v=bYCPbKHivMA"
+  <a rel="noopener" href="https://www.youtube.com/watch?v=bYCPbKHivMA"
     >Patrick Debois - From serverless to Service Full</a
   >
 </section>

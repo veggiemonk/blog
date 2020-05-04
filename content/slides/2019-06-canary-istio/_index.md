@@ -75,11 +75,10 @@ highlight_theme = "zenburn"
   </ol>
   </div>
   <br />
-
   <span >
-    <a href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing">source (wikipedia)</a>
+    <a rel="noopener" href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing">source (wikipedia)</a>
     <br />
-    <a href="https://tools.ietf.org/html/rfc1925">RFC 1925 ( 12 Networking Truths )</a>
+    <a rel="noopener" href="https://tools.ietf.org/html/rfc1925">RFC 1925 ( 12 Networking Truths )</a>
   </span>
 </section>
 
@@ -127,7 +126,6 @@ highlight_theme = "zenburn"
 
 <section>
     <h3>Kubernetes concerns</h3>
-
     <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: smaller">
       <ul>
           <li>Logging</li>
@@ -220,10 +218,10 @@ highlight_theme = "zenburn"
         <p>OBSERVE</p>
       </div>
       <br>
-      <div style="grid-column: span 4;"><a href="http://istio.io">source: istio.io</a></div>
+      <div style="grid-column: span 4;"><a rel="noopener" href="http://istio.io">source: istio.io</a></div>
   </div>
 
-  <p ><a href="https://www.youtube.com/watch?v=WnmzEM52_tQ">VIDEO: Istio a la carte by Dan Ciruli</a></p>
+  <p ><a rel="noopener" href="https://www.youtube.com/watch?v=WnmzEM52_tQ">VIDEO: Istio a la carte by Dan Ciruli</a></p>
 </section>
 
 ---
@@ -255,7 +253,7 @@ highlight_theme = "zenburn"
 <section id="osi-layers">
     <img style="filter: invert(.9) brightness(1.4);" height="521" width="1024"
     src="/slides/images/the_new_new_osi_stack.jpg" >
-    <a href="https://f5.com/about-us/blog/articles/the-new-osi-network-stack-containers-and-half-layers-28124">source</a>
+    <a rel="noopener" href="https://f5.com/about-us/blog/articles/the-new-osi-network-stack-containers-and-half-layers-28124">source</a>
 </section>
 
 ---
@@ -275,7 +273,7 @@ ratings = {
     "children" : []
 }
   </code></pre>
-  <a href="https://github.com/istio/istio/blob/master/samples/bookinfo/src/productpage/productpage.py#L53">source code</a>
+  <a rel="noopener" href="https://github.com/istio/istio/blob/master/samples/bookinfo/src/productpage/productpage.py#L53">source code</a>
 </section>
 
 ---
@@ -372,11 +370,11 @@ spec:
   <h2>Resources</h2>
   <small>
   <ul>
-    <li><a href="https://blog.buoyant.io/2017/04/25/whats-a-service-mesh-and-why-do-i-need-one/">What's a service mesh</a></li>
-    <li><a href="https://landing.google.com/sre/book/index.html">SRE book</a></li>
-    <li><a href="https://www.youtube.com/watch?v=tEylFyxbDLE">SLI, SLO, SLA</a> </li>
-    <li><a href="https://www.microservices.com/talks/lyfts-envoy-monolith-service-mesh-matt-klein/">[Talk] Lyft's envoy</a></li>
-    <li><a href="https://blog.sebastian-daschner.com/entries/istio-networking-api-explained">Istio Networking Api explained (Video)</a></li>
+    <li><a rel="noopener" href="https://blog.buoyant.io/2017/04/25/whats-a-service-mesh-and-why-do-i-need-one/">What's a service mesh</a></li>
+    <li><a rel="noopener" href="https://landing.google.com/sre/book/index.html">SRE book</a></li>
+    <li><a rel="noopener" href="https://www.youtube.com/watch?v=tEylFyxbDLE">SLI, SLO, SLA</a> </li>
+    <li><a rel="noopener" href="https://www.microservices.com/talks/lyfts-envoy-monolith-service-mesh-matt-klein/">[Talk] Lyft's envoy</a></li>
+    <li><a rel="noopener" href="https://blog.sebastian-daschner.com/entries/istio-networking-api-explained">Istio Networking Api explained (Video)</a></li>
   </ul>
   </small>
 </section>
@@ -401,6 +399,4 @@ spec:
   <br/>
   <p>Slides made with Reveal.js</p>
 </section>
-
----
 

@@ -247,7 +247,7 @@ highlight_theme = "zenburn"
 <section>
     <img src="/slides/images/conways-law.jpg" alt="conway's law" srcset="" />
     <br />
-    <a href="https://thefourthrevolution.org/wordpress/archives/5512"
+    <a rel="noopener" href="https://thefourthrevolution.org/wordpress/archives/5512"
     >source</a
     >
 </section>
@@ -282,11 +282,11 @@ highlight_theme = "zenburn"
     <li>Anyone who doesn’t do this will be fired.</li>
     <li>Thank you; have a nice day!</li>
     </ul>
-    <!-- <a href="https://homepages.dcc.ufmg.br/~mtov/pmcc/modularization.pdf"
+    <!-- <a rel="noopener" href="https://homepages.dcc.ufmg.br/~mtov/pmcc/modularization.pdf"
     >source</a
     > -->
     <br />
-    <a href="https://plus.google.com/+RipRowan/posts/eVeouesvaVX">
+    <a rel="noopener" href="https://plus.google.com/+RipRowan/posts/eVeouesvaVX">
     https://plus.google.com/+RipRowan/posts/eVeouesvaVX</a
     >
 </section>
@@ -297,7 +297,7 @@ highlight_theme = "zenburn"
     <img src="/slides/images/org_amazon.png" alt="amazon org" srcset="" />
     <br />
     <p style="font-size: x-large">
-    credit: <a href="https://twitter.com/lmanul">Manu Cornet</a>
+    credit: <a rel="noopener" href="https://twitter.com/lmanul">Manu Cornet</a>
     </p>
 </section>
 
@@ -307,7 +307,7 @@ highlight_theme = "zenburn"
     <img src="/slides/images/org_google.png" alt="google org" srcset="" />
     <br />
     <p style="font-size: x-large">
-    credit: <a href="https://twitter.com/lmanul">Manu Cornet</a>
+    credit: <a rel="noopener" href="https://twitter.com/lmanul">Manu Cornet</a>
     </p>
 </section>
 
@@ -317,7 +317,7 @@ highlight_theme = "zenburn"
     <img src="/slides/images/org_facebook.png" alt="facebook org" srcset="" />
     <br />
     <p style="font-size: x-large">
-    credit: <a href="https://twitter.com/lmanul">Manu Cornet</a>
+    credit: <a rel="noopener" href="https://twitter.com/lmanul">Manu Cornet</a>
     </p>
 </section>
 
@@ -327,7 +327,7 @@ highlight_theme = "zenburn"
     <img src="/slides/images/org_microsoft.png" alt="microsoft org" srcset="" />
     <br />
     <p style="font-size: x-large">
-    credit: <a href="https://twitter.com/lmanul">Manu Cornet</a>
+    credit: <a rel="noopener" href="https://twitter.com/lmanul">Manu Cornet</a>
     </p>
 </section>
 
@@ -337,7 +337,7 @@ highlight_theme = "zenburn"
     <img src="/slides/images/org_apple.png" alt="apple org" srcset="" />
     <br />
     <p style="font-size: x-large">
-    credit: <a href="https://twitter.com/lmanul">Manu Cornet</a>
+    credit: <a rel="noopener" href="https://twitter.com/lmanul">Manu Cornet</a>
     </p>
 </section>
 
@@ -347,7 +347,7 @@ highlight_theme = "zenburn"
     <img src="/slides/images/org_oracle.png" alt="oracle org" srcset="" />
     <br />
     <p style="font-size: x-large">
-    credit: <a href="https://twitter.com/lmanul">Manu Cornet</a>
+    credit: <a rel="noopener" href="https://twitter.com/lmanul">Manu Cornet</a>
     </p>
 </section>
 
@@ -382,7 +382,7 @@ highlight_theme = "zenburn"
     <h2>GIT</h2>
     <img width="70%" src="/slides/images/git.png" alt="git" />
     <br />
-    <a href="https://www.youtube.com/watch?v=dBSHLb1B8sw"
+    <a rel="noopener" href="https://www.youtube.com/watch?v=dBSHLb1B8sw"
     >GOTO 2015 • Deep Dive into Git • Edward Thomson</a
     >
 </section>
@@ -420,23 +420,23 @@ highlight_theme = "zenburn"
     <h3>tooling</h3>
     <ul>
     <li>
-        <a href="https://github.com/splitsh/lite">
+        <a rel="noopener" href="https://github.com/splitsh/lite">
         splitsh/lite
         </a>
         (split monorepo)
     </li>
     <li>
-        <a href="https://bazel.build/">bazel.build</a> (build monorepo)
+        <a rel="noopener" href="https://bazel.build/">bazel.build</a> (build monorepo)
     </li>
     <li>
-        <a href="https://lernajs.io/">lernajs.io</a> (build js monorepo)
+        <a rel="noopener" href="https://lernajs.io/">lernajs.io</a> (build js monorepo)
     </li>
     <li>
-        <a href="https://github.com/unravelin/tomono">unravelin/tomono</a>
+        <a rel="noopener" href="https://github.com/unravelin/tomono">unravelin/tomono</a>
         (migration)
     </li>
     <li>
-        <a href="https://github.com/korfuri/awesome-monorepo"
+        <a rel="noopener" href="https://github.com/korfuri/awesome-monorepo"
         >korfuri/awesome-monorepo</a
         >
         (list of resources)
@@ -527,13 +527,13 @@ git clone file:///Users/$USER/Projects/myProject myClonedProject \
     <li>faster onboarding 🙋‍♂️</li>
     </ul>
     <p>
-    <a href="https://github.blog/2016-02-01-working-with-submodules/"
+    <a rel="noopener" href="https://github.blog/2016-02-01-working-with-submodules/"
         >github blog - submodules</a
     >
     </p>
     <p>
     <span style="color:#eee8d5; font-weight: 900;">+</span>
-    <a href="https://github.com/github/scripts-to-rule-them-all"
+    <a rel="noopener" href="https://github.com/github/scripts-to-rule-them-all"
         >github/scripts-to-rule-them-all</a
     >
     </p>
@@ -589,13 +589,13 @@ git clone file:///Users/$USER/Projects/myProject myClonedProject \
 
 <section>
     <h3># minimalist</h3>
-    <p><a href="https://gitpod.io/workspaces/">gitpod.io</a></p>
-    <p><a href="https://codesandbox.io">codesandbox.io</a></p>
+    <p><a rel="noopener" href="https://gitpod.io/workspaces/">gitpod.io</a></p>
+    <p><a rel="noopener" href="https://codesandbox.io">codesandbox.io</a></p>
     <p>in browser editor:</p>
     <ul>
-    <li><a href="https://github.com/eclipse/che/">eclipse/che</a></li>
+    <li><a rel="noopener" href="https://github.com/eclipse/che/">eclipse/che</a></li>
     <li>
-        <a href="https://github.com/theia-ide/theia">theia-ide/theia</a>
+        <a rel="noopener" href="https://github.com/theia-ide/theia">theia-ide/theia</a>
     </li>
     </ul>
 </section>

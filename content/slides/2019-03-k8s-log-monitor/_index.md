@@ -98,7 +98,6 @@ highlight_theme = "zenburn"
 
 <section>
     <h3>8 fallacies of distributed computing</h3>
-
     <ol>
     <li class="fragment grow highlight-blue">
         The network is reliable.
@@ -111,18 +110,11 @@ highlight_theme = "zenburn"
     <li>Transport cost is zero.</li>
     <li>The network is homogeneous.</li>
     </ol>
-
     <p>
-    <a
-        href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing"
-        >Source: wikipedia</a
-    >
+    <a href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing">Source: wikipedia</a>
     </p>
-
     <p>
-    <a href="https://tools.ietf.org/html/rfc1925"
-        >RFC 1925 - 12 Networking Truths</a
-    >
+    <a rel="noopener" href="https://tools.ietf.org/html/rfc1925">RFC 1925 - 12 Networking Truths</a>
     </p>
 </section>
 
@@ -168,8 +160,7 @@ highlight_theme = "zenburn"
     </table>
     <br />
     <br />
-
-    <p>credit <a href="https://twitter.com/coda">@coda</a></p>
+    <p>credit <a rel="noopener" href="https://twitter.com/coda">@coda</a></p>
 </section>
 
 ---
@@ -263,7 +254,7 @@ highlight_theme = "zenburn"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
     ></iframe>
-    <p><a href="https://youtu.be/czes-oa0yik">youtu.be/czes-oa0yik</a></p>
+    <p><a rel="noopener" href="https://youtu.be/czes-oa0yik">youtu.be/czes-oa0yik</a></p>
 </section>
 
 ---
@@ -304,20 +295,19 @@ highlight_theme = "zenburn"
     <div style="display: grid; grid-template-columns: 1fr 1fr">
     <div>
         <h3>Namespace</h3>
-
-        <a href="https://en.wikipedia.org/wiki/Linux_namespaces">
+        <a rel="noopener" href="https://en.wikipedia.org/wiki/Linux_namespaces">
         what a process can see
         </a>
     </div>
     <div>
         <h3>cgroup</h3>
-        <a href="https://en.wikipedia.org/wiki/Cgroups">
+        <a rel="noopener" href="https://en.wikipedia.org/wiki/Cgroups">
         what a process can use
         </a>
     </div>
     </div>
     <!-- <p>
-    See 👉 <a href="https://kernelnewbies.org/FAQ">Linux kernel FAQ</a>
+    See 👉 <a rel="noopener" href="https://kernelnewbies.org/FAQ">Linux kernel FAQ</a>
     </p> -->
 </section>
 
@@ -347,7 +337,7 @@ docker run \
 --name=cadvisor \
 google/cadvisor:latest
     </code></pre>
-    <a target="_blank" href="http://localhost:8080">localhost:8080</a>
+    <a rel="noopener" target="_blank" href="http://localhost:8080">localhost:8080</a>
 </section>
 
 ---
@@ -355,11 +345,11 @@ google/cadvisor:latest
 <section>
     <h2>Logs for containers</h2>
     <p>
-    <a href="https://12factor.net/logs">
+    <a rel="noopener" href="https://12factor.net/logs">
         👉 Treat logs as event streams
     </a>
     </p>
-    <p><a href="https://12factor.net">12factor.net</a></p>
+    <p><a rel="noopener" href="https://12factor.net">12factor.net</a></p>
     <ul>
     <li>❌ no routing</li>
     <li>❌ no storage</li>
@@ -536,7 +526,7 @@ google/cadvisor:latest
     <li>maybe no need to log everything (GDPR?)</li>
     <li>business metrics to the queue</li>
     <li>
-        <a href="https://github.com/kubernetes/kubernetes/pull/67573"
+        <a rel="noopener" href="https://github.com/kubernetes/kubernetes/pull/67573"
         >`kubectl logs --all-container` PR</a
         >
     </li>
@@ -554,7 +544,6 @@ google/cadvisor:latest
 
 <section>
     <h3>CPU & RAM should be enough</h3>
-
     <p class="fragment">not really...</p>
     <ul>
     <li><code>docker stats</code></li>
@@ -634,14 +623,10 @@ google/cadvisor:latest
 
 <section>
     <h2>Open data</h2>
-
     <p>
-    example: <a href="https://makebook.io/open">makebook.io/open</a>
+    example: <a rel="noopener" href="https://makebook.io/open">makebook.io/open</a>
     </p>
-
-    <a href="https://simpleanalytics.io/simpleanalytics.io"
-    >simpleanalytics.io</a
-    >
+    <a rel="noopener" href="https://simpleanalytics.io/simpleanalytics.io">simpleanalytics.io</a>
     <p>doesn't track your users</p>
     <p>GDPR friendly</p>
 </section>

@@ -19,7 +19,7 @@ highlight_theme = "zenburn"
 <section>
 <h2>Demo</h2>
 <p>
-    <a href="https://www.openfaas.com/">
+    <a rel="noopener" href="https://www.openfaas.com/">
     <img width="50%" src="/slides/images/openfaas.png"
         alt="openfaas logo">
     </a>
@@ -59,22 +59,21 @@ make start_kind
 <h4>templates</h4>
 <pre><code class="hljs golang" data-trim >
 import (
-"fmt"
-"io/ioutil"
-"log"
-"os"
-
-"handler/function"
+    "fmt"
+    "io/ioutil"
+    "log"
+    "os"
+    "handler/function"
 )
 func main() {
-input, err := ioutil.ReadAll(os.Stdin)
-if err != nil {
-log.Fatalf("Unable to read standard input: %s", err.Error())
-}
-fmt.Println(function.Handle(input))
+    input, err := ioutil.ReadAll(os.Stdin)
+    if err != nil {
+        log.Fatalf("Unable to read standard input: %s", err.Error())
+    }
+    fmt.Println(function.Handle(input))
 }
 </code></pre>
-<p><a href="https://github.com/openfaas/templates">See all templates</a></p>
+<p><a rel="noopener" href="https://github.com/openfaas/templates">See all templates</a></p>
 </section>
 
 ---
@@ -88,7 +87,7 @@ func Handle(req []byte) string {
 return fmt.Sprintf("Hello, Go. You said: %s", string(req))
 }
 </code></pre>
-<p><a href="https://github.com/esimov/pigo-openfaas/blob/master/pigo-openfaas/handler.go">face detection
+<p><a rel="noopener" href="https://github.com/esimov/pigo-openfaas/blob/master/pigo-openfaas/handler.go">face detection
     handler</a></p>
 </section>
 
@@ -102,9 +101,7 @@ return fmt.Sprintf("Hello, Go. You said: %s", string(req))
 ENV fprocess="./handler"
 # Set to true to see request in function logs
 ENV write_debug="false"
-
 EXPOSE 8080
-
 HEALTHCHECK --interval=3s CMD [ -e /tmp/.lock ] || exit 1
 CMD [ "fwatchdog" ]
 </code></pre>
@@ -147,7 +144,7 @@ CMD [ "fwatchdog" ]
 <div>
     <img src="/slides/images/The_Art_of_Unix_Programming.jpg"
     alt="The Art of UNIX programming">
-    <p><a href="https://www.youtube.com/watch?v=rFejpH_tAHM">dotGo 2015 - Rob Pike - Simplicity is Complicated</a>
+    <p><a rel="noopener" href="https://www.youtube.com/watch?v=rFejpH_tAHM">dotGo 2015 - Rob Pike - Simplicity is Complicated</a>
     </p>
 </div>
 </section>
@@ -156,7 +153,7 @@ CMD [ "fwatchdog" ]
 
 <section>
 <img src="/slides/images/production_grade_infra.png" alt="production grade infrastructure">
-<a href="">Yevgeniy Brikman - Lessons from 300k+ Lines of Infrastructure Code</a>
+<a rel="noopener" href="https://www.youtube.com/watch?v=jiWRTuF4yXk">Yevgeniy Brikman - Lessons from 300k+ Lines of Infrastructure Code</a>
 </section>
 
 ---
@@ -171,7 +168,7 @@ CMD [ "fwatchdog" ]
 ---
 
 <!-- <section>
-Example: <a target="_blank" href="https://gist.github.com/veggiemonk/59afbd540619873587de42d6865253cc">gist</a>
+Example: <a rel="noopener" target="_blank" href="https://gist.github.com/veggiemonk/59afbd540619873587de42d6865253cc">gist</a>
 </section>
 
 ---
@@ -194,7 +191,7 @@ Example: <a target="_blank" href="https://gist.github.com/veggiemonk/59afbd54061
 <h3>build OR buy</h3>
 <img width="60%" src="/slides/images/tweetdc.png" alt="Tweet about datacenter" />
 <p>
-    <a target="_blank" href="https://threadreaderapp.com/thread/1102401615263223809.html">whole thread</a>
+    <a rel="noopener" target="_blank" href="https://threadreaderapp.com/thread/1102401615263223809.html">whole thread</a>
 </p>
 </section>
 
@@ -222,7 +219,7 @@ Example: <a target="_blank" href="https://gist.github.com/veggiemonk/59afbd54061
 
 <section>
 <h2>Consistency is key</h2>
-<a href="http://collections.uakron.edu/utils/getdownloaditem/collection/p15960coll1/id/25524/filename/25525.pdf/mapsto/pdf">source</a>
+<a rel="noopener" href="http://collections.uakron.edu/utils/getdownloaditem/collection/p15960coll1/id/25524/filename/25525.pdf/mapsto/pdf">source</a>
 <img src="/slides/images/army_report_title.png" alt="Archives of the History of American Psychology, The Center for the
 History of Psychology, The University of Akron" srcset="" />
 <img src="/slides/images/army_report.png" alt="army report uniformity" srcset="" />
@@ -272,7 +269,7 @@ History of Psychology, The University of Akron" srcset="" />
 <!-- <section>
 <h2>demo</h2>
 <h4>service mesh: Linkerd</h4>
-<a href="https://github.com/openfaas-incubator/openfaas-linkerd2">linkerd.io</a>
+<a rel="noopener" href="https://github.com/openfaas-incubator/openfaas-linkerd2">linkerd.io</a>
 </section>
 
 ---
@@ -286,7 +283,7 @@ History of Psychology, The University of Akron" srcset="" />
 
 <section>
 <img src="/slides/images/no-code.png" alt="no code" width="80%">
-<a target="_blank" href="https://github.com/kelseyhightower/nocode">repository</a>
+<a rel="noopener" target="_blank" href="https://github.com/kelseyhightower/nocode">repository</a>
 </section>
 
 ---
@@ -296,7 +293,7 @@ History of Psychology, The University of Akron" srcset="" />
 <h2>connect services</h2>
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/bYCPbKHivMA" frameborder="0"
     allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-<a href="https://www.youtube.com/watch?v=bYCPbKHivMA">Patrick Debois - From serverless to Service Full</a>
+<a rel="noopener" href="https://www.youtube.com/watch?v=bYCPbKHivMA">Patrick Debois - From serverless to Service Full</a>
 </section>
 
 ---
@@ -341,7 +338,7 @@ History of Psychology, The University of Akron" srcset="" />
 
 <section>
 <img src="/slides/images/swardley_map.jpeg" alt="mapping">
-<p><a href="https://youtu.be/xlNYYy8pzB4">Simon Wardly - Mapping</a></p>
+<p><a rel="noopener" href="https://youtu.be/xlNYYy8pzB4">Simon Wardly - Mapping</a></p>
 </section>
 
 ---
@@ -366,7 +363,6 @@ History of Psychology, The University of Akron" srcset="" />
 
 <section>
     <h2>Pipelines are software too</h2>
-
     <h4>How to change the system</h4>
 </section>
 
@@ -432,7 +428,6 @@ gcloud auth configure-docker
 export IMAGE="eu.gcr.io/${PROJECT_ID}/pigo-openfaas"
 docker tag esimov/pigo-openfaas:0.1 "${IMAGE}"
 docker push "${IMAGE}"
-
 gcloud beta run deploy pigo-openfaas --platform=managed \
 --region=us-central1 --image="${IMAGE}" \
 --allow-unauthenticated \
@@ -453,17 +448,17 @@ curl -H 'Content-Type: binary/octet-stream' \
 <ul>
     <!-- <li>All references have links</li> -->
     <small>
-    <li><a href="https://www.openfaas.com">openfaas.com</a></li>
-    <li><a href="https://linkerd.io/">linkerd.io</a></li>
-    <li><a href="https://www.openfaas.com/blog/golang-serverless/">openfaas.com/blog/golang-serverless</a></li>
-    <li><a href="https://cloud.google.com/run/docs/reference/container-contract">cloud.google.com/run/docs/reference/container-contract</a></li>
-    <li><a href="https://codelabs.developers.google.com/codelabs/cloud-run-gke/index.html?index=..%2F..index#0">cloud-run-gke - codelabs</a></li>
-    <li><a href="https://cloud.google.com/run/docs/">Cloud Run Docs</a></li>
-    <li><a href="https://www.azquotes.com/author/3969-Edsger_Dijkstra">Dijkstra Quotes</a></li>
+    <li><a rel="noopener" href="https://www.openfaas.com">openfaas.com</a></li>
+    <li><a rel="noopener" href="https://linkerd.io/">linkerd.io</a></li>
+    <li><a rel="noopener" href="https://www.openfaas.com/blog/golang-serverless/">openfaas.com/blog/golang-serverless</a></li>
+    <li><a rel="noopener" href="https://cloud.google.com/run/docs/reference/container-contract">cloud.google.com/run/docs/reference/container-contract</a></li>
+    <li><a rel="noopener" href="https://codelabs.developers.google.com/codelabs/cloud-run-gke/index.html?index=..%2F..index#0">cloud-run-gke - codelabs</a></li>
+    <li><a rel="noopener" href="https://cloud.google.com/run/docs/">Cloud Run Docs</a></li>
+    <li><a rel="noopener" href="https://www.azquotes.com/author/3969-Edsger_Dijkstra">Dijkstra Quotes</a></li>
     </small>
 </ul>
 <h4>free stuff</h4>
-<a href="https://tinyurl.com/FreeK8SQuest">tinyurl.com/FreeK8SQuest </a>
+<a rel="noopener" href="https://tinyurl.com/FreeK8SQuest">tinyurl.com/FreeK8SQuest </a>
 
 </section>
 

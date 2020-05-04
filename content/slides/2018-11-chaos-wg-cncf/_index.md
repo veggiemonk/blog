@@ -145,11 +145,10 @@ highlight_theme = "zenburn"
     </ol>
     </div>
     <br />
-
     <span class="fragment">
-      <a href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing">source (wikipedia)</a>
+      <a rel="noopener" href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing">source (wikipedia)</a>
       <br />
-      <a href="https://tools.ietf.org/html/rfc1925">RFC 1925 - 22 years old and still relevant</a>
+      <a rel="noopener" href="https://tools.ietf.org/html/rfc1925">RFC 1925 - 22 years old and still relevant</a>
     </span>
   </section>
 
@@ -213,10 +212,10 @@ highlight_theme = "zenburn"
         <p>OBSERVE</p>
       </div>
       <br>
-      <div style="grid-column: span 4;"><a href="http://istio.io">source: istio.io</a></div>
+      <div style="grid-column: span 4;"><a rel="noopener" href="http://istio.io">source: istio.io</a></div>
   </div>
 
-  <p class="fragment"><a href="https://www.youtube.com/watch?v=WnmzEM52_tQ">VIDEO: Istio a la carte by Dan Ciruli</a></p>
+  <p class="fragment"><a rel="noopener" href="https://www.youtube.com/watch?v=WnmzEM52_tQ">VIDEO: Istio a la carte by Dan Ciruli</a></p>
 </section>
 
 ---
@@ -260,7 +259,7 @@ highlight_theme = "zenburn"
 <section id="osi-layers">
     <img style="filter: invert(.9) brightness(1.4);" height="521" width="1024"
     src="/slides/images/the_new_new_osi_stack.jpg" >
-    <a href="https://f5.com/about-us/blog/articles/the-new-osi-network-stack-containers-and-half-layers-28124">source</a>
+    <a rel="noopener" href="https://f5.com/about-us/blog/articles/the-new-osi-network-stack-containers-and-half-layers-28124">source</a>
 </section>
 
 ---
@@ -291,7 +290,7 @@ ratings = {
     "children" : []
 }
   </code></pre>
-  <a href="https://github.com/istio/istio/blob/master/samples/bookinfo/src/productpage/productpage.py#L53">source code</a>
+  <a rel="noopener" href="https://github.com/istio/istio/blob/master/samples/bookinfo/src/productpage/productpage.py#L53">source code</a>
 </section>
 
 ---
@@ -390,14 +389,14 @@ spec:
   <h2>QUESTIONS about service mesh</h2>
   <p>List of service meshes</p>
   <ul>
-    <li><a href="https://github.com/istio/istio">Istio</a></li>
-    <li><a href="https://github.com/envoyproxy/envoy">Envoy</a></li>
-    <li><a href="https://github.com/linkerd/linkerd2">Conduit/Linkerd2</a></li>
-    <li><a href="https://github.com/linkerd/linkerd">Linkerd</a></li>
-    <li><a href="https://github.com/hashicorp/consul">Consul</a></li>
-    <li><a href="https://github.com/weaveworks/mesh">Weave mesh</a></li>
+    <li><a rel="noopener" href="https://github.com/istio/istio">Istio</a></li>
+    <li><a rel="noopener" href="https://github.com/envoyproxy/envoy">Envoy</a></li>
+    <li><a rel="noopener" href="https://github.com/linkerd/linkerd2">Conduit/Linkerd2</a></li>
+    <li><a rel="noopener" href="https://github.com/linkerd/linkerd">Linkerd</a></li>
+    <li><a rel="noopener" href="https://github.com/hashicorp/consul">Consul</a></li>
+    <li><a rel="noopener" href="https://github.com/weaveworks/mesh">Weave mesh</a></li>
   </ul>
-  <p><a href="https://www.consul.io/intro/vs/istio.html">Comparison: Consult vs Istio</a></p>
+  <p><a rel="noopener" href="https://www.consul.io/intro/vs/istio.html">Comparison: Consult vs Istio</a></p>
 </section>
 
 ---
@@ -416,7 +415,7 @@ spec:
   <blockquote>
     <p lang="en" dir="ltr">Chaos Engineering is the discipline of experimenting on a distributed system in order to build confidence
     in the system’s capability to withstand turbulent conditions in production.</p>
-    &mdash; <a href="https://principlesofchaos.org/">principlesofchaos.org</a>
+    &mdash; <a rel="noopener" href="https://principlesofchaos.org/">principlesofchaos.org</a>
   </blockquote>
 </section>
 
@@ -426,7 +425,7 @@ spec:
 <section>
   <blockquote>
     <p>Thoughtful, planned experiments designed to reveal the weakness in our systems. </p>
-    &mdash; <a href="https://www.gremlin.com/">Kolton Andrus (cofounder and CEO of Gremlin Inc.)</a>
+    &mdash; <a rel="noopener" href="https://www.gremlin.com/">Kolton Andrus (cofounder and CEO of Gremlin Inc.)</a>
   </blockquote>
   <img src="/slides/images/vaccine.jpeg" width="350px" />
 </section>
@@ -437,7 +436,7 @@ spec:
 <section>
   <blockquote>
     <p lang="en" dir="ltr">Chaos Engineering isn't done to cause problems; it is done to reveal them.</p>
-    &mdash; <a href="https://twitter.com/allspaw/status/1030226933248798720">Nora Jones (Netflix)</a>
+    &mdash; <a rel="noopener" href="https://twitter.com/allspaw/status/1030226933248798720">Nora Jones (Netflix)</a>
   </blockquote>
 </section>
 
@@ -449,7 +448,7 @@ spec:
     <p lang="en" dir="ltr">Chaos Engineering is exploratory testing of non-functional requirements
         where ‘non-functional requirements’ are the requirements that if not met render a service non-functional.
     </p>
-    &mdash; <a href="https://twitter.com/littleidea/status/1030304684991369216">@littleidea</a>
+    &mdash; <a rel="noopener" href="https://twitter.com/littleidea/status/1030304684991369216">@littleidea</a>
   </blockquote>
 </section>
 
@@ -459,7 +458,7 @@ spec:
 <section>
     <blockquote class="twitter-tweet" data-lang="en">
       <p lang="en" dir="ltr">Having a child: Chaos Engineering for everything in your life.</p>
-      &mdash; <a href="https://twitter.com/icecrime/status/963115377562669057?ref_src=twsrc%5Etfw">@icecrime</a>
+      &mdash; <a rel="noopener" href="https://twitter.com/icecrime/status/963115377562669057?ref_src=twsrc%5Etfw">@icecrime</a>
     </blockquote>
 </section>
 
@@ -516,7 +515,7 @@ spec:
     <li>Identify weaknesses</li>
     <li>Improve resiliency</li>
     <li>
-      <a href="https://landing.google.com/sre/book/chapters/service-level-objectives.html">SLI, SLO, SLA</a>
+      <a rel="noopener" href="https://landing.google.com/sre/book/chapters/service-level-objectives.html">SLI, SLO, SLA</a>
       <!--
         These measurements describe basic properties of metrics that matter,
         what values we want those metrics to have,
@@ -530,7 +529,7 @@ spec:
 <section>
   <h2>Gameday</h2>
   <p>What happens when ________ ? [fill in the blank]</p>
-  <p>example: <a href="https://www.gremlin.com/community/tutorials/gremlin-gameday-breaking-dynamodb/">Breaking DynamoDB</a></p>
+  <p>example: <a rel="noopener" href="https://www.gremlin.com/community/tutorials/gremlin-gameday-breaking-dynamodb/">Breaking DynamoDB</a></p>
 </section>
 
 ---
@@ -544,7 +543,7 @@ spec:
     <li>Practice: It's a cultural approach to failure</li>
     <li>Publish reports (RCA) and results</li>
   </ul>
-  <p><a href="https://www.gremlin.com/community/tutorials/how-to-establish-a-high-severity-incident-management-program/">source</a></p>
+  <p><a rel="noopener" href="https://www.gremlin.com/community/tutorials/how-to-establish-a-high-severity-incident-management-program/">source</a></p>
 </section>
 
 ---
@@ -556,7 +555,7 @@ spec:
   <img src="/slides/images/toyota-andon-cord.jpg" alt="Toyota andon cord">
 
   <p>
-     <a href="https://web.archive.org/web/20131029204446/http://www.kaizen.com/about-us/definition-of-kaizen.html">definition</a>
+     <a rel="noopener" href="https://web.archive.org/web/20131029204446/http://www.kaizen.com/about-us/definition-of-kaizen.html">definition</a>
   </p>
 
 </section>
@@ -573,9 +572,9 @@ spec:
   </p>
   <p>
     <br>
-    Article: <a href="https://www.linkedin.com/pulse/would-chaos-any-othername-casey-rosenthal/">Would a Chaos by any other Name</a>
+    Article: <a rel="noopener" href="https://www.linkedin.com/pulse/would-chaos-any-othername-casey-rosenthal/">Would a Chaos by any other Name</a>
   </p>
-  <p>Book: <a href="https://www.amazon.co.uk/Resilience-Engineering-Practice-Guidebook-Ashgate/dp/1472420748/ref=sr_1_2">Resilience Engineering in Practice</a></p>
+  <p>Book: <a rel="noopener" href="https://www.amazon.co.uk/Resilience-Engineering-Practice-Guidebook-Ashgate/dp/1472420748/ref=sr_1_2">Resilience Engineering in Practice</a></p>
 </section>
 
 ---
@@ -613,19 +612,19 @@ spec:
   <h2>Resources</h2>
   <small>
   <ul>
-    <li><a href="https://blog.buoyant.io/2017/04/25/whats-a-service-mesh-and-why-do-i-need-one/">What's a service mesh</a></li>
-    <li><a href="https://landing.google.com/sre/book/index.html">SRE book</a></li>
-    <li><a href="https://www.youtube.com/watch?v=tEylFyxbDLE">SLI, SLO, SLA</a> </li>
-    <li><a href="https://www.microservices.com/talks/lyfts-envoy-monolith-service-mesh-matt-klein/">[Talk] Lyft's envoy</a></li>
-    <li><a href="https://blog.sebastian-daschner.com/entries/istio-networking-api-explained">Istio Networking Api explained (Video)</a></li>
-    <li><a href="https://www.gremlin.com/blog/">Gremlin Blog</a></li>
-    <li><a href="https://www.techrepublic.com/article/chaos-engineering-a-cheat-sheet/">Chaos Engineering Cheat sheet</a></li>
-    <li><a href="https://www.infoq.com/presentations/chaos-engineering-resilient-systems">[Talk] Chaos Engineering: Why the World Needs More Resilient Systems</a></li>
-    <li><a href="https://www.oreilly.com/webops-perf/free/chaos-engineering.csp">Chaos Engineering Book</a></li>
-    <li><a href="https://www.gremlin.com/community/tutorials/chaos-engineering-the-history-principles-and-practice/">Chaos Engineering: the history, principles, and practice</a></li>
-    <li><a href="https://github.com/dastergon/awesome-chaos-engineering">⭐️ Awesome Chaos Engineering</a></li>
-    <li><a href="https://www.infoq.com/presentations/adopt-chaos-engineering">[Talk] Choose Your Own Adventure: Chaos Engineering</a></li>
-    <li><a href="https://www.linkedin.com/pulse/would-chaos-any-othername-casey-rosenthal/">Would a Chaos by any other Name</a></li>
+    <li><a rel="noopener" href="https://blog.buoyant.io/2017/04/25/whats-a-service-mesh-and-why-do-i-need-one/">What's a service mesh</a></li>
+    <li><a rel="noopener" href="https://landing.google.com/sre/book/index.html">SRE book</a></li>
+    <li><a rel="noopener" href="https://www.youtube.com/watch?v=tEylFyxbDLE">SLI, SLO, SLA</a> </li>
+    <li><a rel="noopener" href="https://www.microservices.com/talks/lyfts-envoy-monolith-service-mesh-matt-klein/">[Talk] Lyft's envoy</a></li>
+    <li><a rel="noopener" href="https://blog.sebastian-daschner.com/entries/istio-networking-api-explained">Istio Networking Api explained (Video)</a></li>
+    <li><a rel="noopener" href="https://www.gremlin.com/blog/">Gremlin Blog</a></li>
+    <li><a rel="noopener" href="https://www.techrepublic.com/article/chaos-engineering-a-cheat-sheet/">Chaos Engineering Cheat sheet</a></li>
+    <li><a rel="noopener" href="https://www.infoq.com/presentations/chaos-engineering-resilient-systems">[Talk] Chaos Engineering: Why the World Needs More Resilient Systems</a></li>
+    <li><a rel="noopener" href="https://www.oreilly.com/webops-perf/free/chaos-engineering.csp">Chaos Engineering Book</a></li>
+    <li><a rel="noopener" href="https://www.gremlin.com/community/tutorials/chaos-engineering-the-history-principles-and-practice/">Chaos Engineering: the history, principles, and practice</a></li>
+    <li><a rel="noopener" href="https://github.com/dastergon/awesome-chaos-engineering">⭐️ Awesome Chaos Engineering</a></li>
+    <li><a rel="noopener" href="https://www.infoq.com/presentations/adopt-chaos-engineering">[Talk] Choose Your Own Adventure: Chaos Engineering</a></li>
+    <li><a rel="noopener" href="https://www.linkedin.com/pulse/would-chaos-any-othername-casey-rosenthal/">Would a Chaos by any other Name</a></li>
   </ul>
   </small>
 </section>

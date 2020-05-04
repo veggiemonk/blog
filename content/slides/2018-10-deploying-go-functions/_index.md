@@ -67,21 +67,22 @@ open http://127.0.0.1:8080</code></pre>
 
   <section>
     <h4>templates</h4>
-    <pre><code class="hljs golang">import (
-  "fmt"
-  "io/ioutil"
-  "log"
-  "os"
-
-  "handler/function"
+<pre><code class="hljs golang" data-trim >
+import (
+    "fmt"
+    "io/ioutil"
+    "log"
+    "os"
+    "handler/function"
 )
 func main() {
-  input, err := ioutil.ReadAll(os.Stdin)
-  if err != nil {
-    log.Fatalf("Unable to read standard input: %s", err.Error())
-  }
-  fmt.Println(function.Handle(input))
-}</code></pre>
+    input, err := ioutil.ReadAll(os.Stdin)
+    if err != nil {
+        log.Fatalf("Unable to read standard input: %s", err.Error())
+    }
+    fmt.Println(function.Handle(input))
+}
+</code></pre>
 <p><a rel="noopener" href="https://github.com/openfaas/templates">See all templates</a></p>
   </section>
 
@@ -107,9 +108,7 @@ func Handle(req []byte) string {
 ENV fprocess="./handler"
 # Set to true to see request in function logs
 ENV write_debug="false"
-
 EXPOSE 8080
-
 HEALTHCHECK --interval=3s CMD [ -e /tmp/.lock ] || exit 1
 CMD [ "fwatchdog" ]
         </code></pre>
@@ -230,7 +229,7 @@ A UI is baked in allowing you to invoke functions in your browser and create new
 
 <section>
   <img src="/slides/images/no-code.png" alt="no code" width="80%">
-  <a target="_blank" href="https://github.com/kelseyhightower/nocode">repository</a>
+  <a rel="noopener" target="_blank" href="https://github.com/kelseyhightower/nocode">repository</a>
 </section>
 
 ---

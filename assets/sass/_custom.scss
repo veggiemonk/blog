@@ -4,15 +4,6 @@
 
 // MAIN
 
-.text-center {
-    text-align: center;
-}
-.text-justify {
-    text-align: justify;
-}
-.grayscale {
-    filter: grayscale(1);
-}
 .header__social-links {
     display: flex;
     align-items: center;
@@ -20,7 +11,7 @@
 }
 
 .social_link {
-    margin: 0 .5rem 0 .5rem;
+    padding-left: 1rem;
 }
 
 .page-content {
@@ -92,4 +83,16 @@
             text-align: right;
         }
     }
+}
+
+// single class
+
+.text-center {
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+}
+.grayscale {
+    filter: grayscale(1);
 }

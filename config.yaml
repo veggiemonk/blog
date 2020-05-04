@@ -47,7 +47,12 @@ params:
   imageMaxWidth: 400
   mobileMenu: true
   poweredby: false
-  sidebar: true
+  sidebar: false
+  social_links:
+    twitter: "julienBisconti"
+    github: "veggiemonk"
+    linkedin: "julienbisconti"
+    web: "https://developers.google.com/community/experts/directory/profile/profile-julien_bisconti"
   submitted: true
   reveal_hugo:
     theme: "moon"

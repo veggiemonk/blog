@@ -4,6 +4,12 @@
 
 // MAIN
 
+.header__social-links {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
 .page-content {
     display: grid;
     grid-gap: 1.5rem;

@@ -645,10 +645,10 @@ aside ol {
     font-weight: bold; }
 
 body {
-  background-color: #DDDDDD; }
+  background-color: #FFFFFF; }
 
 .page {
-  background-color: #DDDDDD; }
+  background-color: #FFFFFF; }
 
 .header {
   padding-top: 10px; }
@@ -880,14 +880,14 @@ article.list-view > div.content {
   justify-content: center;
   align-items: center;
   border-radius: 2rem;
-  background: #989898;
+  background: #DDDDDD;
   transition: background-color 1s ease-out; }
   .card:hover, .card:focus {
     background: #b2b2b2; }
   .card__title {
     text-transform: uppercase;
-    color: #DDDDDD;
-    text-shadow: 4px 4px 2px #1E1E1F;
+    color: #FFFFFF;
+    text-shadow: 4px 0px 4px #1E1E1F, 2px -4px 4px #1E1E1F;
     font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
     font-size: 1.3rem;
     font-weight: bold;

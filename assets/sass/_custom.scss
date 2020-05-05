@@ -42,7 +42,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    background: $grey-light;
+    background: $grey-extra-light;
     transition: background-color 1s ease-out;
     &:hover, &:focus  {
       background: lighten($grey-light, 10%);
@@ -51,8 +51,9 @@
     &__title {
         // color: $text;
         text-transform: uppercase;
-        color: $grey-extra-light;
-        text-shadow: 4px 4px 2px $brand;
+        // color: $grey-extra-light;
+        color: $color-primary-1;
+        text-shadow: 4px 0px 4px $brand, 2px -4px 4px $brand;
         font-family: $futura;
         font-size: 1.3rem;
         font-weight: bold;

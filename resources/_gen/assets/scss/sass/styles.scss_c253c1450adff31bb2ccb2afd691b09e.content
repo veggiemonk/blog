@@ -887,7 +887,7 @@ article.list-view > div.content {
   .card__title {
     text-transform: uppercase;
     color: #DDDDDD;
-    text-shadow: 2px 2px #1E1E1F;
+    text-shadow: 4px 4px 2px #1E1E1F;
     font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
     font-size: 1.3rem;
     font-weight: bold;

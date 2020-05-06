@@ -12,7 +12,7 @@ rssLimit: 20
 author:
   name: "Julien Bisconti"
   url: "https://bisconti.cloud"
-  avatar: "images/bw_julien.jpg"
+  avatar: "/static/images/julien.png"
 
 outputFormats:
   SearchIndex:
@@ -37,7 +37,7 @@ outputs:
 params:
   contact: "julien@bisconti.cloud"
   copyright: ""
-  description: "Julien Bisconti, Freelance Software Engineer Specialized in Google Cloud, slides presentations and conference talks about kubernetes, serverless, data engineering, logging, monitoring, software architecture"
+  description: "Julien Bisconti, Freelance Software Engineer Specialized in Google Cloud, living in Stockholm, Swedem, known for slides presentations and conference talks about kubernetes, serverless, GCP, data engineering, logging, monitoring, software architecture"
   dateformat: "2 Jan, 2006"
   favicon: "apple-touch-icon.png"
   feedlinks: true

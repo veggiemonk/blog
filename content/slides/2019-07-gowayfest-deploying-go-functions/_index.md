@@ -4,6 +4,8 @@ outputs = ["Reveal"]
 date = "2019-07-04"
 event_name = "GoWay Fest 2019, Minsk, Belarus"
 event_url = "https://goway.io/"
+video_id = "eQaTs0AkTrw"
+categories = ["Talks"]
 
 [reveal_hugo]
 theme = "moon"

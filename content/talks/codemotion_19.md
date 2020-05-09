@@ -7,4 +7,6 @@ slides = "2019-10-codemotion-deploying-go-functions"
 +++
 
 
+TODO: add description
+
 {{< youtube "3t9t-wxhxWQ" >}}

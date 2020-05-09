@@ -5,4 +5,3 @@ description = "Julien Bisconti, Freelance Software Engineer Specialized in Googl
 +++
 
 TODO: list things here
-

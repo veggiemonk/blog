@@ -160,12 +160,11 @@ resource "google_compute_instance" "vm" {
 ---
 
 <section>
+	<h2>graph dependency</h2>
+	<pre><code data-trim>terraform graph | dot -Tpng > tf_dep_graph.png</code></pre>
 	<!-- # Install graphviz: 
 	# brew install graphviz # OSX
 	# sudo apt install graphviz # Ubuntu -->
-	<h2>graph dependency</h2>
-	<pre><code data-trim>terraform graph | dot -Tpng > tf_dep_graph.png</code></pre>
-
 </section>
 
 ---

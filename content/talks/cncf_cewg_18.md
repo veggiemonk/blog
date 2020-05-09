@@ -6,4 +6,6 @@ video_id = "wqsTTC2QvgI"
 slides = "2018-09-chaos-wg-cncf"
 +++
 
+TODO: add description
+
 {{< youtube wqsTTC2QvgI >}}

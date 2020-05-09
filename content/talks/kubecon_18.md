@@ -9,5 +9,6 @@ video_id = "ukc5mvZkxDI"
 tags = [ "kubecon", "cloud", "kubernetes", "presentation", "chaos", "chaos engineering", "service mesh", "istio"]
 +++
 
+TODO: add description
 
 {{< youtube  ukc5mvZkxDI >}}

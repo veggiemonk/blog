@@ -7,5 +7,6 @@ video_id = "ykrFdvogBI8"
 slides = "2019-02-monorepo-vs-manyrepo"
 +++
 
+TODO: add description
 
 {{< youtube ykrFdvogBI8 >}}

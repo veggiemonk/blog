@@ -6,3 +6,7 @@ event_url = "https://goway.io/"
 video_id = "eQaTs0AkTrw"
 slides = "2019-07-gowayfest-deploying-go-functions"
 +++
+
+TODO: add description
+
+{{< youtube eQaTs0AkTrw >}}

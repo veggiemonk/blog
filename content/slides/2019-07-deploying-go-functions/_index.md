@@ -1,8 +1,9 @@
 +++
 title = "Deploying Go Functions"
 outputs = ["Reveal"]
-date = "18 Jul 2019"
-event_name = "Go Conference 2019, Minsk"
+date = "2019-07-04"
+event_name = "GoWay Fest 2019, Minsk, Belarus"
+event_url = "https://goway.io/"
 
 [reveal_hugo]
 theme = "moon"

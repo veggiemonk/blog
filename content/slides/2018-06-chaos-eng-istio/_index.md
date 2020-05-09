@@ -1,7 +1,7 @@
 +++
 title = "Chaos Engineering with a Service Mesh"
 outputs = ["Reveal"]
-date = "18 Sep 2018"
+date = "2018-06-21"
 event_name = "CNCF Meetup, Stockholm @ Spotify"
 
 [reveal_hugo]

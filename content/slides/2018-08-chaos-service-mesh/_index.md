@@ -1,13 +1,15 @@
 +++
 title = "Chaos Engineering with a Service Mesh"
 outputs = ["Reveal"]
-date = "18 Nov 2018"
-event_name = "Meetup, Stockholm @ R2M"
+date = "2018-08-21"
+event_name = "Go Stockholm Meetup, Stockholm"
+event_url = "https://www.meetup.com/Go-Stockholm/events/252129069/"
 
 [reveal_hugo]
 theme = "moon"
 highlight_theme = "zenburn"
 +++
+
 
 <section data-transition='concave' data-state='blackout'>
 <h1>CHAOS ENGINEERING</h1>
@@ -19,32 +21,31 @@ highlight_theme = "zenburn"
 
 
 <section>
-  <h4>Julien Bisconti</h4>
-  <p>Site Reliability Engineer </p>
-  <small>"what happens when a software engineer is tasked with what used to be called operations"</small>
-  <div style="display: grid; grid-template-columns: 1fr 1fr;">
-    <div style="display: grid; grid-template-rows: 1fr 1fr;">
-      <div style="height: 160px"><img src="/slides/images/56k.cloud.png" alt="56k.cloud" style="background-color: white; border: none;" height="80%"></div>
-      <div><svg style="height: 150px" viewBox="0 0 275 100" width="275" xmlns="http://www.w3.org/2000/svg"><path d="m82.775 79.842-17.875-30.067 17.875-30.067 8.617 30.067zm-39.783-2.934-22.459-22.275h35.75l17.875 30.067zm0-54.358 31.075-7.792-17.875 30.067h-35.75zm45.65-22.55-40.609 10.542-6.05 10.358-12.191-.092-29.792 28.967 29.792 28.967 12.191-.092 6.05 10.358 40.609 10.634 10.908-39.509-6.142-10.266 6.142-10.267zm92.216 29.242c-5.408 0-9.075 2.291-11.825 6.508h-.183v-5.408h-9.533v39.783h9.716v-22.55c0-5.408 3.392-9.167 8.067-9.167 4.4 0 7.7 2.659 7.7 7.334v24.475h9.717v-26.034c.091-8.708-5.409-14.941-13.659-14.941zm-36.3 24.108c0 5.317-3.025 8.983-7.975 8.983-4.491 0-7.333-2.566-7.333-7.241v-24.75h-9.717v26.583c0 8.708 4.95 14.392 13.842 14.392 5.592 0 8.708-2.109 11.367-5.775h.275v4.675h9.35v-39.875h-9.717v23.008zm55.184-23.008h9.716v39.783h-9.716zm0-12.375h9.716v7.975h-9.716zm64.808 12.375-5.775 17.966c-1.283 3.667-2.292 8.709-2.292 8.709h-.275s-1.283-5.042-2.566-8.709l-6.509-17.966h-10.45l10.725 28.325c2.292 6.05 3.025 8.616 3.025 10.816 0 3.3-1.741 5.409-5.866 5.409h-3.759v8.341h6.234c8.066 0 10.908-3.208 13.933-12.008l14.025-40.792h-10.45zm-36.942 28.141v-21.083h6.234v-6.967h-6.234v-12.466h-9.716v12.375h-5.5v6.966h5.5v23.375c0 7.517 5.683 9.534 10.816 9.534 4.217 0 5.317-.184 5.317-.184v-7.7h-2.475c-2.292.092-3.942-.916-3.942-3.85z" fill="#fff"/></svg></div>
-      <div style="height: 200px;"><img style="border: none;" src="https://corporate.discovery.com/wp-content/themes/discovery-corporate/images/discovery-logo-explore-flat-2018.png" alt="Discovery Logo"></div>
-    </div>
-    <div>
-        <h4>contact</h4>
-        <p>
-          <small>
-            <a style='font-weight:bold;color:deepskyblue;' href='http://github.com/veggiemonk'>Github: @veggiemonk</a>
-            <br/>
-            <a style='font-weight:bold;color:deepskyblue;' href='https://twitter.com/veggiemonk'>Twitter: @veggiemonk</a>
-            <br/>
-            <a style='font-weight:bold;color:deepskyblue;' href='https://www.linkedin.com/in/julienbisconti/'>LinkedIn: julienbisconti  👈 CV</a>
-            <br />
-            <a style='font-weight:bold;color:deepskyblue;' href="https://veggiemonk.github.io/">blog: https://veggiemonk.github.io/</a>
-            <br>
-            <a style='font-weight:bold;color:deepskyblue;' href="mailto:julien@56k.cloud">mail: julien@56k.cloud</a>
-          </small>
-        </p>
+  <h3>Who am I</h3>
+  <p>Software engineer / DevOps </p>
+  <div>
+    <h4>Worked at</h4>
+    <div style="display: grid; grid-template-columns: 1fr 1fr;">
+      <div>
+        <svg height="100" viewBox="0 0 275 100" width="275" xmlns="http://www.w3.org/2000/svg"><path d="m82.775 79.842-17.875-30.067 17.875-30.067 8.617 30.067zm-39.783-2.934-22.459-22.275h35.75l17.875 30.067zm0-54.358 31.075-7.792-17.875 30.067h-35.75zm45.65-22.55-40.609 10.542-6.05 10.358-12.191-.092-29.792 28.967 29.792 28.967 12.191-.092 6.05 10.358 40.609 10.634 10.908-39.509-6.142-10.266 6.142-10.267zm92.216 29.242c-5.408 0-9.075 2.291-11.825 6.508h-.183v-5.408h-9.533v39.783h9.716v-22.55c0-5.408 3.392-9.167 8.067-9.167 4.4 0 7.7 2.659 7.7 7.334v24.475h9.717v-26.034c.091-8.708-5.409-14.941-13.659-14.941zm-36.3 24.108c0 5.317-3.025 8.983-7.975 8.983-4.491 0-7.333-2.566-7.333-7.241v-24.75h-9.717v26.583c0 8.708 4.95 14.392 13.842 14.392 5.592 0 8.708-2.109 11.367-5.775h.275v4.675h9.35v-39.875h-9.717v23.008zm55.184-23.008h9.716v39.783h-9.716zm0-12.375h9.716v7.975h-9.716zm64.808 12.375-5.775 17.966c-1.283 3.667-2.292 8.709-2.292 8.709h-.275s-1.283-5.042-2.566-8.709l-6.509-17.966h-10.45l10.725 28.325c2.292 6.05 3.025 8.616 3.025 10.816 0 3.3-1.741 5.409-5.866 5.409h-3.759v8.341h6.234c8.066 0 10.908-3.208 13.933-12.008l14.025-40.792h-10.45zm-36.942 28.141v-21.083h6.234v-6.967h-6.234v-12.466h-9.716v12.375h-5.5v6.966h5.5v23.375c0 7.517 5.683 9.534 10.816 9.534 4.217 0 5.317-.184 5.317-.184v-7.7h-2.475c-2.292.092-3.942-.916-3.942-3.85z" fill="#fff"/></svg>
       </div>
+        <div>
+          <img src="https://corporate.discovery.com/wp-content/themes/discovery-corporate/images/discovery-logo-explore-flat-2018.png" alt="Discovery Logo">
+        </div>
+    </div>
   </div>
+  <h4>contact</h4>
+  <p>
+      <small>
+        <a style='font-weight:bold;color:deepskyblue;' href='http://github.com/veggiemonk'>Github: @veggiemonk</a>
+        <br/>
+        <a style='font-weight:bold;color:deepskyblue;' href='https://twitter.com/veggiemonk'>Twitter: @veggiemonk</a>
+        <br/>
+        <a style='font-weight:bold;color:deepskyblue;' href='https://www.linkedin.com/in/julienbisconti/'>LinkedIn: julienbisconti</a>
+        <br />
+        <a style='font-weight:bold;color:deepskyblue;' href="https://veggiemonk.github.io/">blog: https://veggiemonk.github.io/</a>
+      </small>
+    </p>
 </section>
 
 ---
@@ -69,11 +70,30 @@ highlight_theme = "zenburn"
   <h2>APP</h2>
   <p class="fragment">and the app was code</p>
   <p class="fragment">that needed to scale</p>
-  <p class="fragment">👉  microservices</p>
 </section>
 
 ---
 
+<!-- <section>
+  <p>using a library, framework or service for:</p>
+  <ul>
+      <li>circuit breaking</li>
+      <li>timeouts</li>
+      <li>retries</li>
+      <li>service discovery</li>
+      <li>client-side loadbalancing</li>
+      <li>metrics</li>
+      <li>traffic shaping</li>
+      <li>rate limiting</li>
+      <li>...</li>
+  </ul>
+  <strong style="text-align: right;">
+    <p class="fragment">for which languages?</p>
+  </strong>
+</section>
+
+---
+ -->
 
 <section>
   <h2>Deployment</h2>
@@ -110,28 +130,28 @@ highlight_theme = "zenburn"
 ---
 
 <section>
-  <h3>8 fallacies of distributed computing</h3>
-  <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: smaller">
-  <ol>
-      <li  class="fragment highlight-blue">The network is reliable.</li>
-      <li>Latency is zero.</li>
-      <li>Bandwidth is infinite.</li>
-      <li>The network is secure.</li>
-  </ol>
-  <ol start="5">
-      <li>Topology doesn't change.</li>
-      <li>There is one administrator.</li>
-      <li>Transport cost is zero.</li>
-      <li>The network is homogeneous.</li>
-  </ol>
-  </div>
-  <br />
-  <span >
-    <a rel="noopener" href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing">source (wikipedia)</a>
+    <h3>8 fallacies of distributed computing</h3>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: smaller">
+    <ol>
+        <li  class="fragment highlight-blue">The network is reliable.</li>
+        <li>Latency is zero.</li>
+        <li>Bandwidth is infinite.</li>
+        <li>The network is secure.</li>
+    </ol>
+    <ol start="5">
+        <li>Topology doesn't change.</li>
+        <li>There is one administrator.</li>
+        <li>Transport cost is zero.</li>
+        <li>The network is homogeneous.</li>
+    </ol>
+    </div>
     <br />
-    <a rel="noopener" href="https://tools.ietf.org/html/rfc1925">RFC 1925 - 22 years old and still relevant</a>
-  </span>
-</section>
+    <span class="fragment">
+      <a rel="noopener" href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing">source (wikipedia)</a>
+      <br />
+      <a rel="noopener" href="https://tools.ietf.org/html/rfc1925">RFC 1925 - 22 years old and still relevant</a>
+    </span>
+  </section>
 
 ---
 
@@ -173,32 +193,6 @@ highlight_theme = "zenburn"
 
 ---
 
-
-<section id="envoyproxy">
-  <h3>Data plane</h3>
-  <img width="50%" src="/slides/images/envoyproxy.png" alt="envoy proxy">
-  <blockquote style="width: 100%">
-    The network should be transparent to applications.
-    <br>
-    When network and application problems do occur it should be easy to determine the source of the problem.
-    </blockquote>
-  <h4>demo</h4>
-</section>
-
----
-
-
-<section id="arch1">
-  <!-- <h4>How does it solve inter service communication</h4> -->
-  <img style="height: 50vh;filter: invert(.9) brightness(1.4);"
-  alt="The overall architecture of an Istio-based application."
-  src="/slides/images/istio_arch.svg" title="Istio Architecture">
-  <h4 class="fragment" >How to manage a fleet of envoy proxy?</h4>
-</section>
-
----
-
-
 <section>
   <h2>Service Mesh</h2>
   <div style="display: grid; grid-template-columns: repeat(4, 1fr)">
@@ -222,12 +216,16 @@ highlight_theme = "zenburn"
       <div style="grid-column: span 4;"><a rel="noopener" href="http://istio.io">source: istio.io</a></div>
   </div>
 
-  <p ><a rel="noopener" href="https://www.youtube.com/watch?v=WnmzEM52_tQ">VIDEO: Istio a la carte by Dan Ciruli</a></p>
+  <p class="fragment"><a rel="noopener" href="https://www.youtube.com/watch?v=WnmzEM52_tQ">VIDEO: Istio a la carte by Dan Ciruli</a></p>
 </section>
 
 ---
 
 
+
+<!--
+  *******************************************************************************************
+-->
 <section data-transition='concave'>
   <h4>What is a service mesh</h4>
   <h3>What problems does it solve</h3>
@@ -240,12 +238,20 @@ highlight_theme = "zenburn"
 ---
 
 
-
-<section id="arch2">
+<section id="arch">
   <h4>How does it solve inter service communication</h4>
   <img style="height: 60vh;filter: invert(.9) brightness(1.4);"
   alt="The overall architecture of an Istio-based application."
   src="/slides/images/istio_arch.svg" title="Istio Architecture">
+</section>
+
+---
+
+
+<section id="envoyproxy">
+  <h3>Data plane</h3>
+  <img src="/slides/images/envoyproxy.png" alt="envoy proxy">
+  <p>demo?</p>
 </section>
 
 ---
@@ -265,7 +271,6 @@ highlight_theme = "zenburn"
   <img style="height: 50vh;filter: invert(.9) brightness(1.4);"
    src="/slides/images/PilotAdapters.svg"
    alt="pilot arch">
-   <!-- <p>How to manage a fleet of envoy proxy?</p> -->
 </section>
 
 ---
@@ -295,7 +300,7 @@ ratings = {
 <section data-transition='concave' id="routing">
   <h4>Traffic Management</h4>
   <pre>
-    <code class="yaml hljs" style="word-wrap: break-word; font-size: 0.75em; line-height: 1em" data-trim>
+    <code class="yaml hljs" style="word-wrap: break-word;" data-trim>
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
@@ -440,6 +445,28 @@ spec:
 
 
 <section>
+  <blockquote>
+    <p lang="en" dir="ltr">Chaos Engineering is exploratory testing of non-functional requirements
+        where ‘non-functional requirements’ are the requirements that if not met render a service non-functional.
+    </p>
+    &mdash; <a rel="noopener" href="https://twitter.com/littleidea/status/1030304684991369216">@littleidea</a>
+  </blockquote>
+</section>
+
+---
+
+
+<section>
+    <blockquote class="twitter-tweet" data-lang="en">
+      <p lang="en" dir="ltr">Having a child: Chaos Engineering for everything in your life.</p>
+      &mdash; <a rel="noopener" href="https://twitter.com/icecrime/status/963115377562669057?ref_src=twsrc%5Etfw">@icecrime</a>
+    </blockquote>
+</section>
+
+---
+
+
+<section>
   <h4>What Chaos Engineering is not</h4>
   <img src="/slides/images/server_praying.jpg" alt="pray to server">
 </section>
@@ -513,7 +540,7 @@ spec:
   <h4>Expect failure and learn from it</h4>
   <ul>
     <li>High Severity Incident Management Program</li>
-    <li>If you don't learn from it, it will happen again!</li>
+    <li>Who should be updated and when</li>
     <li>Practice: It's a cultural approach to failure</li>
     <li>Publish reports (RCA) and results</li>
   </ul>
@@ -544,23 +571,11 @@ spec:
     <br>
     <i>"Resiliency"</i>: sounds great for your manager and the system.
   </p>
-  <h4>
-    Results of Chaos Engineering = resiliency
-  </h4>
   <p>
     <br>
     Article: <a rel="noopener" href="https://www.linkedin.com/pulse/would-chaos-any-othername-casey-rosenthal/">Would a Chaos by any other Name</a>
   </p>
   <p>Book: <a rel="noopener" href="https://www.amazon.co.uk/Resilience-Engineering-Practice-Guidebook-Ashgate/dp/1472420748/ref=sr_1_2">Resilience Engineering in Practice</a></p>
-</section>
-
----
-
-
-<section>
-  <h2><span style="text-decoration: underline">Chaos</span> is in the system already</h2>
-<br>
-  <h2>Chaos engineering <span style="text-decoration: underline">exposes</span> it</p>
 </section>
 
 ---
@@ -586,7 +601,7 @@ spec:
 
 <section>
   <h1>DEMO</h1>
-  <img style="filter: invert(.9) brightness(1.2);" height="300px" src="/slides/images/withistio.svg" alt="Bookinfo Application without Istio" title="Bookinfo Application without Istio">
+  <img style="filter: invert(.9) brightness(1.2);" height="300px" src="https://istio.io/docs/examples/bookinfo/withistio.svg" alt="Bookinfo Application without Istio" title="Bookinfo Application without Istio">
   <p>Inject delay in user Jason's requests</p>
 
 </section>
@@ -635,3 +650,4 @@ spec:
   <br/>
   <p>Slides made with Reveal.js</p>
 </section>
+

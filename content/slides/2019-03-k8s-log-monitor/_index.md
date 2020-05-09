@@ -1,8 +1,9 @@
 +++
 title = "Kubernetes Logging & Monitoring"
 outputs = ["Reveal"]
-date = "18 Mar 2019"
-event_name = "Data Native Meetup, Stockholm"
+date = "2019-03-07"
+event_name = "Knock Data Meetup, Stockholm"
+event_url = "https://www.meetup.com/Knock-Data-Stockholm/events/259088988/"
 
 [reveal_hugo]
 theme = "moon"

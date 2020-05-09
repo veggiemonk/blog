@@ -1,8 +1,9 @@
 +++
 title = "Chaos Engineering with a Service Mesh"
 outputs = ["Reveal"]
-date = "23 Sep 2018"
-event_name = "Chaos Meetup, Stockholm @ KTH"
+date = "2019-09-04"
+event_name = "Stockholm Chaos & Reliability Engineering Meetup @ KTH"
+event_url = "https://www.meetup.com/Stockholm-Chaos-Engineering-Community/events/251943440/"
 
 [reveal_hugo]
 theme = "moon"

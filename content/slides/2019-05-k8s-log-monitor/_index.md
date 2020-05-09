@@ -1,8 +1,9 @@
 +++
 title = "Kubernetes Logging & Monitoring"
 outputs = ["Reveal"]
-date = "18 May 2019"
-event_name = "CNCF Meetup, Stockholm"
+date = "2019-05-08"
+event_name = "Stockholm Kubernetes and Cloud Native Computing Meetup"
+event_url = "https://www.meetup.com/sthlm-k8s/events/260846917/"
 
 [reveal_hugo]
 theme = "moon"

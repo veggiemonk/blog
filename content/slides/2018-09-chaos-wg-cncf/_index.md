@@ -1,8 +1,9 @@
 +++
 title = "Chaos Engineering with a Service Mesh"
 outputs = ["Reveal"]
-date = "18 Nov 2018"
+date = "2018-09-24"
 event_name = "Chaos Engineering Working Group, CNCF"
+video_id = "wqsTTC2QvgI"
 
 [reveal_hugo]
 theme = "moon"

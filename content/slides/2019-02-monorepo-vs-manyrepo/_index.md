@@ -1,8 +1,10 @@
 +++
 title = "Monorepo -vs- Multirepo"
 outputs = ["Reveal"]
-date = "18 Feb 2019"
-event_name = "Meetup, Stockholm @ iZettle"
+date = "2019-02-27"
+event_name = "DevOps Meetup, Stockholm @ iZettle"
+event_url = "https://www.meetup.com/DevOps-Stockholm/events/258818276/"
+video_id = "ykrFdvogBI8"
 
 [reveal_hugo]
 theme = "moon"
@@ -16,7 +18,6 @@ highlight_theme = "zenburn"
 </section>
 
 ---
-
 
 <section data-transition="zoom">
     <h4>A.K.A.</h4>

@@ -1,8 +1,9 @@
 +++
 title = "Deploying Go Functions"
 outputs = ["Reveal"]
-date = "18 Oct 2018"
+date = "2018-10-06"
 event_name = "Go Conference 2018, Stockholm @ Google"
+event_url = "https://www.eventbrite.com/e/go-stockholm-conference-tickets-49325007425"
 
 [reveal_hugo]
 theme = "moon"

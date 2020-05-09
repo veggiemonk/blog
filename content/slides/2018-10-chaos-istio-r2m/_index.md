@@ -4,6 +4,8 @@ outputs = ["Reveal"]
 date = "2018-10-02"
 event_name = "GDG Cloud Stockholm @ R2M"
 event_url = "https://www.meetup.com/GDG-Cloud-Stockholm/events/252155162/"
+tags = [ "cloud", "kubernetes", "presentation", "chaos", "chaos engineering", "service mesh", "istio"]
+
 
 [reveal_hugo]
 theme = "moon"

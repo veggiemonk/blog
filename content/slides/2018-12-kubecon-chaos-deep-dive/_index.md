@@ -1,8 +1,11 @@
 +++
-title = "Chaos Engineering Deep Dive"
+title = "Deep Dive: Chaos Engineering"
 outputs = ["Reveal"]
-date = "07 Dec 2018"
+date = "2018-12-13"
 event_name = "KubeCon 18, Seattle"
+event_url = "https://sched.co/Gren"
+video_id = "ukc5mvZkxDI"
+tags = [ "kubecon", "cloud", "kubernetes", "presentation", "chaos", "chaos engineering", "service mesh", "istio"]
 
 [reveal_hugo]
 theme = "moon"

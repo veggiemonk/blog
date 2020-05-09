@@ -58,3 +58,24 @@ params:
   reveal_hugo:
     theme: "moon"
 
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    anonymizeIP: false
+    disable: true
+    respectDoNotTrack: true
+    useSessionStorage: false
+  instagram:
+    disable: true
+    simple: false
+  twitter:
+    disable: true
+    enableDNT: false
+    simple: false
+  vimeo:
+    disable: false
+    simple: false
+  youtube:
+    disable: false
+    privacyEnhanced: true

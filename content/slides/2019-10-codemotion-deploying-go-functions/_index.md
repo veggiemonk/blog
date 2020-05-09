@@ -1,8 +1,9 @@
 +++
 title = "Deploying Go Functions"
+date = "2019-10-24"
 outputs = ["Reveal"]
-date = "18 Oct 2019"
 event_name = "Code Motion Conference 2019, Milan"
+video_id = "3t9t-wxhxWQ"
 
 [reveal_hugo]
 theme = "moon"

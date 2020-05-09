@@ -4,7 +4,7 @@
     <div class="content">
         {{ .Content }}
         <ul class="talk-list">
-            {{ range $p :=.Pages}}
+            {{ range $p := .Pages.ByWeight.Reverse }}
             <li class="talk-item">
                 <a class="talk-item__link" href="{{ .Permalink }}">{{ .Title}}</a>
                 {{ with .Params.event_name }}
@@ -13,16 +13,16 @@
                 </div>
                 {{ end }}
                 <div class="talk-item__date">Recorded:{{ .Date.Format "02 Jan 2006" }}</div>
+                <p class="talk-item__summary">{{ .Summary }} {{if .Truncated }}<a href="{{ .RelPermalink }}">Read More…</a>{{ end }}</p>
+                
                 {{ with .Params.slides }}
                 <a href="/slides/{{ . | relURL }}">SLIDES</a>
                 {{ end }}
-                {{ with .Params.video_id }}
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-                    <iframe src="https://www.youtube-nocookie.com/embed/{{ . }}"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
-                        allowfullscreen title="YouTube Video"></iframe>
+                <!-- {{ with .Params.video_id }}
+                <div class="talk-item__video" >
+                    <iframe src="https://www.youtube-nocookie.com/embed/{{ . }}" allowfullscreen title="YouTube Video"></iframe>
                 </div>
-                {{ end }}
+                {{ end }} -->
             </li>
             {{ end }}
         </ul>

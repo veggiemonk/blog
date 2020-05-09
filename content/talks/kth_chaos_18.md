@@ -6,6 +6,10 @@ event_name = "Stockholm Chaos & Reliability Engineering Meetup @ KTH"
 event_url = "https://www.meetup.com/Stockholm-Chaos-Engineering-Community/events/251943440/"
 video_id = "RCh1b3LjPOs"
 slides = "2018-09-chaos-meetup-kth"
+tags = [ "cloud", "devops", "kubernetes", "presentation", "chaos", "chaos engineering", "service mesh", "istio", "kth", "unversity"]
+
+weight = 300
+
 +++
 
 TODO: add description

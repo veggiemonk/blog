@@ -36,6 +36,7 @@ outputs:
 
 params:
   mainSections: ["posts", "slides", "talks"]
+  # summaryLength: 50
   contact: "julien@bisconti.cloud"
   copyright: ""
   description: "Julien Bisconti, Freelance Software Engineer Specialized in Google Cloud, living in Stockholm, Swedem, known for slides presentations and conference talks about kubernetes, serverless, GCP, data engineering, logging, monitoring, software architecture"

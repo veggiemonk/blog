@@ -4,6 +4,7 @@ outputs = ["Reveal"]
 date = "2018-08-21"
 event_name = "Go Stockholm Meetup, Stockholm"
 event_url = "https://www.meetup.com/Go-Stockholm/events/252129069/"
+video_id = "8VD-z06kgh"
 
 [reveal_hugo]
 theme = "moon"

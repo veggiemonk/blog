@@ -1,11 +1,12 @@
 +++
 title = "Chaos Engineering with a Service Mesh"
-date = "2018-09-24"
-event_name = "Chaos Engineering Working Group, CNCF"
-video_id = "wqsTTC2QvgI"
-slides = "2018-09-chaos-wg-cncf"
-weight = 700
-tags = [ "cncf", "devops", "conference", "cloud", "kubernetes", "presentation", "chaos", "chaos engineering", "service mesh", "istio"]
+outputs = ["Reveal"]
+date = "2018-08-21"
+event_name = "Go Stockholm Meetup, Stockholm"
+event_url = "https://www.meetup.com/Go-Stockholm/events/252129069/"
+video_id = "8VD-z06kgh8"
+weight = 500
+tags = [ "cloud", "devops", "kubernetes", "presentation", "chaos", "chaos engineering", "service mesh", "istio"]
 
 +++
 
@@ -14,4 +15,4 @@ Starting to do chaos engineering can seem like a daunting task if one has never 
 
 It's a network for services, not for bytes. When the concept of a service mesh is understood, starting to do chaos engineering is simpler and easier. The talk will contain 2 demos: first, in order to explain the inner working of a service mesh (we will use Istio) and second, an example of chaos engineering on top of Istio
 
-{{< youtube wqsTTC2QvgI >}}
+{{< youtube 8VD-z06kgh8 >}}

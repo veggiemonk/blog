@@ -6,3 +6,5 @@
 - [ ] add resume
 - [ ] favicon
 - [ ] SoMi metadata
+- [ ] TEMPLATE SLIDES
+- [ ] Insert common slides

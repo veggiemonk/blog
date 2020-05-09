@@ -1,8 +1,9 @@
 +++
 title = "Service Mesh - Istio"
 outputs = ["Reveal"]
-date = "18 May 2019"
+date = "2019-05-16"
 event_name = "DevOps Meetup, Stockholm"
+video = "aH6DpIS9-0k"
 
 [reveal_hugo]
 theme = "moon"

@@ -1,8 +1,9 @@
 ---
-title: "Résumé"
+title: "Curriculum Vitae (CV) "
 date: ''
 ---
 
+This blog, its content, and opinions are my own.
 
 {{< avatar "julien.webp" "Julien Bisconti" >}}
 

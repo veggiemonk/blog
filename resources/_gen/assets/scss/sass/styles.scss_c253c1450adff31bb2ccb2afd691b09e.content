@@ -849,6 +849,9 @@ figure.podcast audio {
 .js-submitted textarea:invalid {
   background-color: white; }
 
+header.header {
+  margin: auto; }
+
 .header__social-links {
   display: flex;
   align-items: center;
@@ -939,7 +942,7 @@ article.list-view > div.content {
 .fade-in {
   opacity: 0;
   /* make things invisible upon start */
-  animation: fadeIn ease-in .7s;
+  animation: fadeIn ease-in 0.7s;
   animation-fill-mode: forwards;
   animation-duration: 1s; }
 

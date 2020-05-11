@@ -1,6 +1,6 @@
 +++
 title = "Frontend crash course for Backstage"
-date = "06 May 2020"
+date = "2020-05-07"
 outputs = ["Reveal"]
 event_name = "presentation @ NetEnt"
 
@@ -45,21 +45,23 @@ I would also add: </br>
 
 ## Content
 
-* Browsers
-* Javascript
-* React
-* Typescript
-* Backstage
+1. Browsers
+1. Javascript
+1. React
+1. Typescript
+1. Backstage
 
 ---
 
 # Browsers
 
-* HTTP
-* HTML
+* HTTP (see [curl](https://curl.haxx.se/))
+* HTML (see [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML))
 * DOM
 * dynamic DOM with JS
 * javascript
+
+[MDN demo example](https://mdn.github.io/dom-examples/insert-adjacent/insertAdjacentElement.html)
 
 ---
 
@@ -157,11 +159,42 @@ document
 
 ---
 
-# Async JS
+## Async JS
 
-[Christophe Porteneuve - modern asynchronous javascript](https://www.dotconferences.com/2015/12/christophe-porteneuve-modern-asynchronous-javascript)
+[Modern Asynchronous Javascript](https://www.dotconferences.com/2015/12/christophe-porteneuve-modern-asynchronous-javascript)
+
+by Christophe Porteneuve
 
 [ExploreJS - Promise](https://exploringjs.com/impatient-js/ch_promises.html#the-basics-of-using-promises)
+
+
+by Dr. Axel Rauschmayer
+
+---
+
+### Async/Await + Promise
+
+{{< highlight javascript  >}}
+async function github_graphql() {
+  const query = { query: "query { viewer { login } }" };
+  const body = { 
+      method: 'post',
+      headers: {
+        Authorization: `bearer ${token}`
+      }
+      body: JSON.stringify(query)
+  };
+  try{
+    const result = await fetch(
+                    'https://api.github.com/graphql', body)
+                      .then( x => x.json())
+                      .catch(err => console.log({ err }));
+    return result;
+  } catch(err) {
+    console.log({ err, from_try_catch: true })
+  }
+}
+{{< / highlight >}}
 
 ---
 
@@ -171,7 +204,7 @@ document
 
 Keeping track of all the changes in the DOM is hard
 
-{{< frag c=" 👉 IMMUTABILITY" >}}
+### {{< frag c=" 👉 IMMUTABILITY" >}}
 
 ---
 
@@ -188,7 +221,7 @@ var laptop2 = laptop;
 laptop.ram = 2; // not immutable
 
 console.log('laptop', laptop);
-console.log('laptop2',laptop2);
+console.log('laptop2', laptop2);
 console.log(laptop === laptop2) //true comparison is by reference
 {{< / highlight >}}
 
@@ -204,7 +237,7 @@ idea: batching changes to the DOM
 
 ---
 
-# JSX
+## JSX
 
 {{< highlight jsx  >}}
 
@@ -215,7 +248,7 @@ const element2 = <h1>Hello, world!</h1>;
 
 {{< / highlight  >}}
 
-[Abstract Syntax Tree (link)](https://astexplorer.net/)
+[Abstract Syntax Tree](https://astexplorer.net/)
 
 ---
 
@@ -236,6 +269,7 @@ const element = <Welcome name="A Name" />;
 
 // NOTE: 
 // Always start component names with a capital letter.
+
 {{< / highlight  >}}
 
 ---
@@ -326,7 +360,7 @@ Replace Redux these days
 ---
 
 * Immutability for DOM: React
-* Immutability for state: Redux/Hooks
+* Immutability for app state: Redux/Hooks
 * what about the shape of data ?
 
 ---
@@ -336,6 +370,8 @@ Replace Redux these days
 > typed superset of JavaScript, transpiled to JavaScript
 
 [Typescript in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+
+Imagine Javascript but with more Java
 
 ---
 
@@ -398,6 +434,14 @@ transpile, optimise, bundle,...
 
 ---
 
+# CORS
+
+[Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+
+I'm sure the fullstack role was invented to avoid explaining CORS to backend developers.
+
+---
+
 # Styling
 
 CSS is worth learning.
@@ -432,8 +476,23 @@ yarn create-plugin
 
 ---
 
-# CORS
+## plugins
 
-[Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+{{< highlight tsx  >}}
+const ExampleFetchComponent: FC<{}> = () => {
+  const { value, loading, error } = 
+            useAsync(async (): Promise<User[]> => {
+    const response = await fetch('https://randomuser.me/api/?results=20');
+    const data = await response.json();
+    return data.results;
+  }, []);
 
-I'm sure the fullstack role was invented to avoid explaining CORS to backend developers.
+  if (loading) {
+    return <Progress />;
+  } else if (error) {
+    return <Alert severity="error">{error.message}</Alert>;
+  }
+
+  return <DenseTable users={value || []} />;
+};
+{{< / highlight >}}

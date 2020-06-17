@@ -20,10 +20,7 @@
                 <a href="{{ "/" | relLangURL }}" title="Home" class="header__site-link"
                     rel="home"><span>{{ .Site.Title }}</span></a>
             </h1>
-            <!-- <div class="header__social-links">
-                {{ partial "social_links" . }}
-            </div> -->
-            <a class="hire-me">Hire Me</a>
+            <!-- <span><a class="hire-me" href="{{ "hire_me/" | relLangURL }}">Hire Me</a></span> -->
         </header>
 
         {{ if not .IsHome }}

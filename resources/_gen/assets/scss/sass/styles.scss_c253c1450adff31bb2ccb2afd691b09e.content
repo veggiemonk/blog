@@ -606,18 +606,13 @@ aside ol {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0; }
-  .navbar > li:first-child {
-    margin-left: 0;
-    padding-left: 0; }
-  .navbar > li:last-child {
-    margin-right: 0;
-    padding-right: 0; }
+  padding: 0;
+  text-align: left; }
   .navbar__item,
   .navbar li {
+    padding: 0 10px 0 0;
     list-style-type: none;
     list-style-image: none; }
 
@@ -851,7 +846,11 @@ figure.podcast audio {
 
 header.header {
   margin: auto; }
-
+  header.header .header__site-name {
+    font-size: 1.8rem; }
+  @media (min-width: 666px) {
+    header.header {
+      text-align: center; } }
 h2.main__header {
   text-align: center;
   margin-bottom: 2rem; }
@@ -864,8 +863,23 @@ h2.main__header {
   margin-top: 0;
   text-align: justify; }
 
+.about-me a[title="hire me"] {
+  font-weight: 800;
+  padding: .2rem 1rem .3rem 1rem;
+  text-transform: uppercase; }
+
 .about-me a {
-  color: #4D4D4E; }
+  color: #4D4D4E;
+  background-color: #DDDDDD;
+  border-radius: .8rem;
+  font-weight: 600;
+  padding: .2rem .6rem .3rem .6rem;
+  white-space: nowrap;
+  transition: background-color .7s ease-out, border-radius 0.3s ease-out; }
+  .about-me a:hover, .about-me a:focus {
+    text-decoration: none;
+    border-radius: .4rem;
+    background: #f7f7f7; }
 
 .page-content, .about-me {
   display: grid;
@@ -891,8 +905,8 @@ article.list-view > div.content {
   justify-content: center;
   align-items: center;
   border-radius: 2rem;
-  background: #DDDDDD;
-  transition: background-color 1s ease-out; }
+  background: #989898;
+  transition: background-color .7s ease-out; }
   .card:hover, .card:focus {
     background: #b2b2b2; }
   .card__title {

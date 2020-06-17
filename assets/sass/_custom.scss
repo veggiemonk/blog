@@ -6,6 +6,14 @@
 
 header.header {
     margin: auto;
+    // text-align: center;
+    .header__site-name {
+        font-size: 1.8rem;
+    }
+
+    @include respond-to(s) {
+        text-align: center;
+    }
 }
 
 h2.main__header {
@@ -13,55 +21,43 @@ h2.main__header {
     margin-bottom: 2rem;
 }
 
-.hire-me {
-    a {
-        display: block;
-        background: $brand;
-        color: $text-bg;
-        padding: 8px 12px;
-        border-radius: 4px;
-        text-decoration: none;
-        
-        &:hover, &:focus  {
-          background: $brand-alt;
-          transition: background-color .7s ease-out;
-        }
-    
-        &:active,
-        &.active {
-          background-color: $brand-alt;
-          // text-decoration: underline;
-        }
-      }
-}
+
 .about-me {
     img {
-        // filter: grayscale(50%);
         filter: drop-shadow(12px 12px 16px black)  contrast(50%);
         border-radius: 2rem;
     }
 
     p {
+        // font-family: $futura;
         margin-top: 0;
         text-align: justify;
     }
-
+    a[title="hire me"] {
+        font-weight: 800;
+        padding: .2rem 1rem .3rem 1rem;
+        text-transform: uppercase;
+    }
     a {
         // color: blue;
-        color: $color-complement-3;
-        
+        color: $grey-dark;
+        background-color: $grey-extra-light;
+        border-radius: .8rem;
+        font-weight: 600;
+        padding: .2rem .6rem .3rem .6rem;
+        white-space: nowrap;
+        transition: background-color .7s ease-out,
+                    border-radius 0.3s ease-out;
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            // padding: .3rem .6rem .5rem .6rem;
+            border-radius: .4rem;
+            background: lighten($grey-extra-light, 10%);
+        }
     }
 
 }
-// .header__social-links {
-//     display: flex;
-//     align-items: center;
-//     margin-left: auto;
-// }
-
-// .social_link {
-//     padding-left: 1rem;
-// }
 
 .page-content, .about-me {
     display: grid;
@@ -92,8 +88,8 @@ article.list-view > div.content {
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    background: $grey-extra-light;
-    transition: background-color 1s ease-out;
+    background: $grey-light;
+    transition: background-color .7s ease-out;
     &:hover,
     &:focus {
         background: lighten($grey-light, 10%);

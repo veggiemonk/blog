@@ -23,5 +23,5 @@ save money on your cloud bills,
 secure your workload,
 build a secure, scalable platform,
 get insights from your data,
-deploying machine learning models to production,
+deploy machine learning models to production,
 you can __[hire me]({{< ref "hire_me.md" >}} "hire me")__ or just have a look at the content I produced and made freely available below.

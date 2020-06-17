@@ -1,5 +1,5 @@
 ---
-title: "Curriculum Vitae (CV) "
+title: "Resume"
 date: ''
 ---
 

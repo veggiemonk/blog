@@ -2,31 +2,52 @@
 
 {{ define "main" -}}
 <main class="main layout__main fade-in">
+    <h2 class="main__header">{{ .Title }}</h2>
     <article class="{{ with .Section }}section-{{ . | urlize }} {{ end }}single-view text-center">
-        <div class="content">
+        <div class="about-me">
             {{ .Content }}
         </div>
     </article>
-
     <div class="page-content">
 
         {{ $currentSection := .Section -}}
         {{ $currentID := "" -}}
         {{ with .File }}{{ $currentID = .UniqueID }}{{ end -}}
-        {{ with .Site.GetPage "section" "resume" }}
+        {{ with .Site.GetPage "section" "talks" }}
         <a class="no-underline" href="{{ .RelPermalink }}">
             <div class="card">
                 <span class="card__title">{{ .Title }}</span>
             </div>
         </a>
         {{ end }}
-        {{ range .Site.Sections -}}
+        {{ with .Site.GetPage "section" "slides" }}
         <a class="no-underline" href="{{ .RelPermalink }}">
             <div class="card">
                 <span class="card__title">{{ .Title }}</span>
             </div>
         </a>
-        {{ end -}}
+        {{ end }}
+        {{ with .Site.GetPage "section" "podcasts" }}
+        <a class="no-underline" href="{{ if .Params.Website }}{{ .Params.Website }}{{ else }}{{ .RelPermalink }}{{ end }}">
+            <div class="card">
+                <span class="card__title">{{ .Title }}</span>
+            </div>
+        </a>
+        {{ end }}
+        {{ with .Site.GetPage "section" "bookmarks" }}
+        <a class="no-underline" href="{{ .RelPermalink }}">
+            <div class="card">
+                <span class="card__title">{{ .Title }}</span>
+            </div>
+        </a>
+        {{ end }}
+        <!-- {{ range .Site.Sections -}}
+        <a class="no-underline" href="{{ .RelPermalink }}">
+            <div class="card">
+                <span class="card__title">{{ .Title }}</span>
+            </div>
+        </a>
+        {{ end -}} -->
     </div>
 </main>
 {{ end }}

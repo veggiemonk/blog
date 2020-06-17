@@ -8,19 +8,65 @@ header.header {
     margin: auto;
 }
 
-.header__social-links {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+h2.main__header {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.social_link {
-    padding-left: 1rem;
+.hire-me {
+    a {
+        display: block;
+        background: $brand;
+        color: $text-bg;
+        padding: 8px 12px;
+        border-radius: 4px;
+        text-decoration: none;
+        
+        &:hover, &:focus  {
+          background: $brand-alt;
+          transition: background-color .7s ease-out;
+        }
+    
+        &:active,
+        &.active {
+          background-color: $brand-alt;
+          // text-decoration: underline;
+        }
+      }
 }
+.about-me {
+    img {
+        // filter: grayscale(50%);
+        filter: drop-shadow(12px 12px 16px black)  contrast(50%);
+        border-radius: 2rem;
+    }
 
-.page-content {
+    p {
+        margin-top: 0;
+        text-align: justify;
+    }
+
+    a {
+        // color: blue;
+        color: $color-complement-3;
+        
+    }
+
+}
+// .header__social-links {
+//     display: flex;
+//     align-items: center;
+//     margin-left: auto;
+// }
+
+// .social_link {
+//     padding-left: 1rem;
+// }
+
+.page-content, .about-me {
     display: grid;
-    grid-gap: 1.5rem;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
     padding: 1rem;
     max-width: $max-content-width;
     margin: 0 auto;

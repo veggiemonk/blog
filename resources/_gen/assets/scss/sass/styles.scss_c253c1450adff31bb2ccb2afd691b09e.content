@@ -855,6 +855,22 @@ h2.main__header {
   text-align: center;
   margin-bottom: 2rem; }
 
+a[href^="http://"]:not([href*="bisconti.cloud"]),
+a[href^="https://"]:not([href*="bisconti.cloud"]),
+a[href^="//"]:not([href*="bisconti.cloud"]) {
+  padding-right: .9rem; }
+
+a[href*="//"]:not([href*="bisconti.cloud"]):after {
+  /* external link styles, use :before or :after if you want! */
+  content: "\21F1";
+  transform: rotate(90deg);
+  position: absolute;
+  font-size: small;
+  margin-left: .3rem; }
+
+a[href*="localhost"] {
+  content: ''; }
+
 .about-me figure {
   display: flex;
   justify-content: center;
@@ -868,25 +884,26 @@ h2.main__header {
   margin-top: 0;
   text-align: justify; }
 
-.about-me a[title="hire me"] {
+.about-me a[title='hire me'] {
   font-weight: 800;
-  padding: .2rem 1rem .3rem 1rem;
+  padding: 0.2rem 1rem 0.3rem 1rem;
   text-transform: uppercase; }
 
 .about-me a {
   color: #4D4D4E;
   background-color: #DDDDDD;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   font-weight: 600;
-  padding: .2rem .6rem .3rem .6rem;
+  padding: 0.2rem 0.6rem 0.3rem 0.6rem;
   white-space: nowrap;
-  transition: background-color .7s ease-out, border-radius 0.3s ease-out; }
+  transition: background-color 0.7s ease-out, border-radius 0.3s ease-out; }
   .about-me a:hover, .about-me a:focus {
     text-decoration: none;
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     background: #f7f7f7; }
 
-.page-content, .about-me {
+.page-content,
+.about-me {
   display: grid;
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.5rem;
@@ -894,7 +911,8 @@ h2.main__header {
   max-width: 960px;
   margin: 0 auto; }
   @media (min-width: 666px) {
-    .page-content, .about-me {
+    .page-content,
+    .about-me {
       grid-template-columns: repeat(2, 1fr); } }
 article.list-view > div.content {
   text-align: justify; }
@@ -911,7 +929,7 @@ article.list-view > div.content {
   align-items: center;
   border-radius: 2rem;
   background: #989898;
-  transition: background-color .7s ease-out; }
+  transition: background-color 0.7s ease-out; }
   .card:hover, .card:focus {
     background: #b2b2b2; }
   .card__title {

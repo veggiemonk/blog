@@ -5,188 +5,202 @@
 // MAIN
 
 header.header {
-    margin: auto;
-    .header__site-name {
-        font-size: 1.8rem;
-    }
+  margin: auto;
+  .header__site-name {
+    font-size: 1.8rem;
+  }
 
-    @include respond-to(s) {
-        text-align: center;
-    }
+  @include respond-to(s) {
+    text-align: center;
+  }
 }
 
 h2.main__header {
-    text-align: center;
-    margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
+a[href^="http://"]:not([href*="bisconti.cloud"]),
+a[href^="https://"]:not([href*="bisconti.cloud"]), 
+a[href^="//"]:not([href*="bisconti.cloud"]){
+    padding-right: .9rem;
+}
+a[href*="//"]:not([href*="bisconti.cloud"]):after {
+    /* external link styles, use :before or :after if you want! */
+    content: "\21F1";
+    transform: rotate(90deg);
+    position: absolute;
+    font-size: small;
+    margin-left: .3rem;
+}
+a[href*="localhost"]{
+  content: '';
+}
 
 .about-me {
-    figure {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        img {
-            filter: drop-shadow(12px 12px 16px black)  contrast(50%);
-            border-radius: 2rem;
-            margin: auto;
-        }
+    img {
+      filter: drop-shadow(12px 12px 16px black) contrast(50%);
+      border-radius: 2rem;
+      margin: auto;
+    }
+  }
+
+  p {
+    // font-family: $futura;
+    margin-top: 0;
+    text-align: justify;
+  }
+  a[title='hire me'] {
+    font-weight: 800;
+    padding: 0.2rem 1rem 0.3rem 1rem;
+    text-transform: uppercase;
+  }
+  a {
+    // color: blue;
+    color: $grey-dark;
+    background-color: $grey-extra-light;
+    border-radius: 0.8rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem 0.3rem 0.6rem;
+    white-space: nowrap;
+    transition: background-color 0.7s ease-out, border-radius 0.3s ease-out;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      border-radius: 0.4rem;
+      background: lighten($grey-extra-light, 10%);
     }
     
-
-    p {
-        // font-family: $futura;
-        margin-top: 0;
-        text-align: justify;
-    }
-    a[title="hire me"] {
-        font-weight: 800;
-        padding: .2rem 1rem .3rem 1rem;
-        text-transform: uppercase;
-    }
-    a {
-        // color: blue;
-        color: $grey-dark;
-        background-color: $grey-extra-light;
-        border-radius: .8rem;
-        font-weight: 600;
-        padding: .2rem .6rem .3rem .6rem;
-        white-space: nowrap;
-        transition: background-color .7s ease-out,
-                    border-radius 0.3s ease-out;
-        &:hover,
-        &:focus {
-            text-decoration: none;
-            // padding: .3rem .6rem .5rem .6rem;
-            border-radius: .4rem;
-            background: lighten($grey-extra-light, 10%);
-        }
-    }
-
+  }
 }
 
-.page-content, .about-me {
-    display: grid;
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 1.5rem;
-    padding: 1rem;
-    max-width: $max-content-width;
-    margin: 0 auto;
+.page-content,
+.about-me {
+  display: grid;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  padding: 1rem;
+  max-width: $max-content-width;
+  margin: 0 auto;
 
-    @include respond-to(s) {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  @include respond-to(s) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 article.list-view > div.content {
-    text-align: justify;
+  text-align: justify;
 }
 
 .no-underline {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .card {
-    display: flex;
-    padding: 1rem;
-    height: 250px;
-    // width: 100%;
-    grid-column: 1;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2rem;
-    background: $grey-light;
-    transition: background-color .7s ease-out;
-    &:hover,
-    &:focus {
-        background: lighten($grey-light, 10%);
-    }
+  display: flex;
+  padding: 1rem;
+  height: 250px;
+  // width: 100%;
+  grid-column: 1;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  background: $grey-light;
+  transition: background-color 0.7s ease-out;
+  &:hover,
+  &:focus {
+    background: lighten($grey-light, 10%);
+  }
 
-    &__title {
-        // color: $text;
-        text-transform: uppercase;
-        // color: $grey-extra-light;
-        color: $color-primary-1;
-        text-shadow: 4px 0px 4px $brand, 2px -4px 4px $brand;
-        font-family: $futura;
-        font-size: 1.3rem;
-        font-weight: bold;
-        line-height: 1.2;
-    }
+  &__title {
+    // color: $text;
+    text-transform: uppercase;
+    // color: $grey-extra-light;
+    color: $color-primary-1;
+    text-shadow: 4px 0px 4px $brand, 2px -4px 4px $brand;
+    font-family: $futura;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
 }
 
 // SLIDES
 
 .slide-list {
+  padding: 0rem;
+
+  .slide-item {
+    list-style-type: none;
+    line-height: 2rem;
+    border-bottom: 1px $grey-light solid;
     padding: 0rem;
 
-    .slide-item {
-        list-style-type: none;
-        line-height: 2rem;
-        border-bottom: 1px $grey-light solid;
-        padding: 0rem;
-
-        &__date {
-            display: inline-block;
-            width: 6rem;
-        }
-
-        &__separator {
-            content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>');
-        }
-        &__event-name {
-            text-align: right;
-        }
+    &__date {
+      display: inline-block;
+      width: 6rem;
     }
+
+    &__separator {
+      content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>');
+    }
+    &__event-name {
+      text-align: right;
+    }
+  }
 }
 
 // TALKS
 
 .talk-item {
-    &__video {
-        position: relative; 
-        padding-bottom: 56.25%; 
-        height: 0; 
-        overflow: hidden;
+  &__video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
 
-        & > iframe {
-            position: absolute; 
-            top: 0; 
-            left: 0; 
-            width: 100%; 
-            height: 100%; 
-            border:0;
-        }
+    & > iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
+  }
 }
 
 // single class
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 .text-justify {
-    text-align: justify;
+  text-align: justify;
 }
 .grayscale {
-    filter: grayscale(1);
+  filter: grayscale(1);
 }
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .fade-in {
-    opacity: 0; /* make things invisible upon start */
-    animation: fadeIn ease-in 0.7s;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
+  opacity: 0; /* make things invisible upon start */
+  animation: fadeIn ease-in 0.7s;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }

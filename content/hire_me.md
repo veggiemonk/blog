@@ -6,6 +6,11 @@ title = "Hire me"
 
 > Independent consultant, public speaker, Google developer expert (GDE) for GCP, certified Kubernetes CKA/CKAD, university guest lecturer.
 
+<h3 class="center">I am not currently available for hire</h3>
+It does not mean that I can't help you,
+contact me at julien@bisconti.cloud for future availability and
+tell me what can I do for you.
+
 Hope is not a strategy -- Traditional SRE saying
 <!-- https://landing.google.com/sre/sre-book/chapters/introduction/ -->
 

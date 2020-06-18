@@ -19,7 +19,9 @@ h2.main__header {
   text-align: center;
   margin-bottom: 2rem;
 }
-
+#hire-me {
+  background-color: darkred
+}
 .about-me {
   figure {
     display: flex;
@@ -63,7 +65,6 @@ h2.main__header {
       transform: rotate(90deg);
       position: absolute;
       font-size: small;
-      // margin-left: .3rem;
     }
   }
 }

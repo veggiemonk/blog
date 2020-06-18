@@ -855,6 +855,9 @@ h2.main__header {
   text-align: center;
   margin-bottom: 2rem; }
 
+#hire-me {
+  background-color: darkred; }
+
 .about-me figure {
   display: flex;
   justify-content: center;

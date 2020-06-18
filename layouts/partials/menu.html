@@ -23,7 +23,8 @@
 {{ end -}}
 {{ range where .Site.RegularPages "Section" "" -}}
 <li><a href="{{ .RelPermalink }}" {{ if eq $currentID .File.UniqueID }} class="active"
-                aria-current="page" {{ end }}>{{ .Title }}</a></li>
+                aria-current="page" {{ end }}
+                {{ if eq .RelPermalink "/hire_me/"}} id="hire-me" {{ end }}>{{ .Title }}</a></li>
 {{ end -}}
 
 

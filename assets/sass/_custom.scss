@@ -20,23 +20,6 @@ h2.main__header {
   margin-bottom: 2rem;
 }
 
-a[href^="http://"]:not([href*="bisconti.cloud"]),
-a[href^="https://"]:not([href*="bisconti.cloud"]), 
-a[href^="//"]:not([href*="bisconti.cloud"]){
-    padding-right: .9rem;
-}
-a[href*="//"]:not([href*="bisconti.cloud"]):after {
-    /* external link styles, use :before or :after if you want! */
-    content: "\21F1";
-    transform: rotate(90deg);
-    position: absolute;
-    font-size: small;
-    margin-left: .3rem;
-}
-a[href*="localhost"]{
-  content: '';
-}
-
 .about-me {
   figure {
     display: flex;
@@ -51,7 +34,6 @@ a[href*="localhost"]{
   }
 
   p {
-    // font-family: $futura;
     margin-top: 0;
     text-align: justify;
   }
@@ -61,7 +43,6 @@ a[href*="localhost"]{
     text-transform: uppercase;
   }
   a {
-    // color: blue;
     color: $grey-dark;
     background-color: $grey-extra-light;
     border-radius: 0.8rem;
@@ -69,13 +50,21 @@ a[href*="localhost"]{
     padding: 0.2rem 0.6rem 0.3rem 0.6rem;
     white-space: nowrap;
     transition: background-color 0.7s ease-out, border-radius 0.3s ease-out;
+    
     &:hover,
     &:focus {
       text-decoration: none;
       border-radius: 0.4rem;
       background: lighten($grey-extra-light, 10%);
     }
-    
+
+    i:after {
+      content: "\21F1";
+      transform: rotate(90deg);
+      position: absolute;
+      font-size: small;
+      // margin-left: .3rem;
+    }
   }
 }
 

@@ -855,22 +855,6 @@ h2.main__header {
   text-align: center;
   margin-bottom: 2rem; }
 
-a[href^="http://"]:not([href*="bisconti.cloud"]),
-a[href^="https://"]:not([href*="bisconti.cloud"]),
-a[href^="//"]:not([href*="bisconti.cloud"]) {
-  padding-right: .9rem; }
-
-a[href*="//"]:not([href*="bisconti.cloud"]):after {
-  /* external link styles, use :before or :after if you want! */
-  content: "\21F1";
-  transform: rotate(90deg);
-  position: absolute;
-  font-size: small;
-  margin-left: .3rem; }
-
-a[href*="localhost"] {
-  content: ''; }
-
 .about-me figure {
   display: flex;
   justify-content: center;
@@ -901,6 +885,11 @@ a[href*="localhost"] {
     text-decoration: none;
     border-radius: 0.4rem;
     background: #f7f7f7; }
+  .about-me a i:after {
+    content: "\21F1";
+    transform: rotate(90deg);
+    position: absolute;
+    font-size: small; }
 
 .page-content,
 .about-me {

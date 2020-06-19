@@ -1,0 +1,30 @@
+{{ define "main" -}}
+<main class="main layout__main">
+    <h1 class="title">{{ .Title }}</h1>
+    <div class="content">
+        {{ .Content }}
+        <ul>
+        {{ range .Site.Data.resume.work}}
+            <li>
+                <p>
+                    <span class="position">{{ .position }}</span> at 
+                    <span class="company">{{ .company }}</span>
+                </p>
+                <p>
+                    {{$startDate := time .startDate}}
+                    {{ $startDate | dateFormat "Jan 2006" }} 
+                    {{ if ne .endDate nil }} 
+                        {{$endDate := time .endDate}}
+                        to {{ $endDate | dateFormat "Jan 2006"}}
+                        - ({{ div (sub $endDate.Unix $startDate.Unix) (mul 86400 30) }} months)
+                    {{ else }} 
+                        (ongoing)
+                    {{ end }}
+                </p>
+                <p>{{.summary}}</p>
+            </li>
+        {{ end }}
+        </ul>
+    </div>
+</main>
+{{ end }}

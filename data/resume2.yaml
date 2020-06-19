@@ -50,7 +50,7 @@ work:
         Using Nats to receive data from other microservices.
   - company: Freelance
     position: Software Engineer
-    website: www.discoverynetworks.se
+    website: ''
     startDate: '2016-08-01'
     endDate: '2016-12-27'
     summary: Web development in Clojure and Clojurescript

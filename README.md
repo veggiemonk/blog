@@ -11,6 +11,7 @@
 - [ ] add things I learned (tips)
 - [ ] favicon
 - [ ] SoMi metadata
+- [ ] add slide links to videos
 - [ ] TEMPLATE SLIDES
 - [ ] Insert common slides
 - [ ] add "uses" section

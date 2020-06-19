@@ -961,6 +961,14 @@ article.list-view > div.content {
     height: 100%;
     border: 0; }
 
+nav#TableOfContents ul {
+  list-style: none; }
+  nav#TableOfContents ul ul {
+    list-style-type: "> ";
+    padding: 5px 0 5px 18px; }
+  nav#TableOfContents ul ul > li {
+    margin-left: 10px; }
+
 .text-center {
   text-align: center; }
 

@@ -32,7 +32,7 @@
 
         <footer class="footer layout__footer">
             {{ if $.Param "feedlinks" }}{{ partial "feedlinks.html" . }}{{ end -}}
-            <p>contact: <a href="mailto:julien@bisconti.cloud">julien@bisconti.cloud</a> |
+            <p>contact: julien@bisconti.cloud |
                 {{ with $.Param "copyright" }}{{ . | markdownify }}{{ else }}<span>Julien Bisconti &copy;
                     {{ now.Format "2006"}}</span>{{ end }}
             </p>

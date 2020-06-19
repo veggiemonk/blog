@@ -8,13 +8,15 @@ description = "Julien Bisconti, Freelance Software Engineer Specialized in Googl
 ## Summary
 
 Google developer expert (GDE) for GCP, conference speaker, certified Kubernetes CKA/CKAD, university guest lecturer.
-Master in Computer Science (graduated 2007).
-Serverless first mindset, data operation and data engineering.
-Used many programming languages: JavaScript (Node.js + browser), Go, Java, Python, Bash, Clojure, ClojureScript, OCaml, Rust and Haskell. Fast learner.
-Like building scalable distributed systems.
-Design, architect, develop, deploy, operate and maintain software.
-Achievements: KubeCon 18' Seattle speaker, University guest lecturer, open source contributor.
+Master in Computer Science (graduated 2007).<br/>
+Serverless first mindset, data operation and data engineering.<br/>
+Used many programming languages: JavaScript (Node.js + browser), Go, Java, Python, Bash, Clojure, ClojureScript, OCaml, Rust and Haskell. Fast learner.<br/>
+Like building scalable distributed systems.<br/>
+Design, architect, develop, deploy, operate and maintain software.<br/>
+Achievements: [KubeCon 18' Seattle speaker](https://youtube.com/watch?v=ukc5mvZkxDI), University guest lecturer, [open source contributor](https://github.com/veggiemonk/awesome-docker).<br/>
 Work remotely (good writing communication skill).
+
+<div class="divider-hr divider-hr-transparent divider-hr-dot"></div>
 
 ## Work
 
@@ -27,6 +29,8 @@ Topics:
 - containers (Docker, CRI)
 - orchestration (Kubernetes, swarm)
 - serverless & FaaS
+
+<div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
 ### NetEnt | Site Reliability Engineer
 
@@ -52,6 +56,8 @@ Frontend development for backoffice API in Typescript/Angular9<br/>
 Presentations and workshop dedicated to Terraform, 
 Kubernetes, Go, serverless, service mesh and site reliability engineering.
 
+<div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
+
 ### 56K.Cloud | Site Reliability Engineer
 
 __Nov 2018 – Mar 2019 (5 months) | Zurich, Switzerland__ (Remote)
@@ -63,6 +69,8 @@ Containerizing application<br/>
 Setting up kubernetes clusters<br/>
 Giving workshops<br/>
 Presenting and teaching DevOps and Chaos Engineering.
+
+<div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
 ### Discovery Inc | Software Engineer
 
@@ -82,6 +90,8 @@ Testing with Rest-assured and JUnit.
 Using Agile and TDD with code review via pull request on Github.
 Using containers, testing & deploying with Jenkins to Kubernetes cluster running on AWS
 Logs gather with ELK stack. Metrics with Prometheus.
+
+<div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
 ### Unity Technologies Finland | Software Engineer
 
@@ -111,11 +121,15 @@ Technical recruiter: Part of the recruitment process, review technical tests, co
 
 Give presentations to teams
 
+<div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
+
 ### Freelance | Software Engineer
 
 __2016 – Dec 2016 (5 mos) | Chiand Mai, Thailand__ (Remote)
 
 Full stack web development in Clojure and ClojureScript using PostgreSQL as database. Part of the project can be found on my github account https://github.com/veggiemonk/guestbook.
+
+<div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
 ### Group S | Software Engineer
 
@@ -154,6 +168,8 @@ Install and configure SonarQube (running inside Docker containers) for code qual
 Writing reports:
 Conferences, meetings, projects requirements analysis. Example of conference report: https://docs.google.com/document/d/1ahblUs2BaIyEdtQamSX7O9XwRi1GiOZQ4W-G48CooIo/edit?usp=sharing
 
+<div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
+
 ### Share2Grow | Partner | Software Engineer
 
 __Feb 2014 – Jul 2016 (2 yrs 6 months) | Brussels, Belgium__
@@ -166,11 +182,15 @@ Full stack developer Java/JavaScript.
 
 Web Development, Technology Assessment, Technical Business Analysis, SEO, Python programming, mobile application development, GoogleWebToolkit GWT, Node.js/Express, GIT server on Windows.
 
+<div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
+
 ### Freelance | Software Engineer
 
 __2010 – May 2014 (4 yrs) | World__ (Remote)
 
 Web Development, Technology Assessment, Technical Business Analysis, SEO, Python programming, mobile application development, GoogleWebToolkit GWT, Node.js/Express, MongoDB, Django, Plone, ...
+
+<div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
 ### Piton Lux S.A. | Software Engineer
 
@@ -185,11 +205,15 @@ Development of custom/tailor-made solutions with CRM Software “eLink” at Uni
 - Software Versioning: Subversion (svn)
 - IIS, COM+
 
+<div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
+
 ### Callataÿ & Wouters | Release Engineer
 
 __Oct 2007 – Mar 2008 (6 months) | Brussels, Belgium__
 
 Worked in team for the release of Banking Software “Thales”. Now called “Sopra Banking Software”.
+
+<div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
 ### Universitat Politècnica de Catalunya | Researcher
 
@@ -198,24 +222,27 @@ __Sep 2006 – Feb 2007 (6 months) | Barcelona Area, Spain__
 Research over the MPLS protocol:
 Multiprotocol Label Switching (MPLS) is a type of data-carrying technique for high-performance telecommunications networks. MPLS is a scalable, protocol-independent transport. In an MPLS network, data packets are assigned labels. Packet-forwarding decisions are made solely on the contents of this label, without the need to examine the packet itself. This allows one to create end-to-end circuits across any type of transport medium, using any protocol. The primary benefit is to eliminate dependence on a particular OSI model data link layer (layer 2) technology,
 
-Thesis "Dynamic Configuration of Label Switched Path" under the supervision of M. F. Casadevall.
+Thesis "Dynamic Configuration of Label Switched Path" under the supervision of M. F. Casadevall. [PDF](/Master_thesis.pdf)
 
-- Linux Kernel Module development in C with mpls-linux (https://sourceforge.net/projects/mpls-linux/‎)
+- Linux Kernel Module development in C with [mpls-linux](https://sourceforge.net/projects/mpls-linux/‎)
 - Advanced Bash scripting
 - Advanced Networking in Linux Kernel with QoS and various queue model (such as Weighted Fair Queuing)
 - Network load testing with tc (traffic control command), iptables, quagga, tcpdump.
 - Virtualization of Network with Linux Containers (Netkit http://wiki.netkit.org)
 
+<div class="divider-hr-small divider-hr-transparent divider-hr-dot"></div>
 
 ## Education
 
-### Master in Computer Science - 2004-07
+### Master in Computer Science - 2005-07
 
 University of Namur, Belgium - https://www.unamur.be/
 
-### Bachelor in Cmoputer Science - 2002-05
+### Bachelor in Computer Science - 2002-05
 
 University of Namur, Belgium - https://www.unamur.be/
+
+<div class="divider-hr divider-hr-transparent divider-hr-dot"></div>
 
 ## Certifications
 

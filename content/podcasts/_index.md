@@ -5,4 +5,4 @@ description = "Julien Bisconti, Freelance Software Engineer Specialized in Googl
 website = "https://devsecops.fm/about/"
 +++
 
-DevSecOps
+Migrated to <a href="https://devsecops.fm" target="_blank">devsecops.fm</a>

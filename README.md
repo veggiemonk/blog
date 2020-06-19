@@ -1,19 +1,19 @@
 # TODO
 
-- [ ] integrate videos into presentation
-- [ ] move presentation -> public speaking
+- [x] integrate videos into presentation
+- [x] move presentation -> public speaking
 - [ ] add tags
-- [ ] add description
+- [x] add description
 - [ ] fix kubecon slides
-- [ ] add resume
-- [ ] use d3 for resume: https://github.com/Jac21/SkillSet
+- [x] add resume
 - [ ] add personal section
-- [ ] add data from resume
+- [x] add data from resume
 - [ ] add things I learned (tips)
 - [ ] favicon
 - [ ] SoMi metadata
 - [ ] TEMPLATE SLIDES
 - [ ] Insert common slides
 - [ ] add "uses" section
-- [ ] mailing list
-- [ ] hire me page (https://leavingworkbehind.com/freelance-writing-hire-me-page/)
+- [x] hire me page (https://leavingworkbehind.com/freelance-writing-hire-me-page/)
+- [ ] rider page (https://www.sarasoueidan.com/rider/)
+- [ ] available for workshop (https://mt165.co.uk/consulting/index.html)

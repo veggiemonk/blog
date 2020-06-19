@@ -2,14 +2,24 @@
 title = "Hire me"
 +++
 
-{{< avatar "julien.webp" "Julien Bisconti" >}}
+{{< avatar "julien.jpg" "Julien Bisconti" >}}
 
 > Independent consultant, public speaker, Google developer expert (GDE) for GCP, certified Kubernetes CKA/CKAD, university guest lecturer.
 
 <h3 class="center">I am not currently available for hire</h3>
-It does not mean that I can't help you,
-contact me at julien@bisconti.cloud for future availability and
-tell me what can I do for you.
+
+It does not mean that I cannot help you,
+contact me by email for future availability and
+briefly describe what you would like to achieve.
+
+I work remotely from my home office in Sweden, with teams located anywhere and sometimes distributed across the world.
+
+Despite time zone differences, collaboration is usually seamless.
+Teams I work with often use Slack to communicate or pair programming,
+Trello or Notion for project management,
+Github for code hosting,
+Zoom or Google Meet calls are done as needed in order to sync and collaborate.
+Note that I have no problem using a new tool but it will hinder productivity, therefore, communication as well.
 
 Hope is not a strategy -- Traditional SRE saying
 <!-- https://landing.google.com/sre/sre-book/chapters/introduction/ -->

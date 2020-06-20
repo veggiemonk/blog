@@ -2,6 +2,15 @@
 
 // Site custom styles
 
+#dark-mode-toggle {
+  position: fixed;
+  z-index: 1000;
+  width: 1rem;
+  height: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+
 // MAIN
 
 header.header {
@@ -19,9 +28,15 @@ h2.main__header {
   text-align: center;
   margin-bottom: 2rem;
 }
+
 #hire-me {
-  background-color: darkred
+  background-color: darkred;
 }
+
+.footer .social_link {
+  text-decoration: none;
+}
+
 .about-me {
   figure {
     display: flex;
@@ -30,6 +45,7 @@ h2.main__header {
 
     img {
       filter: drop-shadow(12px 12px 16px black) contrast(50%);
+      -webkit-filter: drop-shadow(12px 12px 16px black) contrast(50%);
       border-radius: 2rem;
       margin: auto;
     }
@@ -39,6 +55,17 @@ h2.main__header {
     margin-top: 0;
     text-align: justify;
   }
+
+  ul {
+    padding-left: 0px;
+    list-style-type: '\2713 ';
+
+    li {
+      padding-left: .3rem;
+      text-align: left;
+    }
+  }
+
   a[title='hire me'] {
     font-weight: 800;
     padding: 0.2rem 1rem 0.3rem 1rem;
@@ -52,7 +79,7 @@ h2.main__header {
     padding: 0.2rem 0.6rem 0.3rem 0.6rem;
     white-space: nowrap;
     transition: background-color 0.7s ease-out, border-radius 0.3s ease-out;
-    
+
     &:hover,
     &:focus {
       text-decoration: none;
@@ -61,7 +88,7 @@ h2.main__header {
     }
 
     i:after {
-      content: "\21F1";
+      content: '\21F1';
       transform: rotate(90deg);
       position: absolute;
       font-size: small;
@@ -169,73 +196,73 @@ article.list-view > div.content {
 nav#TableOfContents {
   ul {
     list-style: none;
-    ul { 
-      list-style-type: "> ";
-      padding: 5px 0 5px 18px; 
+    ul {
+      list-style-type: '> ';
+      padding: 5px 0 5px 18px;
     }
     ul > li {
-      margin-left:10px; }
+      margin-left: 10px;
+    }
   }
 }
 
 // Divider (<hr>)
 .divider-hr {
-	position: relative;
-	margin: 4rem 0 4rem 0;
-	height: 1px;
+  position: relative;
+  margin: 4rem 0 4rem 0;
+  height: 1px;
 }
 .divider-hr-small {
-	position: relative;
-	margin: 2rem 0 2rem 0;
-	height: 1px;
+  position: relative;
+  margin: 2rem 0 2rem 0;
+  height: 1px;
 }
 .divider-hr-transparent:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 5%;
-	right: 5%;
-	width: 90%;
-	height: 1px;
-	background-image: linear-gradient(to right, transparent, $text, transparent);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, $text, transparent);
 }
 
 .divider-hr-transparent-small:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 15%;
-	right: 15%;
-	width: 70%;
-	height: 1px;
-	background-image: linear-gradient(to right, transparent, $text, transparent);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  width: 70%;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, $text, transparent);
 }
 .divider-hr-stop:after {
-	content: "";
-	position: absolute;
-	z-index: 1;
-	top: -6px;
-	left: calc(50% - 7px);
-	width: 14px;
-	height: 12px;
-	background-color: $body-bg;
-	border-left: 1px solid $text;
-	border-right: 1px solid $text;
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -6px;
+  left: calc(50% - 7px);
+  width: 14px;
+  height: 12px;
+  background-color: $body-bg;
+  border-left: 1px solid $text;
+  border-right: 1px solid $text;
 }
 
-.divider-hr-dot:after{
-	content: "";
-	position: absolute;
-	z-index: 1;
-	top: -9px;
-	left: calc(50% - 9px);
-	width: 18px;
-	height: 18px;
-	background-color: $grey-dark;
-	border: 1px solid $text;
-	border-radius: 50%;
-	box-shadow: inset 0 0 0 2px $body-bg,
-					0 0 0 4px $body-bg;
+.divider-hr-dot:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -9px;
+  left: calc(50% - 9px);
+  width: 18px;
+  height: 18px;
+  background-color: $grey-dark;
+  border: 1px solid $text;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px $body-bg, 0 0 0 4px $body-bg;
 }
 
 // single class

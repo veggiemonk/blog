@@ -845,6 +845,14 @@ figure.podcast audio {
 .js-submitted textarea:invalid {
   background-color: white; }
 
+#dark-mode-toggle {
+  position: fixed;
+  z-index: 1000;
+  width: 1rem;
+  height: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem; }
+
 header.header {
   margin: auto; }
   header.header .header__site-name {
@@ -859,18 +867,29 @@ h2.main__header {
 #hire-me {
   background-color: darkred; }
 
+.footer .social_link {
+  text-decoration: none; }
+
 .about-me figure {
   display: flex;
   justify-content: center;
   align-items: center; }
   .about-me figure img {
     filter: drop-shadow(12px 12px 16px black) contrast(50%);
+    -webkit-filter: drop-shadow(12px 12px 16px black) contrast(50%);
     border-radius: 2rem;
     margin: auto; }
 
 .about-me p {
   margin-top: 0;
   text-align: justify; }
+
+.about-me ul {
+  padding-left: 0px;
+  list-style-type: '\2713 '; }
+  .about-me ul li {
+    padding-left: .3rem;
+    text-align: left; }
 
 .about-me a[title='hire me'] {
   font-weight: 800;
@@ -890,7 +909,7 @@ h2.main__header {
     border-radius: 0.4rem;
     background: #f7f7f7; }
   .about-me a i:after {
-    content: "\21F1";
+    content: '\21F1';
     transform: rotate(90deg);
     position: absolute;
     font-size: small; }
@@ -965,7 +984,7 @@ article.list-view > div.content {
 nav#TableOfContents ul {
   list-style: none; }
   nav#TableOfContents ul ul {
-    list-style-type: "> ";
+    list-style-type: '> ';
     padding: 5px 0 5px 18px; }
   nav#TableOfContents ul ul > li {
     margin-left: 10px; }
@@ -981,7 +1000,7 @@ nav#TableOfContents ul {
   height: 1px; }
 
 .divider-hr-transparent:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 5%;
@@ -991,7 +1010,7 @@ nav#TableOfContents ul {
   background-image: linear-gradient(to right, transparent, #2D2D2B, transparent); }
 
 .divider-hr-transparent-small:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 15%;
@@ -1001,7 +1020,7 @@ nav#TableOfContents ul {
   background-image: linear-gradient(to right, transparent, #2D2D2B, transparent); }
 
 .divider-hr-stop:after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 1;
   top: -6px;
@@ -1013,7 +1032,7 @@ nav#TableOfContents ul {
   border-right: 1px solid #2D2D2B; }
 
 .divider-hr-dot:after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 1;
   top: -9px;

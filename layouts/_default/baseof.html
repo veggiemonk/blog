@@ -14,6 +14,7 @@
 </head>
 
 <body class="{{ if .IsPage }}single-page{{ else }}list-page{{ end }}{{ if .IsHome }} front{{ end }}">
+    <a id="dark-mode-toggle" title="Toggle Dark Mode" class="light">Toggle Dark Mode</a>
     <div class="page layout__page{{ if $.Param "sidebar" | default true }} layout__sidebar-second{{ end }}">
         <header class="header layout__header">
             <h1 class="header__site-name">
@@ -32,7 +33,7 @@
 
         <footer class="footer layout__footer">
             {{ if $.Param "feedlinks" }}{{ partial "feedlinks.html" . }}{{ end -}}
-            <p>contact: julien@bisconti.cloud |
+<p>contact: julien@bisconti.cloud | {{ partial "social_links.html" (dict "twitter" "julienBisconti" "linkedin" "julienbisconti" "github" "veggiemonk") }} |
                 {{ with $.Param "copyright" }}{{ . | markdownify }}{{ else }}<span>Julien Bisconti &copy;
                     {{ now.Format "2006"}}</span>{{ end }}
             </p>

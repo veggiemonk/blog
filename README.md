@@ -3,6 +3,7 @@
 - [x] integrate videos into presentation
 - [x] move presentation -> public speaking
 - [ ] add tags
+- [ ] add my name in slides!!!
 - [x] add description
 - [ ] fix kubecon slides
 - [x] add resume

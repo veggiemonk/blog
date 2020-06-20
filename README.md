@@ -7,12 +7,12 @@
 - [x] add description
 - [ ] fix kubecon slides
 - [x] add resume
-- [ ] add personal section
+- [x] add personal section
 - [x] add data from resume
 - [ ] add things I learned (tips)
-- [ ] favicon
+- [x] favicon
 - [ ] SoMi metadata
-- [ ] add slide links to videos
+- [x] add slide links to videos
 - [ ] TEMPLATE SLIDES
 - [ ] Insert common slides
 - [ ] add "uses" section

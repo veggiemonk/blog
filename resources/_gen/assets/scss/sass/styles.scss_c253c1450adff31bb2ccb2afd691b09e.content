@@ -924,27 +924,6 @@ article.list-view > div.content {
 .no-underline {
   text-decoration: none; }
 
-.card {
-  display: flex;
-  padding: 1rem;
-  height: 250px;
-  grid-column: 1;
-  justify-content: center;
-  align-items: center;
-  border-radius: 2rem;
-  background: #989898;
-  transition: background-color 0.7s ease-out; }
-  .card:hover, .card:focus {
-    background: #b2b2b2; }
-  .card__title {
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-shadow: 4px 0px 4px #1E1E1F, 2px -4px 4px #1E1E1F;
-    font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
-    font-size: 1.3rem;
-    font-weight: bold;
-    line-height: 1.2; }
-
 .slide-list {
   padding: 0rem; }
   .slide-list .slide-item {
@@ -959,6 +938,30 @@ article.list-view > div.content {
       content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>'); }
     .slide-list .slide-item__event-name {
       text-align: right; }
+
+.talk-list {
+  list-style: none;
+  padding-left: 0px; }
+  .talk-list .talk-item {
+    display: grid;
+    grid-template-areas: "link event-name date" "summary summary summary " " .  .  slides " " divid  divid divid";
+    margin-bottom: 1rem;
+    padding-bottom: 1rem; }
+    .talk-list .talk-item .divider-hr-small {
+      grid-area: divid; }
+    .talk-list .talk-item .talk-item__link {
+      grid-area: link; }
+    .talk-list .talk-item .talk-item__event-name {
+      text-align: center;
+      grid-area: event-name; }
+    .talk-list .talk-item .talk-item__date {
+      text-align: right;
+      grid-area: date; }
+    .talk-list .talk-item .talk-item__summary {
+      grid-area: summary; }
+    .talk-list .talk-item .talk-item__slides {
+      text-align: right;
+      grid-area: slides; }
 
 .talk-item__video {
   position: relative;

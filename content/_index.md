@@ -26,12 +26,14 @@ Read on.
 ### Problems I will solve for you
 
 * Everything related to __Google Cloud__:
-* increase the resilience by doing chaos engineering experiement,
-* ship features faster with complete automation of CI/CD,
-* save money on your cloud bills by monitoring cost,
+* increase the resilience and confidence by doing __chaos engineering__ experiments,
+* ship features faster with complete automation of code deployment __(CI/CD)__,
+* save money on cloud bills by __monitoring__ cost,
 * secure your workload,
-* build a scalable platform,
+* build a scalable __data platform__,
+* __performance tuning__ for high load services,
 * manage your infrastructure at scale with Terraform,
-* get insights from your data with BigQuery,
-* train and deploy machine learning models to production with Kubeflow,
-* workshop & training
+* get insights from your data with __BigQuery__,
+* __data visualization__
+* train and deploy __machine learning__ models to production with Kubernetes and Kubeflow,
+* __workshop & training__

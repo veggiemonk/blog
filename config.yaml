@@ -46,6 +46,7 @@ params:
   footer: "Powered by [Hugo](https://gohugo.io/), [Zen theme](https://github.com/frjo/hugo-theme-zen) and [reveal-hugo](https://github.com/dzello/reveal-hugo), hosted on [Netlify](https://www.netlify.com/)"
   icon: "apple-touch-icon.png"
   image: "apple-touch-icon.png"
+  realfavicongenerator: true
   imageMaxWidth: 400
   mobileMenu: true
   poweredby: false

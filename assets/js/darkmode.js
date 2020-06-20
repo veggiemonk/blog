@@ -8,12 +8,11 @@ function setTheme(mode) {
     if (mode === "dark") {
         darkTheme.disabled = false;
         toggle.className = "dark";
-        toggle.innerHTML = "☀️"
+        toggle.innerHTML = '<i class="gg-sun"></i>'
     } else if (mode === "light") {
         darkTheme.disabled = true;
         toggle.className = "light";
-        toggle.innerHTML = "🌛"
-
+        toggle.innerHTML = '<i class="gg-moon"></i>'
     }
 }
 

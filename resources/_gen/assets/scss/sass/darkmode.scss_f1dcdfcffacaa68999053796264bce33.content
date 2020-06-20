@@ -10,8 +10,10 @@ body {
 
 img,
 video,
+iframe,
 body * [style*="background-image"],
 .main_pic,
+#hire-me,
 #dark-mode-toggle,
 .about-me a {
   filter: hue-rotate(180deg) contrast(100%) invert(100%);

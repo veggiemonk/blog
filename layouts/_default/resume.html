@@ -4,7 +4,7 @@
 <header>
 <h1 class="title {{ if $.Param "submitted" | default false }}title-submitted{{ end }}">{{ .Title }}</h1>
 <p class="content-dates" style="text-align: left;">
-{{ i18n "last_mod" }} {{ .Lastmod.Format ($.Param "dateformat" | default "2 January, 2006") }}<br>
+{{ i18n "last_mod" }} {{ .Lastmod.Format ($.Param "dateformat" | default "2 January, 2006") }}
 </p>
 {{ if .Params.tags }}{{ partial "tags.html" . }}{{ end -}}
 </header>

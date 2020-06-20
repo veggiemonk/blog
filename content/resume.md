@@ -2,10 +2,22 @@
 title = "Résumé"
 layout = "resume"
 lastmod = "2020-06-21"
-tags = ["resume", "cv", "curriculum vitae"]
+tags = ["resume", "cv", "curriculum vitae", "gde", "cka", "ckad"]
 description = "Julien Bisconti, Freelance Software Engineer Specialized in Google Cloud, slides presentations and conference talks about kubernetes, serverless, data engineering, logging, monitoring, software architecture"
 +++
 <!-- markdownlint-disable -->
+
+## Download PDF
+
+<!-- [Julien Bisconti resume PDF](/Julien_Bisconti_resume.pdf) -->
+<a href="/Julien_Bisconti_resume.pdf" download>Julien Bisconti resume PDF</a>
+
+<div class="divider-hr divider-hr-transparent divider-hr-dot"></div>
+
+{{< avatar "julien.jpg" "Julien Bisconti" >}}
+
+> Independent consultant, public speaker, Google developer expert (GDE) for GCP, certified Kubernetes CKA/CKAD, university guest lecturer.
+
 
 ## Summary
 
@@ -14,9 +26,9 @@ Master in Computer Science (graduated 2007).<br/>
 Serverless first mindset, data operation and data engineering.<br/>
 Used many programming languages: JavaScript (Node.js + browser), Go, Java, Python, Bash, Clojure, ClojureScript, Scala, OCaml, Rust and Haskell. Fast learner.<br/>
 Like building scalable distributed systems.<br/>
-Design, architect, develop, deploy, operate and maintain software.<br/>
+Design, architect, develop, deploy, operate, maintain and monitor software.<br/>
 Achievements: [KubeCon 18' Seattle speaker](https://youtube.com/watch?v=ukc5mvZkxDI), University guest lecturer, [open source contributor](https://github.com/veggiemonk/awesome-docker).<br/>
-Work remotely (good writing communication skill).
+__Work remotely__ (good writing communication skill).
 
 <div class="divider-hr divider-hr-transparent divider-hr-dot"></div>
 
@@ -230,7 +242,7 @@ Multiprotocol Label Switching (MPLS) is a type of data-carrying technique for hi
 
 Thesis "Dynamic Configuration of Label Switched Path" under the supervision of M. F. Casadevall. [PDF](/Master_thesis.pdf)
 
-- Linux Kernel Module development in C with [mpls-linux](https://sourceforge.net/projects/mpls-linux/‎)
+- Linux Kernel Module development in C with [mpls-linux](https://sourceforge.net/projects/mpls-linux/)
 - Advanced Bash scripting
 - Advanced Networking in Linux Kernel with QoS and various queue model (such as Weighted Fair Queuing)
 - Network load testing with tc (traffic control command), iptables, quagga, tcpdump.
@@ -263,8 +275,6 @@ Issued by the Linux Foundation - [Credentials](https://www.youracclaim.com/badge
 ### Certified Kubernetes Application Developer (CKAD)
 
 Issued by the Linux Foundation - [Credentials](https://www.youracclaim.com/badges/025df104-a24d-4462-8bbf-150e533d2a54)
-
-
 
 
 

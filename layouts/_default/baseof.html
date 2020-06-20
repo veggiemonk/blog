@@ -23,9 +23,9 @@
             <!-- <span><a class="hire-me" href="{{ "hire_me/" | relLangURL }}">Hire Me</a></span> -->
         </header>
 
-        {{ if not .IsHome }}
+        
         {{ partial "menu" . }}
-        {{ end }}
+        
         {{ block "main" . }}{{ end }}
 
         {{ if $.Param "sidebar" }}{{ partial "sidebar.html" . }}{{ end -}}

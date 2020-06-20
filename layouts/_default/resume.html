@@ -3,15 +3,15 @@
 <article class="{{ with .Section }}section-{{ . | urlize }} {{ end }}single-view">
 <header>
 <h1 class="title {{ if $.Param "submitted" | default false }}title-submitted{{ end }}">{{ .Title }}</h1>
-{{ if $.Param "submitted" | default false }}{{ partial "submitted.html" . }}{{ end -}}
+<p class="content-dates" style="text-align: left;">
+{{ i18n "last_mod" }} {{ .Lastmod.Format ($.Param "dateformat" | default "2 January, 2006") }}<br>
+</p>
 {{ if .Params.tags }}{{ partial "tags.html" . }}{{ end -}}
 </header>
-<h2>Table of Content</h2>
+<h2>Table of Contents</h2>
     {{ .TableOfContents }}
 <div class="content">
 {{ .Content }}
-
-{{ if ne .Lastmod .Date }}{{ partial "dates.html" . }}{{ end -}}
 </div>
 </article>
 </main>

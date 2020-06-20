@@ -1,6 +1,8 @@
 +++
 title = "Résumé"
 layout = "resume"
+lastmod = "2020-06-21"
+tags = ["resume", "cv", "curriculum vitae"]
 description = "Julien Bisconti, Freelance Software Engineer Specialized in Google Cloud, slides presentations and conference talks about kubernetes, serverless, data engineering, logging, monitoring, software architecture"
 +++
 <!-- markdownlint-disable -->
@@ -10,7 +12,7 @@ description = "Julien Bisconti, Freelance Software Engineer Specialized in Googl
 Google developer expert (GDE) for GCP, conference speaker, certified Kubernetes CKA/CKAD, university guest lecturer.
 Master in Computer Science (graduated 2007).<br/>
 Serverless first mindset, data operation and data engineering.<br/>
-Used many programming languages: JavaScript (Node.js + browser), Go, Java, Python, Bash, Clojure, ClojureScript, OCaml, Rust and Haskell. Fast learner.<br/>
+Used many programming languages: JavaScript (Node.js + browser), Go, Java, Python, Bash, Clojure, ClojureScript, Scala, OCaml, Rust and Haskell. Fast learner.<br/>
 Like building scalable distributed systems.<br/>
 Design, architect, develop, deploy, operate and maintain software.<br/>
 Achievements: [KubeCon 18' Seattle speaker](https://youtube.com/watch?v=ukc5mvZkxDI), University guest lecturer, [open source contributor](https://github.com/veggiemonk/awesome-docker).<br/>
@@ -20,7 +22,7 @@ Work remotely (good writing communication skill).
 
 ## Work
 
-### KTH Royal Institute of Technology | Guest lecturer
+### KTH Royal Institute of Technology 🇸🇪| Guest lecturer
 
 __Apr 2019 – Present (1 yr 3 months) | Stockholm, Sweden__
 
@@ -32,7 +34,7 @@ Topics:
 
 <div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
-### NetEnt | Site Reliability Engineer
+### NetEnt 🇸🇪| Site Reliability Engineer
 
 __Apr 2019 – May 2020 (1 yr 2 months) | Stockholm, Sweden__
 
@@ -53,12 +55,13 @@ Data cleaning and data lifecycle using Cloud Functions,
 PubSub and BigQuery scheduled query for costs management and monitoring data.<br/>
 Data mining GitHub organisation to provide relevant KPI in order to make data driven decisions.<br/>
 Frontend development for backoffice API in Typescript/Angular9<br/>
+Migration from Python 2 to Python 3 of full stack Flask app<br/>
 Presentations and workshop dedicated to Terraform, 
 Kubernetes, Go, serverless, service mesh and site reliability engineering.
 
 <div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
-### 56K.Cloud | Site Reliability Engineer
+### 56K.Cloud 🇨🇭| Site Reliability Engineer
 
 __Nov 2018 – Mar 2019 (5 months) | Zurich, Switzerland__ (Remote)
 
@@ -72,7 +75,7 @@ Presenting and teaching DevOps and Chaos Engineering.
 
 <div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
-### Discovery Inc | Software Engineer
+### Discovery Inc 🇸🇪| Software Engineer
 
 __Mar 2018 – Nov 2018 (9 mos) | Stockholm, Sweden__
 
@@ -91,11 +94,14 @@ Using Agile and TDD with code review via pull request on Github.
 Using containers, testing & deploying with Jenkins to Kubernetes cluster running on AWS
 Logs gather with ELK stack. Metrics with Prometheus.
 
+Database migration from Redis to PostgreSQL:
+Live migration (no downtime) from Redis to PostgreSQL using jsonB. 
+
 <div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
-### Unity Technologies Finland | Software Engineer
+### Unity Technologies Finland 🇫🇮| Software Engineer
 
-__2017 – Mar 2018 (1 yr 3 months) | Helsinki Area, Finland__
+__2017 – Mar 2018 (1 yr 3 months) | Helsinki, Finland__
 
 cloud native, containerized environment
 
@@ -123,7 +129,7 @@ Give presentations to teams
 
 <div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
-### Freelance | Software Engineer
+### Freelance 🇹🇭| Software Engineer
 
 __2016 – Dec 2016 (5 mos) | Chiand Mai, Thailand__ (Remote)
 
@@ -131,9 +137,9 @@ Full stack web development in Clojure and ClojureScript using PostgreSQL as data
 
 <div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
-### Group S | Software Engineer
+### Group S 🇧🇪| Software Engineer
 
-__May 2014 – Aug 2016 (2 yrs 4 months) | Brussels Area, Belgium__
+__May 2014 – Aug 2016 (2 yrs 4 months) | Brussels, Belgium__
 
 Transfer:
 Analysis, development, maintenance, support of Single Page Application (Redux + React, ES6+, JSX, SaSS, Mocha, Chai, Sinon, Localization: EN, FR, NL) and backend (Java 8, Tomcat 8, JAX-RS, Hibernate, JUNIT) connecting to Oracle 11g, MySQL, cache (Redis) and a secure FTP server (proprietary) containing sensitive documents (accounting, payroll, salary, ...). In front of load balancing running on RHEL 7. +1000 downloads/day for 3000 customers in Belgium and France.
@@ -170,7 +176,7 @@ Conferences, meetings, projects requirements analysis. Example of conference rep
 
 <div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
-### Share2Grow | Partner | Software Engineer
+### Share2Grow 🇧🇪| Partner | Software Engineer
 
 __Feb 2014 – Jul 2016 (2 yrs 6 months) | Brussels, Belgium__
 
@@ -184,7 +190,7 @@ Web Development, Technology Assessment, Technical Business Analysis, SEO, Python
 
 <div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
-### Freelance | Software Engineer
+### Freelance 🌏| Software Engineer
 
 __2010 – May 2014 (4 yrs) | World__ (Remote)
 
@@ -192,7 +198,7 @@ Web Development, Technology Assessment, Technical Business Analysis, SEO, Python
 
 <div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
-### Piton Lux S.A. | Software Engineer
+### Piton Lux S.A. 🇱🇺| Software Engineer
 
 __Apr 2008 – Oct 2009 (1 yr 7 months) | Luxembourg__
 
@@ -207,7 +213,7 @@ Development of custom/tailor-made solutions with CRM Software “eLink” at Uni
 
 <div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
-### Callataÿ & Wouters | Release Engineer
+### Callataÿ & Wouters 🇧🇪| Release Engineer
 
 __Oct 2007 – Mar 2008 (6 months) | Brussels, Belgium__
 
@@ -215,9 +221,9 @@ Worked in team for the release of Banking Software “Thales”. Now called “S
 
 <div class="divider-hr-small divider-hr-transparent-small divider-hr-stop"></div>
 
-### Universitat Politècnica de Catalunya | Researcher
+### Universitat Politècnica de Catalunya 🇪🇸| Researcher
 
-__Sep 2006 – Feb 2007 (6 months) | Barcelona Area, Spain__
+__Sep 2006 – Feb 2007 (6 months) | Barcelona, Spain__
 
 Research over the MPLS protocol:
 Multiprotocol Label Switching (MPLS) is a type of data-carrying technique for high-performance telecommunications networks. MPLS is a scalable, protocol-independent transport. In an MPLS network, data packets are assigned labels. Packet-forwarding decisions are made solely on the contents of this label, without the need to examine the packet itself. This allows one to create end-to-end circuits across any type of transport medium, using any protocol. The primary benefit is to eliminate dependence on a particular OSI model data link layer (layer 2) technology,
@@ -246,7 +252,7 @@ University of Namur, Belgium - https://www.unamur.be/
 
 ## Certifications
 
-### Google Developer Expert
+### Google Developer Expert (GDE)
 
 For Google Cloud Platform - [Credentials](https://developers.google.com/community/experts/directory/profile/profile-julien_bisconti)
 

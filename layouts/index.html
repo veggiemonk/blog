@@ -8,46 +8,6 @@
             {{ .Content }}
         </div>
     </article>
-    <div class="page-content">
 
-        {{ $currentSection := .Section -}}
-        {{ $currentID := "" -}}
-        {{ with .File }}{{ $currentID = .UniqueID }}{{ end -}}
-        {{ with .Site.GetPage "section" "talks" }}
-        <a class="no-underline" href="{{ .RelPermalink }}">
-            <div class="card">
-                <span class="card__title">{{ .Title }}</span>
-            </div>
-        </a>
-        {{ end }}
-        {{ with .Site.GetPage "section" "slides" }}
-        <a class="no-underline" href="{{ .RelPermalink }}">
-            <div class="card">
-                <span class="card__title">{{ .Title }}</span>
-            </div>
-        </a>
-        {{ end }}
-        {{ with .Site.GetPage "section" "podcasts" }}
-        <a class="no-underline" href="{{ if .Params.Website }}{{ .Params.Website }}{{ else }}{{ .RelPermalink }}{{ end }}">
-            <div class="card">
-                <span class="card__title">{{ .Title }}</span>
-            </div>
-        </a>
-        {{ end }}
-        {{ with .Site.GetPage "section" "bookmarks" }}
-        <a class="no-underline" href="{{ .RelPermalink }}">
-            <div class="card">
-                <span class="card__title">{{ .Title }}</span>
-            </div>
-        </a>
-        {{ end }}
-        <!-- {{ range .Site.Sections -}}
-        <a class="no-underline" href="{{ .RelPermalink }}">
-            <div class="card">
-                <span class="card__title">{{ .Title }}</span>
-            </div>
-        </a>
-        {{ end -}} -->
-    </div>
 </main>
 {{ end }}

@@ -23,14 +23,14 @@ Read on.
 
 ### Problems I will solve for you
 
-TODO
+* Everything related to __Google Cloud__:
+* increase the resilience of your platform by doing chaos engineering experiement,
+* ship features faster and more reliably or,
+* save money on your cloud bills,
+* secure your workload,
+* build a scalable platform,
+* get insights from your data,
+* deploy machine learning models to production,
+* workshop & training
 
-Migrate to __Google Cloud__,
-Increase the resilience of your platform by using techniques such as Chaos Engineer.
-If you want to ship features faster and more reliably or,
-save money on your cloud bills,
-secure your workload,
-build a secure, scalable platform,
-get insights from your data,
-deploy machine learning models to production,
 you can __[hire me]({{< ref "hire_me.md" >}} "hire me")__ or just have a look at the content I produced and made freely available below.

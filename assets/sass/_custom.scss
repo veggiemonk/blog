@@ -155,7 +155,8 @@ article.list-view > div.content {
     .talk-item__link {
       grid-area: link;
     }
-    .talk-item__event-name {
+    .talk-item__event-name { 
+      font-size: larger;
       text-align: center;
       grid-area: event-name;
     }

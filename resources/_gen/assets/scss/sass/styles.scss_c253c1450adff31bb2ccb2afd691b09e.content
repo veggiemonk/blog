@@ -952,6 +952,7 @@ article.list-view > div.content {
     .talk-list .talk-item .talk-item__link {
       grid-area: link; }
     .talk-list .talk-item .talk-item__event-name {
+      font-size: larger;
       text-align: center;
       grid-area: event-name; }
     .talk-list .talk-item .talk-item__date {
